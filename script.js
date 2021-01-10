@@ -1,8 +1,7 @@
 preguntas = document.getElementsByClassName("qtext")
 opciones = document.getElementsByClassName("answer")
 bbdd = {
-    'En el formato de instrucciones tipo I de MIPS, el inmediato está indicado en:' :[
-        'En los bits del 31 al 16. '],
+    
     'Las instrucciones tipo I en el ISA del MIPS:'	:[
         'Incluyen las instrucciones de salto condicional. ',
         'Incluyen las cargas y almacenamientos. ',
