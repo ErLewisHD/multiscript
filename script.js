@@ -34,7 +34,7 @@ bbdd = {
         'elimina redundancia espacial ',
         'los predictores se forman extrapolando (de diferentes formas) el valor de los píxeles vecinos ',
         'se hace a nivel de pixel o a nivel de bloque de pixeles ',
-        'se le conoce como predicción Intra '
+        'se le conoce como predicción Intra ',
         'es una técnica de compresión sin pérdidas '],
     'Los codificadores de entropía (VLC) se basan en' :[
       'asignar palabras de código de longitud variable a cada muestra ',
