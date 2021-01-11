@@ -341,7 +341,10 @@ bbdd = {
       'Codificar eficientemente resoluciones de alta (HD) a ultra-alta definición (UHDV) de vídeo ',
       'Se necesita desarrollar una nueva tecnología de compresión de vídeo para reducir considerablemente las tasas de bits que genera la mejor configuración de H.264/AVC ',
       'Si se sigue utilizando H.264/AVC, el caudal generado por el tráfico de vídeo crecerá más rápido de lo que serán capaces de transportar las infraestructuras de transmisión '],
-    'En el Formato 3D: Multiview Simulcast, …' :[],
+    'En el Formato 3D: Multiview Simulcast, …' :[
+      'Codifica cada vista por separado ',
+      'Permite utilizar codificadores convencionales para cada vista (MPEG-2, H.264, etc..) ',
+      'No se buscan dependencias entre vistas '],
     'En el estándar H.264/AVC, que Perfil hay que utilizar para aplicaciones de VideoConferencia:' :[
       'Baseline '],
     'En el estándar H.264/AVC, ¿Qué tipo de transformada se utiliza?:' :[
@@ -360,13 +363,26 @@ bbdd = {
       'All Intra (AI) ',
       'Random Access (RA) ',
       'Low Delay P (LDP) y Low Delay B (LDB) '],
-    'En el estándar H.264/SVC, para proporcionar eficiencia en la escalabilidad espacial se utiliza…' :[],
+    'En el estándar H.264/SVC, para proporcionar eficiencia en la escalabilidad espacial se utiliza…' :[
+      'Inter-Layer Intra-Prediction ',
+      'Inter-Layer Residual Prediction ',
+      'Inter-Layer Motion Prediction '],
     'En el Formato 3D: Conventional Stereo Video, …' :[],
     'En el estándar H.264/AVC, dada la técnica de codificación mostrada en la figura ¿Qué nombre recibe esta técnica?:' :[
       'Predicción temporal (P) basada en múltiples frames '],
     'En el estándar H.264/SVC, la escalabilidad temporal…' :[
       'Puede ser implementada haciendo uso de frames B generalizados '],
-                                                         
+    'En el estándar H.264/AVC, en el filtro de deblocking, si es de tipo IN LOOP FILTER:' :[],
+    'En el Formato 3D: 2D (Texture) + Depth, …' :[
+      'El mapa de profundidad posibilita la renderización (generación) de más vistas intermedias ',
+      'La información 2D puede codificarse bajo estándares tradicionales (MPEG-2, MPEG-4, H.264) ',
+      'La información 2D proporciona compatibilidad con los displays solo 2D '],
+    '¿Cuáles fueron los principales requisitos para el diseño del estándar HEVC?' :[
+      'una considerable reducción en bitrate con respecto al H.264/AVC High Profile (para un mismo nivel de calidad). '],
+    'En el estándar H.264/AVC, los objetivos que se marcaron para su diseño fueron:' :[],
+    'El estándar H.264/SVC, la idea de SVC es…' :[
+      'Poder decodificar varias versiones del vídeo, utilizando un bitstream formado por varios sub-bitstreams (extraibles) o capas. '],
+    ''
 
 }
 
