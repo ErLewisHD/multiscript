@@ -124,6 +124,58 @@ bbdd = {
     'Caso de Estudio: Codificación en Sub-banda (SBC, Sub-Band Coding). Al representar la curva RD obtenida para los 6 tipos diferentes comunes de descomposición en sub-bandas de una imagen, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, y comparándolo con la sprestaciones RD que se obtendían utilizando una codificación DPCM (mismo modelo de predicción 2D que el utilizado en SBC-Subs), para la imagen "Lena256B" con 256 niveles de gris':[],
     'La codificación de muestras…':[
       'se utiliza únicamente información de los pixels o muestras individuales para comprimir la señal digital '],
+    'Los servicios de broadcasting interactivos se caracterizan por ser:' :[
+      'modelo de producción de contenidos centralizados ',
+      'asimétrico ',
+      'bidireccional ',
+      'bidireccional y asimétrico '],
+    'En una imagen existe ...' :[
+      'redundancia espacial ',
+      'considerable información que es irrelevante desde un punto de vista perceptivo.'],
+    'Los servicios de broadcasting convencionales se caracterizan por ser:' :[
+      'modelo de producción de contenidos centralizados ',
+      'unireccional ',
+      'punto a multipunto '],
+    'Los servicios de reproducción multimedia se caracterizan por ser:' :[
+      'no hay transmisión ',
+      'calidad muy alta ',
+      'modelo de producción de contenidos centralizados '],
+    'Los servicios de monocasting compartido se caracterizan por ser:' :[
+      'modelo de producción de contenidos descentralizados ',
+      'amplio rango de calidades ',
+      'bidireccional y asimétrico '],
+    'Los sistemas de codificación sin pérdidas o reversibles....' :[
+      'Adecuada para ficheros de datos, imágenes médicas ',
+      'Tasas de compresión muy moderadas '],
+    'En una secuencia de vídeo existe ..' :[
+      'redundancia espacial ',
+      'redundancia temporal '],
+    'Un estándar de imagen, video o audio define:' :[
+      'solo el proceso de decodificación '],
+    'Dentro de una imagen, existe una significativa correlación entre muestras vecinas. Esta se denomina' :[
+      'redundancia espacial '],
+    '¿Cuál de los siguientes aspectos se consideran necesarios para el buen desarrollo de las aplicaciones multimedia?' :[
+      'Técnicas de compresión. ',
+      'Potencia de procesamiento para comprimir/descomprimir las señales. ',
+      'Estándares '],
+    'En un codec asimétrico....' :[
+      'son los utilizados en vídeo bajo demanda ',
+      'son los utilizados en la difusión de la señal de TV ',
+      'el codificador es mucho más complejo y lento que el descodificador '],
+    'Los servicios de comunicaciones personales se caracterizan por ser:' :[
+      'bidireccional y simétrico ',
+      'retraso crítico ',
+      'calidad media-baja '],
+    'Los sistemas de codificación con pérdidas o irreversibles....' :[
+      'Adecuados para medios continuos ',
+      'Mayores tasas de compresión '],
+    'En una secuencia de vídeo existe ...' :[
+      'redundancia espacial ',
+      'redundancia temporal '],
+    
+
+
+
 
 }
 
