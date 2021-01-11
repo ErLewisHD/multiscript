@@ -59,7 +59,7 @@ bbdd = {
         'la comparación de macrobloques (MB) '],
     'La cuantificación vectorial' :[
         'la complejidad dependerá de la medida de distorsión y del algoritmo de búsqueda utilizado ',
-        'procesa los bloques de datos directamente en el dominio espacial '
+        'procesa los bloques de datos directamente en el dominio espacial ',
         'es una técnica de codificación con pérdidas '],
     'La cuantificación vectorial…' :[
       'se basa en codificar un conjunto de muestras (vector) en base a una lista de vectores pre-establecidos '],
@@ -136,7 +136,7 @@ bbdd = {
         'Gp(fd)=4.53; Gp(mcfd)=41.05 '],
     'Caso de Estudio: Codificación de Sub-banda (SBC, Sub-Band Coding). Aplicándole a la imagen "Lena256B" con 256 niveles de gris, una codificación en sub-banda con un modelo de descomposición en 16 bandas de frecuencia, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, se obtienen los resultados mostrados en la figura. ¿Cuál sería la imagen con la descomposición en sub-bandas codificadas, acorde al modelo de descomposición en sub-bandas seleccionado en Decomp, y a los resultados obtenidos?.' :[],
     'Caso de Estudio: Codificación en Sub-banda (SBC, Sub-Band Coding). Al representar la curva RD obtenida para los 6 tipos diferentes comunes de descomposición en sub-bandas de una imagen, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, y comparándolo con la sprestaciones RD que se obtendían utilizando una codificación DPCM (mismo modelo de predicción 2D que el utilizado en SBC-Subs), para la imagen "Lena256B" con 256 niveles de gris' :[],
-    'Caso de Estudio: Codificación Predictiva de Muestras (DPCM). Al representar la curva RD al aplicar el DPCM a la imagen de Lena256B (con 256 niveles de gris) para todos los DPCM bitrates disponibles (1 a 6 bpp)':[],
+    'Caso de Estudio: Codificación Predictiva de Muestras (DPCM). Al representar la curva RD al aplicar el DPCM a la imagen de Lena256B (con 256 niveles de gris) para todos los DPCM bitrates disponibles (1 a 6 bpp)' :[],
     'La codificación de muestras…' :[
         'se utiliza únicamente información de los pixels o muestras individuales para comprimir la señal digital '],
     'Los servicios de broadcasting interactivos se caracterizan por ser:' :[
@@ -217,7 +217,7 @@ bbdd = {
         'el coeficiente DC se codifica diferencialmente con el coeficiente DC del bloque anterior ',
         'los códigos VLC se generan mediante codificación Huffman o codificación aritmética ',
         'los coeficientes de AC se leen en zigzag y se les aplica una RLC '],
-    'En el estándar JPEG con pérdidas, a que se debe un resultado con estas prestaciones como el mostrado en estas imágenes ' :[]
+    'En el estándar JPEG con pérdidas, a que se debe un resultado con estas prestaciones como el mostrado en estas imágenes ' :[],
     'Las mejoras del Estándar JPEG XR con respecto a JPEG son:' :[
         'también usa bloques de 4x4, 2x4 y 2x2 pixeles ',
         'soporta pixeles de hasta 32 bits ']
@@ -240,11 +240,11 @@ setTimeout(() => {
                     if (value.includes(respuesta)) {
 
 						 opciones_test.item(j).childNodes[1].childNodes[0].setAttribute("style","color:#504D4D")
-                        i ++
+                        i++
                     }
                 }
             }
         });
-        i ++
+        i++
     }
 })
