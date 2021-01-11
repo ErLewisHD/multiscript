@@ -256,6 +256,8 @@ bbdd = {
     'En el estándar MPEG-1, la predicción bidireccional:' :[
       'realiza el proceso de estimación de movimiento dos veces '],
     'El estándar MPEG-2 es aplicable para sistemas del tipo:' :[],
+    'El estándar MPEG-2 de audio (Parte 3) es una extensión del MPEG-1 donde se han añadido las siguientes características.…' :[
+      'Caudales de 384 Kbit/s o menos por canal. '],
     'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa de cuadro son:' :[
       'el tipo de codificación (I, P o B) '],
     'En MPEG-2, en la escalabilidad Espacial' :[
@@ -292,6 +294,8 @@ bbdd = {
       'estimación y compensación de movimiento '],
     'El estándar MPEG-4/parte 2 está basado en el concepto de:' :[
       'Objetos Audiovisuales '],
+    'El estándar MPEG-4 de audio. Características de AAC-ELD:'  :[
+      'Es apto para audio-conferencias de alta calidad '],
     'En MPEG-1-2 la redundancia estadística se reduce/elimina en el módulo de:' :[],
     'El estándar H.261 utiliza las siguientes técnicas en este orden' :[]
     'En H.261 la redundancia perceptiva se reduce/elimina en el módulo de:' :[],
@@ -299,7 +303,7 @@ bbdd = {
       'TDT (televisión digital terrestre) ',
       'Sistemas basados en DVD '],
     'En el Formato 3D: Frame Compatible Stereo, …' :[
-      'a este formato también se le conoce como side-by-side (topbottom, left-right,..) ',
+      'a este formato también se le conoce como side-by-side (top-bottom, left-right,..) ',
       'se empaquetan los píxeles de las vistas izquierda y derecha, en un único frame para ser codificado “tradicionalmente”. ',
       'cada vista tiene solo la mitad de la resolución '],
     'En el estándar H.264/AVC, los objetivos que se marcaron para su diseño fueron:' :[
@@ -307,8 +311,17 @@ bbdd = {
     'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura con respecto a otros estándares. ¿Qué conclusiones son ciertas?.' :[
       'H.264/AVC obtiene un ahorro en bitrate del 50% (aprox) con respecto a MPEG-2 para un mismo nivel de calidad '],
     'En el estándar H.264/AVC, alguna de sus novedades para mejorar la eficiencia son:' :[],
+    'En el estándar H.264/AVC, alguna de sus novedades para mejorar la robustez son:' :[
+      'Flexible macroblock ordering (FMO)'],
+    'En el estándar H.264/AVC, en la codificación de los Frames B:' :[
+      'Frames B MBs pueden utilizar dos referencias ponderadas: puede ser dos del pasado, o dos del futuro, o una del pasado y otra del futuro ',
+      'La selección de las dos referencias (y los frames de referencia) dependen del codificador para maximizar la eficiencia en la codificación ',
+      'Frames B pueden servir como referencia(predicción) para otros frames. '],
+    'En el estándar H.264/AVC, en el proceso de cuantificación:'  :[
+      'se obtiene una reducción del 12.5% en bitrate conforme se incrementa en 1 el Qstep '],
     'En el estándar HEVC, su extensión MV-HEVC esta basada en el formato:' :[
       'Multi-View Video (MVV) '],
+    'En el estándar HEVC, su extensión 3D-HEVC esta basada en el formato:'  :[],
     'En el estándar H.264/SVC, dado el diagrama de bloques de la figura se trata de una escalabilidad…' :[
       'Calidad/Fidelidad '],
     'Alguno de los factores críticos para el éxito del vídeo 3D son …' :[
@@ -336,7 +349,8 @@ bbdd = {
       'Es sencilla de implementar '],
     'En el Formato 3D: 3DV (MVD+synthesis) …' :[
       'Sintetizan un número de vistas “continuo” basado sobre un limitado conjunto de vistas decodificadas '],
-    'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del uso de los frames B generalizados. ¿Qué conclusiones son ciertas?.' :[],
+    'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del uso de los frames B generalizados. ¿Qué conclusiones son ciertas?.' :[
+        'La mejora puede sser de un 40% con respecto al uso de frames P con una sola referencia previa '],
     '¿Cuáles fueron algunas de las motivaciones para el diseño del estándar HEVC?' :[
       'Codificar eficientemente resoluciones de alta (HD) a ultra-alta definición (UHDV) de vídeo ',
       'Se necesita desarrollar una nueva tecnología de compresión de vídeo para reducir considerablemente las tasas de bits que genera la mejor configuración de H.264/AVC ',
@@ -379,10 +393,24 @@ bbdd = {
       'La información 2D proporciona compatibilidad con los displays solo 2D '],
     '¿Cuáles fueron los principales requisitos para el diseño del estándar HEVC?' :[
       'una considerable reducción en bitrate con respecto al H.264/AVC High Profile (para un mismo nivel de calidad). '],
-    'En el estándar H.264/AVC, los objetivos que se marcaron para su diseño fueron:' :[],
+    'En el estándar H.264/AVC, los objetivos que se marcaron para su diseño fueron:' :[
+      'aplicable a un amplio abanico de aplicaciones ',
+      'reducir en un 50% el bit-rate para el mismo nivel de calidad con respecto a MPEG-2. ',
+      'buenas prestaciones en términos de resistencia a errores '],
     'El estándar H.264/SVC, la idea de SVC es…' :[
-      'Poder decodificar varias versiones del vídeo, utilizando un bitstream formado por varios sub-bitstreams (extraibles) o capas. '],
-    ''
+      'Poder decodificar varias versiones del vídeo, utilizando un bitstream formado por varios sub-bitstreams (extraibles) o capas. ',
+      'Codificar vídeos una sola vez a muy alta calidad (espacial/temporal/fidelidad) ',
+      'Adaptar los contenidos de vídeo a las características de los dispositivos de display '],
+    'El estándar de compresión de audio G.722'  :[
+      'Los anchos de banda son 7Khz a 48, 56 y 64 kbits/s ',
+      'Utiliza codificacion en sub-bandas+ADPCM ',
+      'Es una versión mejorada del G.726.'],
+    'El estándar de compresión de audio G.728'  :[
+      'Utiliza un codificador LD-CELP. (CELP de bajo retraso). '],
+    'El estándar MPEG-1 de audio…'  :[
+      'fue el primer estándar para la codificación de audio de calidad CD ',
+      'Utiliza una codificación en sub-banda y un modelo psico-acústico ',
+      'alcanza compresión explotando el fenómeno de enmascaramiento tanto en los dominios frecuencial como temporal ']
 
 }
 
