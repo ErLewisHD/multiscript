@@ -29,9 +29,11 @@ bbdd = {
         'elimina redundancia espacial ',
         'los predictores se forman extrapolando (de diferentes formas) el valor de los píxeles vecinos ',
         'se hace a nivel de pixel o a nivel de bloque de pixeles ',
-        'se le conoce como predicción Intra '],
+        'se le conoce como predicción Intra '
+        'es una técnica de compresión sin pérdidas '],
     'Los codificadores de entropía (VLC) se basan en' :[
-      'asignar palabras de código de longitud variable a cada muestra '],
+      'asignar palabras de código de longitud variable a cada muestra ',
+      'asignan palabras cortas a los valores de muestras más probables, y palabras largas a los valores d emuestras menos probables '],
     'La codificación por transformada'  :[
         'transforma la señal a otro dominio, en el cual, sólo unos pocos de los coeficientes contengan la mayor parte de la información importante '],
     'La codificación por tranformada...':[],
@@ -43,18 +45,41 @@ bbdd = {
         'es una técnica de compresión sin pérdidas ',
         'reduce la redundancia espacio-temporal de las señales ',
         'predice el valor de una muestra a través de su vecindad espacial o temporal '],
+    'La codificación predictiva (predicción temportal):':[
+      'elimina la redundancia temporal ',
+      'se basa en la estimación y compensación de movimiento entre frames '],
     'La codificación predictiva (predicción temporal): para la estimación de movimiento, ¿Cuál es el procedimiento más popular?.':[
         'la comparación de macrobloques (MB) '],
     'La cuantificación vectorial':[
-        'la complejidad dependerá de la medida de distorsión y del algoritmo de búsqueda utilizado '],
+        'la complejidad dependerá de la medida de distorsión y del algoritmo de búsqueda utilizado ',
+        'procesa los bloques de datos directamente en el dominio espacial '
+        'es una técnica de codificación con pérdidas '],
+    'La cuantificación vectorial…' :[
+      'se basa en codificar un conjunto de muestras (vector) en base a una lista de vectores pre-establecidos '],
     'La codificación predictiva (predicción temporal): en la estimación de movimiento, ¿Cuál es la influencia del tamaño de MB?':[
         'el residuo es menor conforme se reduce el tamaño del MB ',
         'se generan menores vectores de movimiento al aumentar el tamaño del MB ',
         'se disminuye el coste computacional al aumentar el tamaño del MB '],
+    'La codificación predictiva (predicción temporal): en la estimación de movimiento..':[
+        'se define un área de búsqueda para reducir el coste de la misma ',
+        'se utilizan algoritmos de búsqueda ',
+        'está el proceso más costoso computacionalmente '],
     'La codificación predictiva (predicción temporal): en la estimación de movimiento con fracciones de pixel':[
         'se realiza la estimación de movimiento con mayor precisión '],
+    'La codificación predictiva (predicción temporal): en la estimación de movimiento con fracciones de pixel.':[
+        'se realiza la estimación de movimiento con mayor precisión ',
+        'se aumenta el coste computacional '],
+    'La codificación predictiva (predicción temporal): en la estimación y compensación de movimiento..':[
+        'la diferencia entre la imagen actual y la predicción se llama residuo de movimiento compensado ',
+        'se crea una imagen de predicción con la imagen actual y la imagen precedente '],
+    'La codificación predictiva (predicción temporal): en la estimación de movimiento, ¿Cuál es el algoritmo de búsqueda más costoso computacionalmente?.':[
+        'Búsqueda completa '],
     'Una descomposición wavelet completa se obtiene realizando reiteradamente los pasos de filtrado paso bajo y alto sobre la banda':[
         'LL '],
+    'La codificación por tranformada:':[
+        'tranforma la señal a otro dominio, en el cual, sólo unos pocos de los coeficientes contengan la mayor parte de la información importante ',
+        'es una técnica de compresión sin pérdidas (pérdidas despreciables) ',
+        'reduce la redundancia espacial de las señales'],
     'En la codificación por transformada:':[
         'para reducir el número de operaciones necesarias, la imagen se subdivide en bloques más pequeños, generalmente de 8x8 ',
         'La transformada elegida por la mayoría de los estándares establecidos, es la transformada DCT ',
@@ -63,15 +88,43 @@ bbdd = {
         'se da más resolución a las muestras de valor más pequeño y menos resolución a las muestras de mayor valor ',
         'el salto en cada paso del cuantificador no es el mismo a lo largo de todo el rango ',
         'la relación entre la señal de entrada y la señal de salida no es lineal '],
-    'En el cuantificador lineal:':[]
+    'En el cuantificador lineal:':[
+        'el salto en cada paso del cuantificador es el mismo a lo largo de todo el rango '],
     'La codificación en sub-banda':[
         'es más costosa computacionalmente que la codificación por transformada basada en bloque a bloque ',
-        'elimina considerablemente el efecto de bloques '],
-    'La codificación en sub-bandas...':[],
+        'elimina considerablemente el efecto de bloques ',
+        'a las bandas resultantes de la codificación en sub-banda se le puede aplicar posteriormente otras técnicas de compresión ',
+        'La compresión de los datos se alcanza al descartar algunas sub-bandas irrelevantes y al codificar eficientemente el resto de bandas acorde a su importancia ',
+        'normalmente en audio se utilizan 32 sub-bandas y en imágenes o vídeo entre 4 y 7 sub-bandas'],
+    'La codificación en sub-bandas…':[
+        'se basa en dividir la señal en varias bandas de frecuencia y efectuar una compresión en cada una de las bandas de acuerdo a su importancia '],
     'En la matriz (8x8) resultante de aplicar la DCT:':[
         'el valor de la esquina superior izquierda es el valor más importante ',
         'el valor de la esquina superior izquierda indica el valor del color dominante, que corresponde a la componente de continua (DC) del bloque (color promedio) ',
-        'en general, cuanto más alejado de la esquina superior izquierda esté el coeficiente DCT, menos importante es desde un punto de vista perceptivo ']
+        'en general, cuanto más alejado de la esquina superior izquierda esté el coeficiente DCT, menos importante es desde un punto de vista perceptivo '],
+    'La codificación basada en Wavelets':[
+        'es un caso especial de codificación sub-banda ',
+        'el filtro paso-bajo extrae la tendencia de la señal, mientras que el filtro paso-alto extrae los detalles ',
+        'los cuatro filtrados realizados son denominados LL, LH, HL y HH ',
+        'está basada en la aplicación repetida de filtros de paso-alto y paso-bajo sobre una imagen de entrada '],
+    'Un cuantificador de 3 bits aplicado a muestras de niveles de gris codificados con un byte/muestra proporciona un factor de compresión F de:':[
+        '2,66:1 '],
+    'Un cuantificador de 4 bits aplicado a muestras de niveles de gris codificados con un byte/muestra proporciona un factor de compresión F de:':[
+        '2:1 '],
+    'Caso de Estudio: Cuantificación vectorial (VQ, Vector Quantization). Al representar la curva RD al aplicar el cuantificador vectorial(VQ) a la imagen de Lena256B (con 256 niveles de gris), con el codebook pre-diseñado en la herramienta VcDemo1_4x4_min1_max12, para los diferentes bitrate/vector 4x4 (desde 1 a 12).':[
+        'Se debe obtener una curva RD como la mostrada en la figura. '],
+    'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Aplicando un PCM de 1 bpp a 7 bpp para la imagen "Lena256B" con 256 niveles de gris, obtenemos los resultados que se muestran en la figura. Si de entre todos ellos, finalmente optamos por un PCM bit rate=4, ¿Cuántos niveles de gris de salida se están utilizando?. ¿Cual es el Factor de Compresión (FC) que se obtendría?.':[
+        '16 niveles de gris y FC=2:1 '],
+    'En los sistemas híbridos de codificación inter-cuadro se aplica:':[
+        'la DCT ',
+        'la estimación y compensación de movimiento '],
+    'Caso de Estudio: Estimación y Compensación de Movimiento (Evaluación de la Ganancia de la Predicción). Seleccionando la secuencia "Vectra21Frames.yuv" (352x288), utilizando modo no Jerárquico, Full Search, tamaño de MB=16X16, (asume que se genera un vector de movimiento por MB), tamaño área de búsqueda=15, se obtienen los resultados mostrados en la figura. ¿Cuál es el coste estimado de codificar todos los Vectores de Movimiento del Frame[2]?.':[
+        '871,2 bits '],
+    'Caso de Estudio: Codificación de Sub-banda (SBC, Sub-Band Coding). Aplicándole a la imagen "Lena256B" con 256 niveles de gris, una codificación en sub-banda con un modelo de descomposición en 16 bandas de frecuencia, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, se obtienen los resultados mostrados en la figura. ¿Cuál sería la imagen con la descomposición en sub-bandas codificadas, acorde al modelo de descomposición en sub-bandas seleccionado en Decomp, y a los resultados obtenidos?.':[],
+    'Caso de Estudio: Codificación en Sub-banda (SBC, Sub-Band Coding). Al representar la curva RD obtenida para los 6 tipos diferentes comunes de descomposición en sub-bandas de una imagen, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, y comparándolo con la sprestaciones RD que se obtendían utilizando una codificación DPCM (mismo modelo de predicción 2D que el utilizado en SBC-Subs), para la imagen "Lena256B" con 256 niveles de gris':[],
+    'La codificación de muestras…':[
+      'se utiliza únicamente información de los pixels o muestras individuales para comprimir la señal digital '],
+
 }
 
 
