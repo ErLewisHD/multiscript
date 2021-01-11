@@ -220,7 +220,154 @@ bbdd = {
     'En el estándar JPEG con pérdidas, a que se debe un resultado con estas prestaciones como el mostrado en estas imágenes ' :[],
     'Las mejoras del Estándar JPEG XR con respecto a JPEG son:' :[
         'también usa bloques de 4x4, 2x4 y 2x2 pixeles ',
-        'soporta pixeles de hasta 32 bits ']
+        'soporta pixeles de hasta 32 bits '],
+    'En el estándar MPEG-4/parte 2:' :[
+      'la codificación basada en objetos audiovisuales permitirá fácilmente la interacción, la reusabilidad y la escalabilidad ',
+      'es necesaria información que describa las relaciones espaciales (descriptor de escena) y temporales entre los objetos que forman la escena ',
+      'una escena es una composición de objetos audiovisuales que puede ser modificada por el usuario '],
+    'En MPEG-1 el significado funcional de la capa de Cuadro es:' :[],
+    'MPEG-2 presenta los siguientes modos de escalabilidad:' :[
+      'Hibrida ',
+      'SNR ',
+      'Partición de datos '],
+    'En el control de caudal del estándar MPEG-1-2 (codificación CBR):' :[
+      'la calidad de vídeo varía debido a que el factor de cuantificación se varía para alcanzar un caudal de salida constante. ',
+      'El estado de ocupación del buffer es controlado a través de la variación del factor de cuantificación ',
+      'los bits producidos por el codificador son almacenados en un buffer, el cual es drenado a caudal constante '],
+    'En MPEG-1 los cuadros B:' :[
+      'utilizan para la codificación, la información contenida en los cuadros pasado y futuro, I o P, más próximos. '
+    ],
+    'En el control de caudal del estándar MPEG-1-2 (codificación CBR):' :[
+      'los bits producidos por el codificador son almacenados en un buffer, el cual es drenado a caudal constante '],
+    'En MPEG-1-2 el coeficiente de continua (DC) de un bloque inter se cuantifica' :[
+      'de la misma forma que lo hacen los coeficientes AC '],
+    'El estándar H.263:' :[
+      'emplea gran parte de las técnicas utilizadas por los estándares H.261 y MPEG-1 '],
+    'En MPEG-1-2 la redundancia temporal se reduce/elimina en el módulo de:' :[
+      'estimación y compensación de movimiento '],
+    'En el estándar MPEG-2 en codificación a VBR, se obtienen las siguientes prestaciones mostradas en estas figuras para evaluar la influencia del factor Q sobre el caudal medio y la calidad. ¿Qué conclusiones son ciertas?.' :[
+      'la forma de las dos gráficas está directamente relacionada con la forma en que se anulan los coeficientes de la DCT después del proceso de cuantificación '],
+    'Dado el patrón de codificación de los tipos de Macrobloque (Macroblock Types) y sus vectores de movimiento asociados mostrados en estas dos figuras, este cuadro ha sido codificado como:' :[
+      'P '],
+    'Con respecto a la decodificación del estándar MPEG-1-2:' :[
+      'no se realiza la estimación del movimiento. ',
+      'es asimétrico con respecto al codificador ',
+      'no es un proceso costoso computacionalmente. '],
+    'En el estándar MPEG-1, la predicción bidireccional:' :[
+      'realiza el proceso de estimación de movimiento dos veces '],
+    'El estándar MPEG-2 es aplicable para sistemas del tipo:' :[],
+    'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa de cuadro son:' :[
+      'el tipo de codificación (I, P o B) '],
+    'En MPEG-2, en la escalabilidad Espacial' :[
+      'las capas pueden tener diferentes tamaños de cuadro, caudal de cuadros o formatos de muestreo. '],
+    'En MPEG-2, en la escalabilidad Espacial:' :[
+      'las capas pueden tener diferentes tamaños de cuadro, caudal de cuadros o formatos de muestreo. '],
+    'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa de franja son:' :[
+      'la posición de la franja dentro del cuadro ',
+      'el factor de escala Q de cuantificación (MQUANT) '],
+    'En MPEG-2, el impacto que tienen los errores:' :[
+      'se ven amplificados por los efectos de la propagación espacial y temporal '],
+    'En el estándar H.261, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del tamaño de la ventana de búsqueda. ¿Qué conclusiones son ciertas?' :[
+      'aumentar el tamaño de la ventana de búsqueda aumenta el coste computacional del codificador '],
+    'En MPEG-1-2 el coeficiente de continua (DC) de un bloque intra se cuantifica' :[
+      'de forma diferente a como lo hacen los coeficientes AC '],
+    'En el estándar MPEG-2, se obtienen las siguientes prestaciones mostradas en estas figuras para evaluar las diferentes técnicas de ocultación ante una secuencia con elevado movimiento. ¿Qué conclusiones son ciertas?:' :[
+      'al tener elevado movimiento, funcionan mejor las técnicas espaciales que las temporales '],
+    'El estándar H.263 se definió principalmente (originalmente) para sistemas del tipo:' :[
+      'Videotelefonía/Videoconferencia a bajo caudal '],
+    'En MPEG-1 el significado funcional de la capa de Bloque es:' :[],
+    'En MPEG-2, en la escalabilidad de SNR:' :[
+      'Las capas de mejora restantes son codificadas para mejorar la calidad básica proporcionando un mayor refinamiento de los coeficientes de la DCT de la capa básica '],
+    'El estándar H.263 presenta la opción de codificación avanzada Syntaxbased arithmetic coding mode (SAC-mode), que consiste en:' :[],
+    'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del tamaño de la ventana de búsqueda. ¿Qué conclusiones son ciertas?.' :[
+      'aumentar el tamaño de la ventana de búsqueda aumenta el coste computacional del codificador ',
+      'MPEG-1 es un códec asimétrico independientemente del tamaño de la ventana de búsqueda ',
+      'aumentar el tamaño de la ventana de búsqueda no es muy eficiente en términos de RD '],
+    'El estándar MPEG-2 se diseñó bajo los siguientes requisitos:' :[
+      'formato de video entrelazado y progresivo '],
+    'En el estándar H.263, se obtienen las siguientes prestaciones mostradas en esta figura con respecto al estándar H.261. ¿Qué conclusiones son ciertas?.' :[],
+    'El estándar H.263 presenta la opción de codificación avanzada PBframes mode, que consiste en:' :[],
+    'En el estándar H.261:' :[],
+    'En H.261 la redundancia temporal se reduce/elimina en el módulo de:' :[
+      'estimación y compensación de movimiento '],
+    'El estándar MPEG-4/parte 2 está basado en el concepto de:' :[
+      'Objetos Audiovisuales '],
+    'En MPEG-1-2 la redundancia estadística se reduce/elimina en el módulo de:' :[],
+    'El estándar H.261 utiliza las siguientes técnicas en este orden' :[]
+    'En H.261 la redundancia perceptiva se reduce/elimina en el módulo de:' :[],
+    'En MPEG-2, sus ejemplos de uso más conocidos son:' :[
+      'TDT (televisión digital terrestre) ',
+      'Sistemas basados en DVD '],
+    'En el Formato 3D: Frame Compatible Stereo, …' :[
+      'a este formato también se le conoce como side-by-side (topbottom, left-right,..) ',
+      'se empaquetan los píxeles de las vistas izquierda y derecha, en un único frame para ser codificado “tradicionalmente”. ',
+      'cada vista tiene solo la mitad de la resolución '],
+    'En el estándar H.264/AVC, los objetivos que se marcaron para su diseño fueron:' :[
+      'reducir en un 50% el bit-rate para el mismo nivel de calidad con respecto a MPEG-2. '],
+    'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura con respecto a otros estándares. ¿Qué conclusiones son ciertas?.' :[
+      'H.264/AVC obtiene un ahorro en bitrate del 50% (aprox) con respecto a MPEG-2 para un mismo nivel de calidad '],
+    'En el estándar H.264/AVC, alguna de sus novedades para mejorar la eficiencia son:' :[],
+    'En el estándar HEVC, su extensión MV-HEVC esta basada en el formato:' :[
+      'Multi-View Video (MVV) '],
+    'En el estándar H.264/SVC, dado el diagrama de bloques de la figura se trata de una escalabilidad…' :[
+      'Calidad/Fidelidad '],
+    'Alguno de los factores críticos para el éxito del vídeo 3D son …' :[
+      'Que el cliente experimente una elevada calidad sin elevados costes de migración hacía el 3D.. ',
+      'Aceptación por parte de los clientes de la tecnología de display del vídeo 3D, sin fatigas ni cansancio ocular ',
+      'Disponibilidad de contenidos/canales en 3D '],
+    'En el estándar H.264/SVC, el precio a pagar es…' :[
+      'Se obtiene la misma calidad final (con todas las capas) pero a mas bitrate ',
+      'Un incremento pequeño en la complejidad de la decodificación '],
+    'En el estándar H.264/AVC, en la predicción Intra-Frame:' :[
+      'al bloque o MB que se está codificando se le resta la predicción realizada para él. ',
+      'se realiza una predicción para ese bloque o MB basándose en los bloques o MB previamente codificados en esa imagen ',
+      'solo se pueden utilizar las muestras pertenecientes al mismo Slice '],
+    'El estándar H.264/MVC, …' :[
+      'Explota las redundancias entre vistas utilizando la predicción inter-vista para reducir el bitrate. '],
+    'En el estándar H.264/AVC, que Perfil hay que utilizar para aplicaciones de Streaming Video:' :[
+      'Extended '],
+    'Algunas de las mejoras del estándar HEVC con respecto a H.264/AVC son:' :[
+      'Unidades de codificación (CU) de tamaños 64x64 a 8x8 ',
+      'Transformadas a bloques de muestras de tamaño grande (32x32 a 4x4) ',
+      '35 Modos de Predicción Intra '],
+    'En el estándar H.264/SVC, la escalabilidad temporal…' :[
+      'las capas de resolución temporal mayor no deben ser utilizadas para predicción de capas de resolución temporal menor ',
+      'Puede ser implementada haciendo uso de frames B generalizados ',
+      'Es sencilla de implementar '],
+    'En el Formato 3D: 3DV (MVD+synthesis) …' :[
+      'Sintetizan un número de vistas “continuo” basado sobre un limitado conjunto de vistas decodificadas '],
+    'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del uso de los frames B generalizados. ¿Qué conclusiones son ciertas?.' :[],
+    '¿Cuáles fueron algunas de las motivaciones para el diseño del estándar HEVC?' :[
+      'Codificar eficientemente resoluciones de alta (HD) a ultra-alta definición (UHDV) de vídeo ',
+      'Se necesita desarrollar una nueva tecnología de compresión de vídeo para reducir considerablemente las tasas de bits que genera la mejor configuración de H.264/AVC ',
+      'Si se sigue utilizando H.264/AVC, el caudal generado por el tráfico de vídeo crecerá más rápido de lo que serán capaces de transportar las infraestructuras de transmisión '],
+    'En el Formato 3D: Multiview Simulcast, …' :[],
+    'En el estándar H.264/AVC, que Perfil hay que utilizar para aplicaciones de VideoConferencia:' :[
+      'Baseline '],
+    'En el estándar H.264/AVC, ¿Qué tipo de transformada se utiliza?:' :[
+      'Transformada Hadamard 4x4 '],
+    'Estándar HEVC, sobre la Prediction Unit (PU)…' :[],
+    'En el estándar H.264/AVC, en la predicción Intra-Frame (para las Luminancias), se calculan en este ejemplo mostrado en la figura, los 4 predictores Intra16x16 para obtener el mejor predictor de todos ellos. ¿Cuál elegiría el estándar?:' :[
+      'Modo 3 '],
+    'En un estándar de codificación donde la partición de los Macrobloques (asume que los cuadrados de mayor tamaño son de 16x16) para obtener el mejor residuo posible ha sido el siguiente, ¿de cuál estándar se trata?:' :[
+      'H.264/AVC '],
+    'En el estándar H.264/AVC, …' :[
+      'Frames B pueden servir como referencia(predicción) para otros frames. ',
+      'Frames B MBs pueden utilizar dos referencias ponderadas: pueden ser dos del pasado, o dos del futuro, o una del pasado y otra del futuro '],
+    'En el estándar H.264/AVC, en el filtro de deblocking, si es de tipo POST FILTER:' :[
+      'Operan a la salida de la decodificación y antes de mostrar el frame en pantalla '],
+    'En el estándar HEVC, en las CTC (Common Test Conditions), las Estructuras de Predicción pre-definidas son:' :[
+      'All Intra (AI) ',
+      'Random Access (RA) ',
+      'Low Delay P (LDP) y Low Delay B (LDB) '],
+    'En el estándar H.264/SVC, para proporcionar eficiencia en la escalabilidad espacial se utiliza…' :[],
+    'En el Formato 3D: Conventional Stereo Video, …' :[],
+    'En el estándar H.264/AVC, dada la técnica de codificación mostrada en la figura ¿Qué nombre recibe esta técnica?:' :[
+      'Predicción temporal (P) basada en múltiples frames '],
+    'En el estándar H.264/SVC, la escalabilidad temporal…' :[
+      'Puede ser implementada haciendo uso de frames B generalizados '],
+                                                         
+
 }
 
 
