@@ -262,7 +262,9 @@ bbdd = {
       'realiza el proceso de estimación de movimiento dos veces '],
     'El estándar MPEG-2 es aplicable para sistemas del tipo:' :[],
     'El estándar MPEG-2 de audio (Parte 3) es una extensión del MPEG-1 donde se han añadido las siguientes características.…' :[
-      'Caudales de 384 Kbit/s o menos por canal. '],
+      'Caudales de 384 Kbit/s o menos por canal. ',
+      'Frecuencias de muestreo adicionales ',
+      'Sistema Multicanal (5+1) '],
     'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa de cuadro son:' :[
       'el tipo de codificación (I, P o B) '],
     'En MPEG-2, en la escalabilidad Espacial' :[
@@ -411,7 +413,9 @@ bbdd = {
       'Utiliza codificacion en sub-bandas+ADPCM ',
       'Es una versión mejorada del G.726. '],
     'El estándar de compresión de audio G.728'  :[
-      'Utiliza un codificador LD-CELP. (CELP de bajo retraso). '],
+      'Utiliza un codificador LD-CELP. (CELP de bajo retraso). ',
+      'Utiliza cuantificación vectorial ',
+      'Alcanza una calidad comparable a la G.721 pero a 16 Kbits/s '],
     'El estándar MPEG-1 de audio…'  :[
       'fue el primer estándar para la codificación de audio de calidad CD ',
       'Utiliza una codificación en sub-banda y un modelo psico-acústico ',
@@ -807,25 +811,60 @@ bbdd = {
       'eliminar la redundancia temporal '],
     'La codificación por transformada…' :[
       'transforman la información a otro dominio donde los datos están mucho más de-correlados que en el dominio espacial, y la información se acumula en un pequeño número de muestras '],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    'El estándar MPEG-2 de audio (Parte 7)/ACC.…' :[
+        'Fue diseñado para ser el sucesor de MP3 ',
+        'Soporta asta 48 canales de audio ',
+        'No es backward compatible con MPEG-1 '],
+    'El fenómeno de enmascaramiento en el oído humano…' :[
+        'además del enmascaramiento frecuencial existe el enmascaramiento temporal ',
+        'gana importancia cuando los sonidos son cercanos en frecuencia y la frecuencia enmascaradora es inferior que la enmascarada '],
+    'El estándar de compresión de audio G.721/G.726'  :[
+      'G.721 fue sustituido por el G.726 el cual permite codificación en caudales de 16,24,32 y 40 Kbit/s ',
+      'Ambos utilizan ADPCM y tienen una calidad ligeramente inferior al G.711 ',
+      'G.721 es un estándar para la codificación de la voz a 32 kbit/s '],
+    'El estándar MPEG-4 de audio. Características de AAC-LD:' :[
+        'Es apto para audio-conferencias de alta calidad ',
+        'Es un códec de audio solo para estéreo ',
+        'Apto oara audio-conferencias de alta calidad ',
+        'Es de bajo retraso '],
+    'Los codificadores preceptúales de compresión de audio se basan en los siguientes fenómenos'  :[
+      'El fenómero de enmascaramiento ',
+      'La curva de sensibilidad del oído'],
+    'El estándar MPEG-1 de audio. Su modelo psico-acústico…'  :[
+        'Obtiene los umbrales de enmascaramiento para cada sub-banda ',
+        'Su coste computacional es elevado ',
+        'Es la clave de su funcionamiento ']
+    'El estándar de compresión de audio G.729'  :[
+        'Codifica muestras PCM muestreada a 8Khz a un caudal de 8 Kbit/s ',
+        'Fue motivado para la transmisión de voz sobre redes inalámbricas ',
+        'Utiliza un CS-ACELP '],
+    'El estándar MPEG-4 de audio. Características de HE-AACv2:' :[],
+    'El estándar MPEG-4 de audio. Características de HE-AAC:' :[],
+    'La curva de sensibilidad del oído humano…' :[
+      'nos indica que nuestro oído es muy sensible a frecuencias entre 2 y 4 KHz (aprox) ',
+      'es la curva que indica cual es la potencia mínima (umbral) que una frecuencia necesita para ser detectada por nuestro oido '],
+    '¿Qué parámetros controlan la calidad y el caudal de bits de la señal de audio digital?.' :[
+      'Número de canales de audio ',
+      'Frecuencia de muestreo (44.1, 48, 96, 192 kHz). ',
+      'Número de bits por muestra de audio (8, 16, 24 bits). '],
+    'El estándar MPEG-4 de audio. Características de AAC-ELDv2:'  :[
+      'Es un códec de aucio solo para estéreo ',
+      'Es apto para audio-conferencias de alta calidad '],
+    'Los estándares de compresión de audio G.72x' :[
+        'alcanzan su compresión realizando codificaciones predictivas en la mayría de los casos ',
+        'realizan una codificación eficiente de la voz humana sobre canales de ancho de banda limitado. '],
+    'Los estándares de compresión de audio G.727' :[
+      'Utiliza un ADPCM mejorado (EADPCM). ',
+      'Codifica muestras PCM muestreadas a 8 Khz a caudales de 40, 32, 24 y 16 kbits/s. '],
+    'El estándar MPEG-1 de audio. Sus capas de codificación…' :[
+      'La Capa I es la más simple de todas. Sólo considera en enmascaramiento frecuencial ',
+      'La Capa III (formato mp3) es la más compleja y optimizada de las tres ',
+      'La Capa II considera además del enmascaramiento frecuencial, el enmascaramiento temporal'],
+    'El estándar de compresión de audio G.723.1'  :[
+      'G.723.1 es estándar de facto para la codificación de voz en Internet ',
+      'Para generar el caudal de 6.3 Kbit/s utiliza un codificador MPMLQ',
+      'Codifica muestras PCM muestreadas a 8 Khz a caudales de 5.3 y 6.3 Kbit/s'
+    ]
 
 }
 
