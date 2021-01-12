@@ -404,13 +404,288 @@ bbdd = {
     'El estándar de compresión de audio G.722'  :[
       'Los anchos de banda son 7Khz a 48, 56 y 64 kbits/s ',
       'Utiliza codificacion en sub-bandas+ADPCM ',
-      'Es una versión mejorada del G.726.'],
+      'Es una versión mejorada del G.726. '],
     'El estándar de compresión de audio G.728'  :[
       'Utiliza un codificador LD-CELP. (CELP de bajo retraso). '],
     'El estándar MPEG-1 de audio…'  :[
       'fue el primer estándar para la codificación de audio de calidad CD ',
       'Utiliza una codificación en sub-banda y un modelo psico-acústico ',
-      'alcanza compresión explotando el fenómeno de enmascaramiento tanto en los dominios frecuencial como temporal ']
+      'alcanza compresión explotando el fenómeno de enmascaramiento tanto en los dominios frecuencial como temporal '],
+    'La transformada DWT en JPEG2000:' :[
+      'permite la representación en multiresolución espacial y de calidad ',
+      'se aplica a nivel de TILE ',
+      'elimina el “efecto de bloques” cuando se usan factores de compresión muy altos '],
+    'En el estándar de compresión para aplicaciones de fax' :[
+      'las imágenes o documentos son escaneados en un formato bitonal '],
+    'Analizando las prestaciones mostradas en esta figura. ¿Qué conclusiones son ciertas?.' :[
+      'JPEG2000 mejora sustancialmente las prestaciones de JPEG ',
+      'JPEG XR mejora las prestaciones de JPEG ',
+      'JPEG XR y JPEG2000 tienes prestaciones parecidas '],
+    'Dado el diagrama de bloques de la figura ¿de qué codificador se trata?' :[],
+    'Las mejoras del Estándar JPEG XR con respecto a JPEG son:' :[],
+    'El modo de operación de JPEG mostrado en esta figura es:' :[],
+    'En el RLC y Entropía del compresor JPEG con pérdidas' :[],
+    'En la DCT del compresor JPEG con pérdidas' :[
+      'el algoritmo para el cálculo de la DCT no está especificado en el estándar '],
+    'La transformada DWT en JPEG2000:' :[],
+    'El modo de operación de JPEG mostrado en esta figura es:' :[],
+    'La transformada DWT en JPEG2000:' :[],
+    'En el estándar JPEG con pérdidas, se obtienen las prestaciones mostradas en esta figura cuando se aplica a la imagen “The Palace”. ¿Qué conclusiones son ciertas?.' :[],
+    'El modo de operación de JPEG mostrado en esta figura es:' :[
+      'codificación jerárquica '],
+    'En el estándar de compresión para aplicaciones de fax' :[
+      'las imágenes o documentos son escaneados en un formato bitonal '],
+    'Las mejoras del Estándar JPEG XR con respecto a JPEG son:' :[
+      'soporta pixeles de hasta 32 bits. ',
+      'también usa bloques de 4x4, 2x4 y 2x2 pixeles '],
+    'Para la compresión JPEG con pérdidas se eligió en este orden' :[
+      'codificación basada en Transformada DCT, cuantificador, codificación de longitud de series y una codificación de entropía '],
+    'JPEG2000 se diferencia con respecto a JPEG ¿en cuales de las siguientes características?' :[
+      'usa la DWT (Transformada Wavelet) en vez de la DCT ',
+      'Huffman se reemplaza por un compresor aritmético adaptativo '],
+    'El concepto de TILE en JPEG2000 permite:' :[
+      'dividir la imagen en bloques de igual tamaño ',
+      'reducir las necesidades de memoria y cómputo ',
+      'comprimirlo independientemente con sus propios parámetros de compresión '],
+    'El concepto de TILE en JPEG2000 permite:' :[
+      'reducir las necesidades de memoria y cómputo '],
+    'En la DCT del compresor JPEG con pérdidas' :[
+      'se aplica a bloques de 8x8 ',
+      'el algoritmo para el cálculo de la DCT no está especificado en el estándar ',
+      'los coeficientes de la DCT son después cuantificados para hacer a la RLC más efectiva '],
+    'Para la compresión JPEG sin pérdidas se eligió' :[
+      'codificación diferencial + codificación Huffman o una codificación aritmética '],
+    'En el estándar JPEG con pérdidas, se obtienen las prestaciones mostradas en esta figura cuando se aplica a la imagen “The Palace”. ¿Qué conclusiones son ciertas?.' :[
+      'la compresión aumenta al aumentar el factor de cuantificación ',
+      'la compresión es en tiempo real ',
+      'JPEG es un códec simétrico '],
+    'El concepto de TILE en JPEG2000 permite:' :[],
+    'Analizando las prestaciones mostradas en esta figura. ¿Qué conclusiones son ciertas?.' :[],
+    'Las prestaciones del estándar JPEG con pérdidas' :[],
+    'El control de caudal (rate control) en JPEG2000:' :[
+      'se alcanza modificando el factor de cuantificación ',
+      'controla la tasa de bits de salida que se desea para la imagen '],
+    'Dado el diagrama de bloques de la figura ¿de qué codificador se trata?' :[
+      'JPEG2000 '],
+    'En el estándar de compresión JBIG' :[
+      'su aplicación objetivo son la compresión de imágenes con diferentes niveles de gris '],
+    'Analizando las prestaciones mostradas en esta figura. ¿Qué conclusiones son ciertas?.' :[
+      'JPEG2000 mejora sustancialmente las prestaciones de JPEG '],
+    'La transformada DWT en JPEG2000:' :[
+      'permite la representación en multiresolución espacial y de calidad ',
+      'se aplica a nivel de TILE ',
+      'elimina el “efecto de bloques” cuando se usan factores de compresión muy altos '],
+    'En el estándar de compresión para aplicaciones de fax' :[
+      'se adopta una codificación de longitud de series seguido de una codificación Huffman ',
+      'las imágenes o documentos son escaneados en un formato bitonal ',
+      'se utiliza un bit por pixel '],
+    'En el estándar de compresión JBIG' :[
+      'es un estándar de compresión sin pérdidas ',
+      'consiste de un modelador de probabilidades y de un codificador aritmético ',
+      'su aplicación objetivo son la compresión de imágenes con diferentes niveles de gris '],
+    'En el estándar JPEG con pérdidas, se obtienen las prestaciones mostradas en esta figura cuando se aplica a la imagen “The Palace”. ¿Qué conclusiones son ciertas?.' :[
+      'JPEG es un códec simétrico '],
+    'En la DCT del compresor JPEG con pérdidas' :[],
+    'El modo de operación de JPEG mostrado en esta figura es:' :[],
+    'Las mejoras del Estándar JPEG XR con respecto a JPEG son:' :[],
+    'En la DCT del compresor JPEG con pérdidas' :[
+      'el algoritmo para el cálculo de la DCT no está especificado en el estándar '],
+    'En el cuantificador del compresor JPEG con pérdidas' :[
+      'se utilizan matrices de cuantificación ponderadas diferentes para los bloques de luminancia y crominancia ',
+      'esta es la etapa en la que se produce la mayoría de las pérdidas ',
+      'las altas frecuencias se cuantifican más '],
+    'En el estándar JPEG con pérdidas, a que se debe un resultado con estas prestaciones como el mostrado en estas imágenes' :[],
+    'En el estándar de compresión para aplicaciones de fax' :[],
+    'En el RLC y Entropía del compresor JPEG con pérdidas' :[
+      'el coeficiente DC se codifica diferencialmente con el coeficiente DC del bloque anterior ',
+      'los códigos VLC se generan mediante codificación Huffman o codificación aritmética ',
+      'los coeficientes de AC se leen en zigzag y se les aplica una RLC '],
+    'Las prestaciones del estándar JPEG con pérdidas' :[
+      'es posible utilizar el estándar JPEG para comprimir secuencias de vídeo ',
+      'si se permiten pequeñas degradaciones visuales, el factor de compresión puede llegar hasta 100:1 ',
+      'puede alcanzar factores de compresión de entre 10:1 y 20:1, sin comprometer la calidad visual '],
+    'En el cuantificador del compresor JPEG con pérdidas' :[
+      'esta es la etapa en la que se produce la mayoría de las pérdidas '],
+    'Analizando las prestaciones mostradas en esta figura. ¿Qué conclusiones son ciertas?.' :[
+      'JPEG2000 mejora sustancialmente las prestaciones de JPEG ',
+      'JPEG XR mejora las prestaciones de JPEG ',
+      'JPEG XR y JPEG2000 tienes prestaciones parecidas '],
+    'Dado el diagrama de bloques de la figura ¿de qué codificador se trata?' :[],
+    'En el estándar JPEG con pérdidas, a que se debe un resultado con estas prestaciones como el mostrado en estas imágenes' :[
+      'al uso de factores de cuantificación muy elevados '],
+    'Para la compresión JPEG con pérdidas se eligió en este orden' :[],
+    'En el cuantificador del compresor JPEG con pérdidas' :[],
+    'El modo de operación de JPEG mostrado en esta figura es:' :[
+      'codificación secuencial '],
+    'El modo de operación de JPEG mostrado en esta figura es:' :[],
+    'Analizando las prestaciones mostradas en esta figura. ¿Qué conclusiones son ciertas?.' :[
+      'JPEG XR y JPEG2000 tienes prestaciones parecidas '],
+    'Para la compresión JPEG sin pérdidas se eligió' :[],
+    'Analizando las prestaciones mostradas en esta figura. ¿Qué conclusiones son ciertas?.' :[
+      'JPEG XR mejora las prestaciones de JPEG '],
+    'En el estándar de compresión JBIG' :[],
+    'La transformada DWT en JPEG2000:' :[
+      'permite la representación en multiresolución espacial y de calidad '],
+    'El modo de operación de JPEG mostrado en esta figura es:' :[
+      'codificación progresiva. '],
+    'En el RLC y Entropía del compresor JPEG con pérdidas' :[
+      'los códigos VLC se generan mediante codificación Huffman o codificación aritmética '],
+    'En el RLC y Entropía del compresor JPEG con pérdidas' :[],
+    'Las prestaciones del estándar JPEG con pérdidas' :[
+      'puede alcanzar factores de compresión de entre 10:1 y 20:1, sin comprometer la calidad visual '],
+    'En MPEG-2, en la escalabilidad Espacial:' :[
+      'las capas pueden tener diferentes tamaños de cuadro, caudalde cuadros o formatos de muestreo. ',
+      'permite la migración desde sistemas con baja resolución espacial a sistemas con mayores resoluciones espaciales ',
+      'las capas de mejora utilizan la capa básica para proporcionar la resolución espacial completa de la señal de vídeo '],
+    'En MPEG-2, la ocultación de los errores es importante:' :[
+      'para corregir las zonas erróneas antes de que éstas sean referenciadas en otras imágenes de manera errónea, y así eliminar en gran parte la propagación temporal de dichos errores ',
+      'para obtener una calidad aceptable de la imagen donde se producen los errores '],
+    'En el estándar MPEG-2, se obtienen las siguientes prestaciones mostradas en estas figuras para evaluar las diferentes técnicas de ocultación ante una secuencia con poco movimiento. ¿Qué conclusiones son ciertas?.' :[],
+    'En MPEG-1-2 la redundancia perceptiva se reduce/elimina en el módulo de:' :[],
+    'En MPEG-1 el significado funcional de la capa de Grupo de Cuadros es:' :[],
+    'El estándar H.263 presenta las siguientes aplicaciones usuales:' :[
+      'Telemedicina (consultas médicas y diagnostico a distancia) ',
+      'Video vigilancia y monitorización ',
+      'Videoconferencias sobre diferentes tipos de dispositivos '],
+    'En MPEG-2, en la escalabilidad de Partición de Datos:' :[],
+    'En MPEG-2, en las técnicas de ocultación de errores, la Temporal con Movimiento Compensado:' :[
+      'obtiene prestaciones adecuadas en áreas con movimiento moderado '],
+    'Con respecto a la decodificación del estándar H.261:' :[
+      'es asimétrico con respecto al codificador. ',
+      'no es un proceso costoso computacionalmente. ',
+      'no se realiza la estimación del movimiento. '],
+    'En el estándar MPEG-2, se obtienen las siguientes prestaciones mostradas en estas figuras para evaluar las diferentes técnicas de ocultación ante una secuencia con poco movimiento. ¿Qué conclusiones son ciertas?.' :[
+      'al tener poco movimiento, funcionan mejor las técnicas temporales que las espaciales ',
+      'el dinámico es el que mejor funciona al adaptarse a las características espaciales y temporales de la secuencia ',
+      'las frecuenciales funcionan mal, al funcionar mal en los cuadros de tipo P y B '],
+    'En la codificación VBR del estándar H.261:' :[],
+    'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del factor Q. ¿Qué conclusiones son ciertas?' :[
+      'MPEG-1 es un códec asimétrico independientemente del Q utilizado ',
+      'más del 90% de la ganancia en compresión se obtiene al utilizar factores de compresión de 15 ',
+      'aumentar el factor de cuantificación por encima de 15 no es eficiente en términos de RD '],
+    'En MPEG-1 el significado funcional de la capa de Cuadro es:' :[
+      'unidad primaria de display '],
+    'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura. ¿Dónde crees que está el mayor coste computacional en el codificador?' :[
+      'en el proceso de estimación de movimiento, al ir aumentando el tamaño de la ventana de búsqueda se ve claramente '],
+    'En el estándar H.261, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del factor Q. ¿Qué conclusiones son ciertas?' :[],
+    'En MPEG-2, en la escalabilidad de SNR:' :[],
+    'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del factor Q. ¿Qué conclusiones son ciertas?:' :[
+      'el número de coeficientes distintos de cero por bloque varía ligeramente dependiendo de la secuencia de vídeo ',
+      'el número de coeficientes distintos de cero por bloque varía ligeramente dependiendo del frame ',
+      'aumentando el factor Q disminuye el número de coeficientes distintos de cero por bloque '],
+    'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa de secuencia son:' :[
+      'las dimensiones (horizontal y vertical) de los cuadros ',
+      'la frecuencia de cuadro ',
+      'la razón de aspecto de los pixels '],
+    'El estándar MPEG-2 es aplicable para sistemas del tipo:' :[
+      'Televisión digital estándar '],
+    'Este patrón de GOP de MPEG-1 mostrado en la figura se corresponde con un patrón de:' :[
+      'N=9, M=3 '],
+    'En MPEG-2, en las técnicas de ocultación de errores, la Frecuencial:' :[],
+    'En el estándar MPEG-2 en codificación CBR vs VBR, se obtienen las siguientes prestaciones mostradas en estas figuras para evaluar la influencia del factor Q sobre la calidad. ¿Qué conclusiones son ciertas?' :[
+      'desde el punto de vista de la calidad de vídeo (de la aplicación) es más conveniente la codificación a VBR '],
+    'El estándar MPEG-1 se diseñó bajo los siguientes requisitos:' :[
+      'formato SIF ',
+      'formato de muestreo 4:2:0 ',
+      'conseguir compresiones óptimas en el rango entre 1 a 1.5 Mbps. '],
+    'En el estándar MPEG-4/parte 2, un VOP (Video Object Plane):' :[],
+    'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del tamaño de la ventana de búsqueda. ¿Qué conclusiones son ciertas?.' :[
+      'aumentar el tamaño de la ventana de búsqueda no es muy eficiente en términos de RD '],
+    'El soporte de almacenamiento elegido por el estándar MPEG-2 fue:' :[
+      'DVD '],
+    'En MPEG-2, en las técnicas de ocultación de errores, la Temporal Simple:' :[
+      'obtiene prestaciones adecuadas en áreas estáticas '],
+    'En MPEG-2, en las técnicas de ocultación de errores, la Espacial:' :[],
+    'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa de secuencia son:' :[],
+    'El estándar H.261 utiliza las siguientes técnicas en este orden' :[
+      'un sistema híbrido de codificación inter-cuadro, un cuantificador, un codificador de longitud de series y un codificador de entropía '],
+    'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa de cuadro son:' :[],
+    'En H.261 la redundancia temporal se reduce/elimina en el módulo de:' :[],
+    'En el estándar H.261, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del tamaño de la ventana de búsqueda. ¿Qué conclusiones son ciertas?' :[],
+    'Con respecto al estándar H.261:' :[
+      'fue el primer estándar de codificación de vídeo con cierta adopción comercial. '],
+    'En el estándar H.261, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del tamaño de la ventana de búsqueda. ¿Qué conclusiones son ciertas?' :[
+      'aumentar el tamaño de la ventana de búsqueda no es muy eficiente en términos de RD ',
+      'H.261 es un códec asimétrico independientemente del tamaño de la ventana de búsqueda utilizado. ',
+      'aumentar el tamaño de la ventana de búsqueda aumenta el coste computacional del codificado '],
+    'En MPEG-1-2 la capa de franja:' :[
+      'está compuesta por un número determinado de Macrobloques. ',
+      'permite hacer al sistema más robusto frente a errores ',
+      'al comienzo de cada una de las franjas, las predicciones son puestos a cero '],
+    'El estándar H.261 presenta las siguientes características:' :[
+      'un formato de muestreo 4:2:0 y un formato de colores YCbCr '],
+    'El estándar H.263:' :[],
+    'Con respecto al estándar H.261:' :[],
+    'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa de cuadro son:' :[
+      'el tipo de codificación (I, P o B) ',
+      'el rango de los vectores de movimiento. ',
+      'la referencia temporal del cuadro '],
+    'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del Patrón de GOP (PG). ¿Qué conclusiones son ciertas?.' :[
+      'el patrón BP obtiene el mejor compromiso coste computacional/prestaciones RD '],
+    'En MPEG-1 los tamaños relativos de cada tipo de cuadro, en general cumplen que:' :[
+      'un cuadro P ocupa entre 2-5 veces el tamaño de un B '],
+    'En MPEG-2, el diseño de las técnicas de ocultación de errores:' :[],
+    'En MPEG-1-2, dado el orden de presentación del siguiente GOP 1I- 2B-3B-4P-5B-6B-7P-8B-9B-10I-11B-12B-13P, ¿Cuál sería su orden de codificación?:' :[
+      '1I-4P-2B-3B-7P-5B-6B-10I-8B-9B-13P-11B-12B '],
+    'En el estándar H.261, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del tamaño de la ventana de búsqueda. ¿Qué conclusiones son ciertas?' :[
+      'H.261 es un códec asimétrico independientemente del tamaño de la ventana de búsqueda utilizado. '],
+    'El estándar MPEG-1 se diseñó bajo los siguientes requisitos:' :[],
+    'En MPEG-1 los cuadros I:' :[],
+    'En MPEG-1 el significado funcional de la capa de Franja es: ':[
+      'unidad de sincronización '],
+    'En MPEG-1 los tamaños relativos de cada tipo de cuadro, en general cumplen que:' :[
+      'los cuadros B son los que menos ocupan '],
+    'En MPEG-2, en las técnicas de ocultación de errores, la Temporal con Movimiento Compensado:' :[
+      'obtiene prestaciones reducidas en imágenes de tipo I ',
+      'obtiene prestaciones reducidas en cambios de escena ',
+      'obtiene prestaciones adecuadas en áreas con movimiento moderado '],
+    'El estándar H.261 presenta las siguientes características:' :[
+      'un formato de muestreo 4:2:0 y un formato de colores YCbCr ',
+      'el formato de tamaño vídeo utilizado es CIF o QCIF ',
+      'debe comprimir imágenes en movimiento a un caudal de 15 cuadros por segundo '],
+    'El soporte de almacenamiento elegido por el estándar MPEG-1 fue:' :[
+      'CD '],
+    'En MPEG-1-2 la redundancia espacial se reduce/elimina en el módulo de:' :[
+      'DCT '],
+    'En MPEG-1 el significado funcional de la capa de Macrobloque es:' :[],
+    'En el estándar MPEG-4/parte 2, cuales de las siguientes son técnicas de resistencia a errores:' :[
+      'partición de datos ',
+      'marcas de sincronización (Video Packets) ',
+      'códigos VLC reversibles '],
+    'En el estándar MPEG-4/parte 2, un Macrobloque lleva información codificada sobre:' :[
+      'el movimiento de la parte del objeto que codifica ',
+      'la forma de la parte del objeto que codifica ',
+      'la textura de la parte del objeto que codifica '],
+    'En el estándar MPEG-2 en codificación CBR vs VBR, se obtienen las siguientes prestaciones mostradas en estas figuras para evaluar la influencia del factor Q sobre la calidad. ¿Qué conclusiones son ciertas?' :[
+      'para garantizar una calidad de vídeo mínima, en VBR se necesita un menor caudal medio de bits (recursos de la red) que en CBR ',
+      'desde el punto de vista de la calidad de vídeo (de la aplicación) es más conveniente la codificación a VBR ',
+      'para un mismo caudal medio de bits, la calidad de vídeo y su consistencia, en VBR es mayor que en CBR '],
+    'El estándar H.263:' :[
+      'emplea gran parte de las técnicas utilizadas por los estándares H.261 y MPEG-1 '],
+    'En MPEG-1, la precisión de ½ de pixel en la estimación y compensación de movimiento:' :[
+      'aumenta el coste computacional',
+      'obtiene mejores residuos (menores errores de predicción) ',
+      'permite una mayor precisión en la estimación del movimiento '],
+    'El estándar H.263 presenta las siguientes diferencias con respecto a H.261:' :[],
+    'En el estándar MPEG-4/parte 2:' :[
+      'la codificación basada en objetos audiovisuales permitirá fácilmente la interacción, la reusabilidad y la escalabilidad ',
+      'es necesaria información que describa las relaciones espaciales (descriptor de escena) y temporales entre los objetos que forman la escena ',
+      'una escena es una composición de objetos audiovisuales que puede ser modificada por el usuario ']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
