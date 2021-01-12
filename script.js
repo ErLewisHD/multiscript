@@ -862,9 +862,63 @@ bbdd = {
       'La Capa II considera además del enmascaramiento frecuencial, el enmascaramiento temporal'],
     'El estándar de compresión de audio G.723.1'  :[
       'G.723.1 es estándar de facto para la codificación de voz en Internet ',
-      'Para generar el caudal de 6.3 Kbit/s utiliza un codificador MPMLQ',
-      'Codifica muestras PCM muestreadas a 8 Khz a caudales de 5.3 y 6.3 Kbit/s'
-    ]
+      'Para generar el caudal de 6.3 Kbit/s utiliza un codificador MPMLQ ',
+      'Codifica muestras PCM muestreadas a 8 Khz a caudales de 5.3 y 6.3 Kbit/s '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.310 '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[
+      'Solo puede contener un único programa '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.321 '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.323 '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[
+      'Puede contener varios programas '],
+    'La parte de Sistemas del estándar MPEG-1 (11172-1) ofrece:' :[],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[],
+    'La parte de Sistemas del estándar MPEG-1 (11172-1) ofrece:' :[
+      'Multiplexación y sincronización de los flujos de audio y vídeo ',
+      'Añade sintaxis para el control temporal de los flujos '],
+    'El sistema H.321 se utiliza para' :[
+      'Videoconferencia sobre RDSI-BA, calidad media-alta '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[
+      'Puede contener varios programas '],
+    'El sistema H.323 se utiliza para' :[
+      'Videoconferencia sobre IP/Ethernet, calidad media-baja '],
+    'El sistema H.324 se utiliza para' :[
+      'Videoconferencia sobre la RTB/Celular, calidad baja '],
+    'La Recomendación del ITU-T H.241:' :[
+      'Se definió para incluir H.264/AVC/SVC en las versión revisada de H.324 Se definió para incluir H.264/AVC/SVC en la versiones revisadas de H.323, H.324, H.320 (entre otras) ',
+      'Se definió en el año 2012 '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.324 '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.320 '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[
+      'Longitud variable de paquetes ',
+      'Utilizado en condiciones donde no hay errores ',
+      'Solo puede contener un único programa '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.321 '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.320 '],
+    'El sistema H.310 se utiliza para' :[
+      'Videoconferencia MPEG-2 sobre RDSI-BA, calidad alta '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[],
+    'La Recomendación del ITU-T H.241 (2012):' :[
+      'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.320 ',
+      'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.323 ',
+      'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.324 Se realizó en el año 2012 '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.324 '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[
+      'Solo puede contener un único programa '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[
+      'Longitud de paquetes 188 bytes ',
+      'Utilizado en condiciones donde hay errores ',
+      'Puede contener varios programas '],
+
 
 }
 
