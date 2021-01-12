@@ -918,6 +918,171 @@ bbdd = {
       'Longitud de paquetes 188 bytes ',
       'Utilizado en condiciones donde hay errores ',
       'Puede contener varios programas '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[
+      'Solo puede contener un único programa '],
+    'El sistema H.321 se utiliza para' :[
+      'Videoconferencia sobre RDSI-BA, calidad media-alta '],
+    'La parte de Sistemas del estándar MPEG-1 (11172-1) ofrece:' :[],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[
+      'Solo puede contener un único programa '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[
+      'Puede contener varios programas '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.323 '],
+    'La Recomendación del ITU-T H.241:' :[
+      'Se definió para incluir H.264/AVC/SVC en las versión revisada de H.324 Se definió para incluir H.264/AVC/SVC en la versiones revisadas de H.323, H.324, H.320 (entre otras) ',
+      'Se definió en el año 2012 '],
+    'La parte de Sistemas del estándar MPEG-1 (11172-1) ofrece:' :[
+      'Multiplexación y sincronización de los flujos de audio y vídeo ',
+      'Añade sintaxis para el control temporal de los flujos '],
+    'El sistema H.323 se utiliza para' :[
+      'Videoconferencia sobre IP/Ethernet, calidad media-baja '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.310 '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[
+      'Solo puede contener un único programa ',
+      'Longitud variable de paquetes ',
+      'Utilizado en condiciones donde no hay errores '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.321 '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.324 '],
+    'La Recomendación del ITU-T H.241 (2012):' :[
+      'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.323 ',
+      'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.320 ',
+      'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.324 Se realizó en el año 2012 '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[
+      'Solo puede contener un único programa '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[
+      'Puede contener varios programas '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.320 '],
+    'El sistema H.324 se utiliza para' :[
+      'Videoconferencia sobre la RTB/Celular, calidad baja '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[
+      'Utilizado en condiciones donde hay errores ',
+      'Puede contener varios programas ',
+      'Longitud de paquetes 188 bytes '],
+    'La parte de Sistemas del estándar MPEG-1 (11172-1) ofrece:' :[],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[
+      'Puede contener varios programas '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.321 '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[
+      'Puede contener varios programas '],
+    'La Recomendación del ITU-T H.241:' :[
+      'Se definió para incluir H.264/AVC/SVC en las versión revisada de H.324 Se definió para incluir H.264/AVC/SVC en la versiones revisadas de H.323, H.324, H.320 (entre otras) ',
+      'Se definió en el año 2012 '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[
+      'Utilizado en condiciones donde hay errores ',
+      'Puede contener varios programas ',
+      'Longitud de paquetes 188 bytes '],
+    'La parte de Sistemas del estándar MPEG-1 (11172-1) ofrece:' :[
+      'Añade sintaxis para el control temporal de los flujos ',
+      'Multiplexación y sincronización de los flujos de audio y vídeo '],
+    'El sistema H.310 se utiliza para' :[
+      'Videoconferencia MPEG-2 sobre RDSI-BA, calidad alta '],
+    'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
+      'H.310 '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[
+      'Solo puede contener un único programa '],
+    'Los servicios de broadcasting convencionales se caracterizan por ser:' :[
+      'unireccional '],
+    'Los servicios de broadcasting convencionales se caracterizan por ser:' :[
+      'punto a multipunto ',
+      'unireccional ',
+      'modelo de producción de contenidos centralizados '],
+    'Los sistemas de codificación con pérdidas o irreversibles….' :[],
+    'Los sistemas de codificación con pérdidas o irreversibles….' :[
+      'Adecuados para medios continuos ',
+      'Mayores tasas de compresión '],
+    'Dentro de una imagen, existe una significativa correlación entre muestras vecinas. Esta se denomina' :[
+      'redundancia espacial '],
+    'Un estándar de imagen, video o audio define:' :[],
+    'Un estándar de imagen, video o audio define:' :[
+      'solo el proceso de decodificación '],
+    'En un codec asimétrico….' :[
+      'son los utilizados en vídeo bajo demanda ',
+      'son los utilizados en la difusión de la señal de TV ',
+      'el codificador es mucho más complejo y lento que el descodificador '],
+    'En una imagen existe …' :[
+      'considerable información que es irrelevante desde un punto de vista perceptivo. ',
+      'redundancia espacial '],
+    'En una imagen existe ...' :[
+      'redundancia espacial '],
+    'Los servicios de monocasting compartido se caracterizan por ser:' :[
+      'modelo de producción de contenidos descentralizados ',
+      'bidireccional y asimétrico ',
+      'amplio rango de calidades '],
+    'Los servicios de monocasting compartido se caracterizan por ser:' :[
+      'modelo de producción de contenidos descentralizados '],
+    'Los servicios de comunicaciones personales se caracterizan por ser:' :[
+      'bidireccional y simétrico '],
+    'Los servicios de comunicaciones personales se caracterizan por ser:' :[
+      'bidireccional y simétrico ',
+      'calidad media-baja ',
+      'retraso crítico '],
+    'Los servicios de broadcasting interactivos se caracterizan por ser:' :[
+      'asimétrico ',
+      'modelo de producción de contenidos centralizados ',
+      'bidireccional '],
+    'Los servicios de broadcasting interactivos se caracterizan por ser:' :[
+      'bidireccional y asimétrico '],
+    'Los servicios de reproducción multimedia se caracterizan por ser:' :[
+      'no hay transmisión '],
+    'Los servicios de reproducción multimedia se caracterizan por ser:' :[
+      'modelo de producción de contenidos centralizados ',
+      'calidad muy alta ',
+      'no hay transmisión '],
+    '¿Cuál de los siguientes aspectos se consideran necesarios para el buen desarrollo de las aplicaciones multimedia?' :[
+      'Estándares ',
+      'Potencia de procesamiento para comprimir/descomprimir las señales. ',
+      'Técnicas de compresión. '],
+    'Los sistemas de codificación sin pérdidas o reversibles….' :[],
+    'Los sistemas de codificación sin pérdidas o reversibles….' :[
+      'Tasas de compresión muy moderadas ',
+      'Adecuada para ficheros de datos, imágenes médicas '],
+    'En una secuencia de vídeo existe ..' :[
+      'redundancia temporal ',
+      'redundancia espacial '],
+    'En una secuencia de vídeo existe …' :[
+      'considerable información que es irrelevante desde un punto de vista perceptivo ',
+      'redundancia temporal ',
+      'redundancia espacial '],
+    'En secuencias de vídeo, hay una significativa correlación entre muestras pertenecientes a cuadros vecinos. Esta se denomina' :[
+      'redundancia temporal '],
+    'Dada una aplicación, los esquemas de compresión pueden explotar …… los factores de redundancia existentes, para alcanzar el nivel de compresión deseado' :[
+      'todos '],
+    'En el proceso de cuantificación de una señal, cuanto mayor sea el número de niveles (bits utilizados por muestra)...' :[
+      'menor será el error de cuantificación, pero mayor espacio ocupará su representación digital '],
+    'En las aplicaciones multimedia actuales se utiliza' :[
+      'la forma digital de las señales audiovisuales '],
+    'En vídeo progresivo…' :[
+      'no existe el concepto de campo, y sólo existe el de cuadro ',
+      'las líneas adyacentes espacialmente también lo son temporalmente '],
+    'En vídeo progresivo…' :[],
+    'Considerando una señal de audio estéreo de alta fidelidad en CD. ¿Cuál es el número de bits generados en un segundo?' :[
+      '1.410 Kbps '],
+    'La forma digital de una señal se obtiene de su forma analógica original realizando..' :[
+      'muestreo + cuantificación + codificación '],
+    'Las aplicaciones multimedia basadas en datos continuos presentan' :[
+      'mayores requerimientos (retardos, sincronismo, etc) que las basadas en datos discretos '],
+    'Cuál es el tamaño de las imágenes en el formato Sub-QCIF' :[],
+    'Cuál es el tamaño de las imágenes en el formato CIF' :[],
+    'Cuál es el tamaño de las imágenes en el formato CIF' :[
+      '352x288 '],
+    '¿Cuál de los siguientes son datos multimedia de tipo continuo?' :[],
+    '¿Cuál de los siguientes son datos multimedia de tipo continuo?' :[
+      'vídeo '],
+    'Un factor de compresión (F) de 3:1 significa:' :[
+      'el tamaño comprimido ocupa la tercera parte con respecto al tamaño original ']
+
+
+
+
 
 
 }
