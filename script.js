@@ -60,7 +60,8 @@ bbdd = {
     'La cuantificación vectorial' :[
         'la complejidad dependerá de la medida de distorsión y del algoritmo de búsqueda utilizado ',
         'procesa los bloques de datos directamente en el dominio espacial ',
-        'es una técnica de codificación con pérdidas '],
+        'es una técnica de codificación con pérdidas ',
+        'permite una decodificación muy rápida '],
     'La cuantificación vectorial…' :[
       'se basa en codificar un conjunto de muestras (vector) en base a una lista de vectores pre-establecidos '],
     'La codificación predictiva (predicción temporal): en la estimación de movimiento, ¿Cuál es la influencia del tamaño de MB?'  :[
@@ -78,7 +79,9 @@ bbdd = {
         'se aumenta el coste computacional '],
     'La codificación predictiva (predicción temporal): en la estimación y compensación de movimiento..' :[
         'la diferencia entre la imagen actual y la predicción se llama residuo de movimiento compensado ',
-        'se crea una imagen de predicción con la imagen actual y la imagen precedente '],
+        'se crea una imagen de predicción con la imagen actual y la imagen precedente '
+        'se generan los vectores de movimiento '
+        'se genera el residuo de movimiento compensado '],
     'La codificación predictiva (predicción temporal): en la estimación de movimiento, ¿Cuál es el algoritmo de búsqueda más costoso computacionalmente?.'  :[
         'Búsqueda completa '],
     'Una descomposición wavelet completa se obtiene realizando reiteradamente los pasos de filtrado paso bajo y alto sobre la banda' :[
@@ -122,7 +125,8 @@ bbdd = {
         '2,66:1 '],
     'Un cuantificador de 4 bits aplicado a muestras de niveles de gris codificados con un byte/muestra proporciona un factor de compresión F de:' :[
         '2:1 '],
-    'Un cuantificador de 2 bits aplicado a muestras de niveles de gris codificados con un byte/muestra proporciona un factor de compresión F de:' :[],
+    'Un cuantificador de 2 bits aplicado a muestras de niveles de gris codificados con un byte/muestra proporciona un factor de compresión F de:' :[
+      '4:1 '],
     'Caso de Estudio: Cuantificación vectorial (VQ, Vector Quantization). Al representar la curva RD al aplicar el cuantificador vectorial(VQ) a la imagen de Lena256B (con 256 niveles de gris), con el codebook pre-diseñado en la herramienta VcDemo1_4x4_min1_max12, para los diferentes bitrate/vector 4x4 (desde 1 a 12).' :[
         'Se debe obtener una curva RD como la mostrada en la figura. '],
     'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Aplicando un PCM de 1 bpp a 7 bpp para la imagen "Lena256B" con 256 niveles de gris, obtenemos los resultados que se muestran en la figura. Si de entre todos ellos, finalmente optamos por un PCM bit rate=4, ¿Cuántos niveles de gris de salida se están utilizando?. ¿Cual es el Factor de Compresión (FC) que se obtendría?.' :[
@@ -144,7 +148,7 @@ bbdd = {
         'asimétrico ',
         'bidireccional ',
         'bidireccional y asimétrico '],
-    'En una imagen existe ...' :[
+    'En una imagen existe …' :[
         'redundancia espacial ',
         'considerable información que es irrelevante desde un punto de vista perceptivo.'],
     'Los servicios de broadcasting convencionales se caracterizan por ser:' :[
@@ -159,7 +163,7 @@ bbdd = {
         'modelo de producción de contenidos descentralizados ',
         'amplio rango de calidades ',
         'bidireccional y asimétrico '],
-    'Los sistemas de codificación sin pérdidas o reversibles....' :[
+    'Los sistemas de codificación sin pérdidas o reversibles….' :[
         'Adecuada para ficheros de datos, imágenes médicas ',
         'Tasas de compresión muy moderadas '],
     'En una secuencia de vídeo existe ..' :[
@@ -173,7 +177,7 @@ bbdd = {
         'Técnicas de compresión. ',
         'Potencia de procesamiento para comprimir/descomprimir las señales. ',
         'Estándares '],
-    'En un codec asimétrico....' :[
+    'En un codec asimétrico….' :[
         'son los utilizados en vídeo bajo demanda ',
         'son los utilizados en la difusión de la señal de TV ',
         'el codificador es mucho más complejo y lento que el descodificador '],
@@ -181,12 +185,13 @@ bbdd = {
         'bidireccional y simétrico ',
         'retraso crítico ',
         'calidad media-baja '],
-    'Los sistemas de codificación con pérdidas o irreversibles....' :[
+    'Los sistemas de codificación con pérdidas o irreversibles….' :[
         'Adecuados para medios continuos ',
         'Mayores tasas de compresión '],
-    'En una secuencia de vídeo existe ...' :[
+    'En una secuencia de vídeo existe …' :[
         'redundancia espacial ',
-        'redundancia temporal '],
+        'redundancia temporal ',
+        'considerable información que es irrelevante desde un punto de vista perceptivo'],
     'En el estándar de compresión JBIG' :[
         'su aplicación objetivo son la compresión de imágenes con diferentes niveles de gris ',
         'consiste de un modelador de probabilidades y de un codificador aritmético ',
@@ -670,7 +675,142 @@ bbdd = {
     'En el estándar MPEG-4/parte 2:' :[
       'la codificación basada en objetos audiovisuales permitirá fácilmente la interacción, la reusabilidad y la escalabilidad ',
       'es necesaria información que describa las relaciones espaciales (descriptor de escena) y temporales entre los objetos que forman la escena ',
-      'una escena es una composición de objetos audiovisuales que puede ser modificada por el usuario ']
+      'una escena es una composición de objetos audiovisuales que puede ser modificada por el usuario '],
+    'Dada una aplicación, los esquemas de compresión pueden explotar …… los factores de redundancia existentes, para alcanzar el nivel de compresión deseado' :[
+      'todos '],
+    'En una imagen existe ...' :[
+      'redundancia espacial '],
+    'Los parámetros característicos más habituales de una señal de audio calidad de Voz (Telefonía) son:' :[
+      'Señal de audio de 3.5 KHz (BW) ',
+      '8 bits/muestra ',
+      'Sf = 8 KHz '],
+    'Cuáles son las características del formato HDTV 1080i':[
+      'video entrelazado ',
+      '1080x1920 '],
+    'Considerando una señal de audio de voz (calidad telefónica). ¿Cuál es el número de bits generados en un segundo?' :[
+      '64 Kbps '],
+    'En vídeo progresivo…' :[
+      'las líneas adyacentes espacialmente también lo son temporalmente ',
+      'no existe el concepto de campo, y sólo existe el de cuadro '],
+    'Cuál es el tamaño de las imágenes en el formato CCIR/SD (NTSC)':[
+      '720x480 '],
+    'Si la idea es la de comprimir la señal, se puede obtener ahorro del ancho de banda si se trabaja con luminancias y crominancias debido a:' :[
+      'que el ojo humano es más sensible al brillo (luminancia), y no tanto a la diferencia de color (crominancias) '],
+    'Técnicas y estándares de codificación y compresión que proporcionan calidad CD Digital son:' :[
+      'AAC ',
+      'MP3 '],
+    'Cuál es el tamaño de las imágenes en el formato 4CIF' :[
+      '704x576 '],
+    'Dada una imagen en color formada por 768 x 1024 pixeles. El número de bits aproximados generados por dicha imagen es' :[
+      '18,874 Mbits '],
+    'En el formato de muestreo 4:1:1' :[
+      'las señales de crominancia son muestreadas a un cuarto de frecuencia que las de luminancia, en la dirección horizontal '],
+    'Cuáles son las características del formato HDTV 720p' :[
+      'video progresivo ',
+      '720x1280 '],
+    'Técnicas y estándares de codificación y compresión que proporcionan calidad de Voz (Telefonía) son:' :[
+      'G.72x ',
+      'ADPCM '],
+    'El caudal de bits de una señal digital se define como:' :[
+      'el producto entre la frecuencia de muestreo y el número de bits utilizados para representar el valor de las muestras en el proceso de cuantificación '],
+    'En el proceso de cuantificación de una señal, cuanto mayor sea el número de niveles (bits utilizados por muestra)...' :[
+      'menor será el error de cuantificación, pero mayor espacio ocupará su representación digital '],
+    'Las aplicaciones multimedia basadas en datos continuos presentan':[
+      'mayores requerimientos (retardos, sincronismo, etc) que las basadas en datos discretos '],
+    'En el formato de muestreo 4:2:0' :[
+      'las señales de crominancia son muestreadas a la mitad de frecuencia que las de luminancia, tanto en la dirección horizontal como en la vertical '],
+    'Considerando una señal de audio estéreo de alta fidelidad en CD. ¿Cuál es el número de bits generados en un segundo?' :[
+      '1.410 Kbps '],
+    'Cuál es el tamaño de las imágenes en el formato CIF' :[
+      '352x288 '],
+    'Cuál es el tamaño de las imágenes en el formato 4K' :[
+      '3840x2160 '],
+    'Cuál es el tamaño de las imágenes en el formato 8K' :[
+      '7680x4320 '],
+    'La gama de frecuencias perceptibles por el oído humano está en el rango de frecuencias de' :[
+      '20­20.000 Hz '],
+    'Considerando el formato de vídeo CIF que consta de 288 líneas con 360 pixeles cada línea, por imagen y un caudal de frames de 30 fps. ¿Cuál es el número de bits generados en un segundo?':[
+      '74,65 Mbits/s '],
+    'La forma digital de una señal se obtiene de su forma analógica original realizando..' :[
+      'muestreo + cuantificación + codificación '],
+    'La percepción de la calidad de una señal de vídeo digital se basa en los siguientes parámetros:' :[
+      'la resolución de las imágenes (tamaño) ',
+      'la frecuencia de reproducción (cuadros/s) '],
+    'Para la señal de audio de alta fidelidad en CD, el rango de frecuencias que se considera a la señal de audio es' :[
+      '20­20.000 Hz ',
+      '20­-20.000 Hz '],
+    'Un factor de compresión (F) de 3:1 significa:' :[
+      'el tamaño comprimido ocupa la tercera parte con respecto al tamaño original '],
+    '¿Cuál de los siguientes son datos multimedia de tipo continuo?' :[
+      'audio ',
+      'vídeo '],
+    'Cuál es el tamaño de las imágenes en el formato CCIR/SD (PAL)' :[
+      '720x576 '],
+    'En vídeo entrelazado…' :[
+      'las líneas que son espacialmente adyacentes no lo son temporalmente ',
+      'cada cuadro es dividido en dos campos, un campo alto y un campo bajo, separados temporalmente por un periodo de campo '],
+    'En vídeo entrelazado …' :[],
+    'En las aplicaciones multimedia actuales se utiliza' :[
+      'la forma digital de las señales audiovisuales '],
+    'Los parámetros característicos más habituales de una señal de audio calidad CD Digital son:' :[
+      '16 bits/muestra ',
+      'Sf = 41.1 KHz ',
+      'Señal de audio de 20 KHz (BW) '],
+    'En el formato de muestreo 4:2:2' :[
+      'las señales de crominancia son muestreadas a la mitad de frecuencia que las de luminancia, en la dirección horizontal '],
+    '¿Cuál de los siguientes son datos multimedia de tipo discreto?' :[
+      'imágenes estáticas ',
+      'gráficos ',
+      'texto '],
+    'Cuáles son las características del formato HDTV 1080p' :[
+      '1080x1920 ',
+      'video progresivo '],
+    'El uso de otro espacio de colores representa una aplicación de la codificación' :[
+      'Perceptiva '],
+    'Cuál es el tamaño de las imágenes en el formato QCIF' :[
+      '176x144 '],
+    'Cuál es el tamaño de las imágenes en el formato Sub-QCIF' :[
+      '128x96 '],
+    'La métrica PSNR …' :[
+      'a mayor PSNR mayor es la calidad ',
+      'no siempre se ajusta eficientemente a la calidad subjetiva observada por el sistema visual humano ',
+      'es ampliamente utilizada en la bibliografía '],
+    'En el formato de muestreo 4:4:4' :[
+      'la luminancia y las crominancias son muestreadas a la misma frecuencia, y por tanto, no existe ahorro del ancho de banda '],
+    'En las comunicaciones telefónicas, el rango de frecuencias que presenta la voz humana es' :[
+      '200­3.200 Hz ',
+      '200­-3.200 Hz'],
+    'Las aplicaciones multimedia se caracterizan por …' :[
+      'Requieren servicios de transporte de alta calidad. ',
+      'Consumen muchos recursos (red, memoria, CPU, etc.). ',
+      'Se hace imprescindible el uso de técnicas de compresión '],
+    'En las aplicaciones multimedia, el requisito de latencia extremo a extremo se hace más estricto conforme' :[
+      'aumenta la interactividad de la aplicación Multimedia '],
+    'Cuál es el tamaño de las imágenes en el formato Sub­QCIF':[],
+    'Un factor de compresión (F) de 10:1 significa:' :[
+      'el tamaño comprimido ocupa la décima parte con respecto al tamaño original '],
+    'Según el teorema de muestreo de Nyquist, para obtener una representación digital adecuada de una señal analógica, la frecuencia de muestreo debe de ser' :[
+      'El doble de la frecuencia más alta presente en la señal analógica '],
+    'La codificación predictiva:' :[
+      'es una técnica de compresión sin pérdidas ',
+      'predice el valor de una muestra a través de su vecindad espacial o temporal ',
+      'reduce la redundancia espacio-temporal de las señales ',
+      'codifica sólo la diferencia entre los valores predichos y los valores actuales que tengan las muestras '],
+    'La Codificación de Longitud de Series, (RLC):' :[
+      'es una técnica útil cuando se esperan largas sucesiones de un mismo valor (usualmente cero) entre cualquier otro par de valores '],
+    'La codificación perceptiva…' :[
+      'se basa en el conocimiento de la percepción psico-visual y psico-acústica '],
+    'La codificación basada en Wavelets: A la subbanda …. se le denomina subbanda wavelet' :[
+      'LL '],
+    'Los sistemas híbridos de codificación inter-cuadro son un método con el que se pretende' :[
+      'eliminar la redundancia espacial ',
+      'eliminar la redundancia temporal '],
+    'La codificación por transformada…' :[
+      'transforman la información a otro dominio donde los datos están mucho más de-correlados que en el dominio espacial, y la información se acumula en un pequeño número de muestras '],
+
+
+
+
 
 
 
