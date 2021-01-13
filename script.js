@@ -261,7 +261,10 @@ bbdd = {
       'es asimétrico con respecto al codificador ',
       'no es un proceso costoso computacionalmente. '],
     'En el estándar MPEG-1, la predicción bidireccional:' :[
-      'realiza el proceso de estimación de movimiento dos veces '],
+      'realiza el proceso de estimación de movimiento dos veces ',
+      'es una de las innovaciones sobre el estándar H.261 ',
+      'realiza el proceso de estimación de movimiento dos veces (pasado y futuro) ',
+      ' permite obtener el residuo utilizando cualquiera de las dos predicciones (pasada o futura) o un promedio de ellas '],
     'El estándar MPEG-2 es aplicable para sistemas del tipo:' :[],
     'El estándar MPEG-2 de audio (Parte 3) es una extensión del MPEG-1 donde se han añadido las siguientes características.…' :[
       'Caudales de 384 Kbit/s o menos por canal. ',
@@ -286,7 +289,8 @@ bbdd = {
       'al tener elevado movimiento, funcionan mejor las técnicas espaciales que las temporales '],
     'El estándar H.263 se definió principalmente (originalmente) para sistemas del tipo:' :[
       'Videotelefonía/Videoconferencia a bajo caudal '],
-    'En MPEG-1 el significado funcional de la capa de Bloque es:' :[],
+    'En MPEG-1 el significado funcional de la capa de Bloque es:' :[
+      'unidad de transformada DCT '],
     'En MPEG-2, en la escalabilidad de SNR:' :[
       'Las capas de mejora restantes son codificadas para mejorar la calidad básica proporcionando un mayor refinamiento de los coeficientes de la DCT de la capa básica '],
     'El estándar H.263 presenta la opción de codificación avanzada Syntaxbased arithmetic coding mode (SAC-mode), que consiste en:' :[],
@@ -295,10 +299,13 @@ bbdd = {
       'MPEG-1 es un códec asimétrico independientemente del tamaño de la ventana de búsqueda ',
       'aumentar el tamaño de la ventana de búsqueda no es muy eficiente en términos de RD '],
     'El estándar MPEG-2 se diseñó bajo los siguientes requisitos:' :[
-      'formato de video entrelazado y progresivo '],
+      'formato de video entrelazado y progresivo ',
+      'tamaños de bloque de 8x8 o menores ',
+      'formato de muestreo 4:2:0, 4:2:2 y 4:4:4 '],
     'En el estándar H.263, se obtienen las siguientes prestaciones mostradas en esta figura con respecto al estándar H.261. ¿Qué conclusiones son ciertas?.' :[],
     'El estándar H.263 presenta la opción de codificación avanzada PBframes mode, que consiste en:' :[],
-    'En el estándar H.261:' :[],
+    'En el estándar H.261:' :[
+      'el cuantificador varía su factor entre 31 niveles (desde 2 a 62, en pasos pares)acorde al estado de ocupación del buffer de salida. Todos los coeficientes DCT se cuantifican por igual '],
     'En H.261 la redundancia temporal se reduce/elimina en el módulo de:' :[
       'estimación y compensación de movimiento '],
     'El estándar MPEG-4/parte 2 está basado en el concepto de:' :[
@@ -319,7 +326,9 @@ bbdd = {
       'reducir en un 50% el bit-rate para el mismo nivel de calidad con respecto a MPEG-2. '],
     'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura con respecto a otros estándares. ¿Qué conclusiones son ciertas?.' :[
       'H.264/AVC obtiene un ahorro en bitrate del 50% (aprox) con respecto a MPEG-2 para un mismo nivel de calidad '],
-    'En el estándar H.264/AVC, alguna de sus novedades para mejorar la eficiencia son:' :[],
+    'En el estándar H.264/AVC, alguna de sus novedades para mejorar la eficiencia son:' :[
+      'Compensación de movimiento con diferentes tamaños de MB '],
+    ''
     'En el estándar H.264/AVC, alguna de sus novedades para mejorar la robustez son:' :[
       'Flexible macroblock ordering (FMO)'],
     'En el estándar H.264/AVC, en la codificación de los Frames B:' :[
@@ -345,7 +354,9 @@ bbdd = {
       'se realiza una predicción para ese bloque o MB basándose en los bloques o MB previamente codificados en esa imagen ',
       'solo se pueden utilizar las muestras pertenecientes al mismo Slice '],
     'El estándar H.264/MVC, …' :[
-      'Explota las redundancias entre vistas utilizando la predicción inter-vista para reducir el bitrate. '],
+      'Explota las redundancias entre vistas utilizando la predicción inter-vista para reducir el bitrate. ',
+      'Es una extensión de H.264/AVC sin cambios en la sintaxis de la capa de slice (y capas inferiores) ',
+      'Es obligatorio en el stream multivista incluir una vista base, (compatibilidad 2D). '],
     'En el estándar H.264/AVC, que Perfil hay que utilizar para aplicaciones de Streaming Video:' :[
       'Extended '],
     'Algunas de las mejoras del estándar HEVC con respecto a H.264/AVC son:' :[
@@ -357,11 +368,13 @@ bbdd = {
       'Puede ser implementada haciendo uso de frames B generalizados ',
       'Es sencilla de implementar '],
     'En el Formato 3D: 3DV (MVD+synthesis) …' :[
-      'Sintetizan un número de vistas “continuo” basado sobre un limitado conjunto de vistas decodificadas '],
+      'Sintetizan un número de vistas “continuo” basado sobre un limitado conjunto de vistas decodificadas ',
+      'Especifica un formato que fija un caudal, pero permite arbitrariamente mayor número de vistas a ser renderizadas ',
+      'Es el marco de trabajo de MPEG 3DVC '],
     'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del uso de los frames B generalizados. ¿Qué conclusiones son ciertas?.' :[
         'El uso tradicional de frames P con una sola referencia es el que peor prestaciones obtiene ',
         'Utilizando frames B generalizados se mejoran las prestaciones con respecto a frames B clásicos. ',
-        'La mejora puede sser de un 40% con respecto al uso de frames P con una sola referencia previa '],
+        'La mejora puede ser de un 40% con respecto al uso de frames P con una sola referencia previa '],
     '¿Cuáles fueron algunas de las motivaciones para el diseño del estándar HEVC?' :[
       'Codificar eficientemente resoluciones de alta (HD) a ultra-alta definición (UHDV) de vídeo ',
       'Se necesita desarrollar una nueva tecnología de compresión de vídeo para reducir considerablemente las tasas de bits que genera la mejor configuración de H.264/AVC ',
@@ -374,7 +387,10 @@ bbdd = {
       'Baseline '],
     'En el estándar H.264/AVC, ¿Qué tipo de transformada se utiliza?:' :[
       'Transformada Hadamard 4x4 '],
-    'Estándar HEVC, sobre la Prediction Unit (PU)…' :[],
+    'Estándar HEVC, sobre la Prediction Unit (PU)…' :[
+      'Es el particionado adicional que se le puede realizar a una CU ',
+      'Tiene 4 particionados asimétricos ',
+      'Tiene 4 particionados simétricos '],
     'En el estándar H.264/AVC, en la predicción Intra-Frame (para las Luminancias), se calculan en este ejemplo mostrado en la figura, los 4 predictores Intra16x16 para obtener el mejor predictor de todos ellos. ¿Cuál elegiría el estándar?:' :[
       'Modo 3 '],
     'En un estándar de codificación donde la partición de los Macrobloques (asume que los cuadrados de mayor tamaño son de 16x16) para obtener el mejor residuo posible ha sido el siguiente, ¿de cuál estándar se trata?:' :[
@@ -392,7 +408,11 @@ bbdd = {
       'Inter-Layer Intra-Prediction ',
       'Inter-Layer Residual Prediction ',
       'Inter-Layer Motion Prediction '],
-    'En el Formato 3D: Conventional Stereo Video, …' :[],
+    'En el Formato 3D: Conventional Stereo Video, …' :[
+      'Las dos vistas (izquierda y derecha) son codificadas en su resolución total. ',
+      'H.264/MVC utiliza este formato como caso particular (n=2, Stereo High Profile) ',
+      'Las dos vistas son codificadas explotando la redundancia existente entre ellas '],
+
     'En el estándar H.264/AVC, dada la técnica de codificación mostrada en la figura ¿Qué nombre recibe esta técnica?:' :[
       'Predicción temporal (P) basada en múltiples frames '],
     'En el estándar H.264/SVC, la escalabilidad temporal…' :[
@@ -573,7 +593,10 @@ bbdd = {
       'al tener poco movimiento, funcionan mejor las técnicas temporales que las espaciales ',
       'el dinámico es el que mejor funciona al adaptarse a las características espaciales y temporales de la secuencia ',
       'las frecuenciales funcionan mal, al funcionar mal en los cuadros de tipo P y B '],
-    'En la codificación VBR del estándar H.261:' :[],
+    'En la codificación VBR del estándar H.261:' :[
+      'no existe control de caudal (Rate Control). ',
+      'la calidad de vídeo es cuasi-constante debido a que el factor de cuantificación no se varia. ',
+      'el factor de cuantificación Q se mantiene constante para toda la secuencia. '],
     'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del factor Q. ¿Qué conclusiones son ciertas?' :[
       'MPEG-1 es un códec asimétrico independientemente del Q utilizado ',
       'más del 90% de la ganancia en compresión se obtiene al utilizar factores de compresión de 15 ',
@@ -582,7 +605,8 @@ bbdd = {
       'unidad primaria de display '],
     'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura. ¿Dónde crees que está el mayor coste computacional en el codificador?' :[
       'en el proceso de estimación de movimiento, al ir aumentando el tamaño de la ventana de búsqueda se ve claramente '],
-    'En el estándar H.261, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del factor Q. ¿Qué conclusiones son ciertas?' :[],
+    'En el estándar H.261, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del factor Q. ¿Qué conclusiones son ciertas?' :[
+      'H.261 es un códec asimétrico independientemente del tamaño de la ventana de búsqueda utilizado '],
     'En MPEG-2, en la escalabilidad de SNR:' :[],
     'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del factor Q. ¿Qué conclusiones son ciertas?:' :[
       'el número de coeficientes distintos de cero por bloque varía ligeramente dependiendo de la secuencia de vídeo ',
@@ -603,9 +627,13 @@ bbdd = {
       'formato SIF ',
       'formato de muestreo 4:2:0 ',
       'conseguir compresiones óptimas en el rango entre 1 a 1.5 Mbps. '],
-    'En el estándar MPEG-4/parte 2, un VOP (Video Object Plane):' :[],
+    'En el estándar MPEG-4/parte 2, un VOP (Video Object Plane):' :[
+      'es cada uno de los muestreos que se hacen en el tiempo del estado de un objeto de vídeo '],
     'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del tamaño de la ventana de búsqueda. ¿Qué conclusiones son ciertas?.' :[
-      'aumentar el tamaño de la ventana de búsqueda no es muy eficiente en términos de RD '],
+      'aumentar el tamaño de la ventana de búsqueda no es muy eficiente en términos de RD ',
+      'Sistema Multicanal (5+1). ',
+      'Caudales de 384 Kbit/s o menos por canal. ',
+      'Frecuencias de muestreo adicionales '],
     'El soporte de almacenamiento elegido por el estándar MPEG-2 fue:' :[
       'DVD '],
     'En MPEG-2, en las técnicas de ocultación de errores, la Temporal Simple:' :[
@@ -638,8 +666,11 @@ bbdd = {
     'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del Patrón de GOP (PG). ¿Qué conclusiones son ciertas?.' :[
       'el patrón BP obtiene el mejor compromiso coste computacional/prestaciones RD '],
     'En MPEG-1 los tamaños relativos de cada tipo de cuadro, en general cumplen que:' :[
-      'un cuadro P ocupa entre 2-5 veces el tamaño de un B '],
-    'En MPEG-2, el diseño de las técnicas de ocultación de errores:' :[],
+      'un cuadro P ocupa entre 2-5 veces el tamaño de un B ',
+      'un cuadro I ocupa hasta 3 veces el tamaño de un P ',
+      'los cuadros B son los que menos ocupan '],
+    'En MPEG-2, el diseño de las técnicas de ocultación de errores:' :[
+      'regeneran gran parte de la información mediante la interpolación (temporal, espacial, frecuencial) '],
     'En MPEG-1-2, dado el orden de presentación del siguiente GOP 1I- 2B-3B-4P-5B-6B-7P-8B-9B-10I-11B-12B-13P, ¿Cuál sería su orden de codificación?:' :[
       '1I-4P-2B-3B-7P-5B-6B-10I-8B-9B-13P-11B-12B '],
     'En el estándar H.261, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del tamaño de la ventana de búsqueda. ¿Qué conclusiones son ciertas?' :[
@@ -662,7 +693,8 @@ bbdd = {
       'CD '],
     'En MPEG-1-2 la redundancia espacial se reduce/elimina en el módulo de:' :[
       'DCT '],
-    'En MPEG-1 el significado funcional de la capa de Macrobloque es:' :[],
+    'En MPEG-1 el significado funcional de la capa de Macrobloque es:' :[
+      'unidad de estimación y compensación de movimiento '],
     'En el estándar MPEG-4/parte 2, cuales de las siguientes son técnicas de resistencia a errores:' :[
       'partición de datos ',
       'marcas de sincronización (Video Packets) ',
@@ -681,7 +713,8 @@ bbdd = {
       'aumenta el coste computacional',
       'obtiene mejores residuos (menores errores de predicción) ',
       'permite una mayor precisión en la estimación del movimiento '],
-    'El estándar H.263 presenta las siguientes diferencias con respecto a H.261:' :[],
+    'El estándar H.263 presenta las siguientes diferencias con respecto a H.261:' :[
+      'en H.263, para aumentar la resistencia ante errores, cada GOB contiene sólo una fila de MBs '],
     'En el estándar MPEG-4/parte 2:' :[
       'la codificación basada en objetos audiovisuales permitirá fácilmente la interacción, la reusabilidad y la escalabilidad ',
       'es necesaria información que describa las relaciones espaciales (descriptor de escena) y temporales entre los objetos que forman la escena ',
@@ -897,9 +930,11 @@ bbdd = {
     'La parte de Sistemas del estándar MPEG-2 (13818-1), un Transport Stream se caracteriza por:' :[
       'Puede contener varios programas '],
     'El sistema H.323 se utiliza para' :[
-      'Videoconferencia sobre IP/Ethernet, calidad media-baja '],
+      'Videoconferencia sobre IP/Ethernet, calidad media-baja ',
+      'Videoconferencia sobre Redes Locales e IP '],
     'El sistema H.324 se utiliza para' :[
-      'Videoconferencia sobre la RTB/Celular, calidad baja '],
+      'Videoconferencia sobre la RTB/Celular, calidad baja ',
+      'Videoconferencia sobre la Red Telefónica Básica '],
     'La Recomendación del ITU-T H.241:' :[
       'Se definió para incluir H.264/AVC/SVC en las versión revisada de H.324 Se definió para incluir H.264/AVC/SVC en la versiones revisadas de H.323, H.324, H.320 (entre otras) ',
       'Se definió en el año 2012 '],
@@ -1114,7 +1149,9 @@ bbdd = {
     'En un estándar de codificación donde la partición de los Macrobloques (asume que los cuadrados de mayor tamaño son de 16x16) para obtener el mejor residuo posible ha sido el siguiente, ¿de cuál estándar se trata?:' :[
       'H.264/AVC '],
     'En el estándar H.264/AVC, para decidir que tamaño de MB utiliza:':[
-      'selecciona “la mejor” partición posible para maximizar la eficiencia de la codificación '],
+      'selecciona “la mejor” partición posible para maximizar la eficiencia de la codificación ',
+      'prueba todas y se queda con la mejor ',
+      'es un proceso costoso computacionalmente '],
     'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción All Intra (AI):' :[
       'Es apto para aplicaciones de Post-producción y Edición (necesidad de acceso a cada frame de alta calidad). '],
     'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción Random-Access (RA):' :[
@@ -1194,10 +1231,112 @@ bbdd = {
       'se generan menores vectores de movimiento al aumentar el tamaño del MB '],
     'Caso de Estudio: Codificación Predictiva de Muestras (DPCM). Al representar la curva RD al aplicar el DPCM a la imagen de Lena256B (con 256 niveles de gris) para todos los DPCM bitrates disponibles (1 a 6 bpp)' :[],
     'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Al representar la curva RD al aplicar el cuantificador lineal (PCM) a la imagen de Lena256B (con 256 niveles de gris) para todos los PCM bitrates disponibles (1 a 7 bpp).' :[],
-    'Caso de Estudio: Estimación y Compensación de Movimiento (Influencia del Tamaño de MB). Seleccionando la secuencia “Vectra21Frames.yuv” (352x288), utilizando modo no Jerárquico, Full Search, tamaño área de búsqueda=15, y modo de visionado secuencia completa con loop=1. Modificando el tamaño de MB (Set Block Size=2x2, 4x4, 8x8 y 16x16), se obtienen los resultados numéricos obtenidos en la figura. Compara las diferencias en eficiencia entre los diferentes tamaños de MB. En base a ellas, ¿Cuáles de las siguientes afirmaciones son ciertas?.' :[],
+    'Caso de Estudio: Estimación y Compensación de Movimiento (Influencia del Tamaño de MB). Seleccionando la secuencia “Vectra21Frames.yuv” (352x288), utilizando modo no Jerárquico, Full Search, tamaño área de búsqueda=15, y modo de visionado secuencia completa con loop=1. Modificando el tamaño de MB (Set Block Size=2x2, 4x4, 8x8 y 16x16), se obtienen los resultados numéricos obtenidos en la figura. Compara las diferencias en eficiencia entre los diferentes tamaños de MB. En base a ellas ¿Cuáles de las siguientes afirmaciones son ciertas?.' :[],
     'Caso de Estudio: Codificación Predictiva de Muestras (DPCM). Al representar la curva RD obtenida para los diferentes modelos de predictores DPCM disponibles (modelo 1-D y modelos 2-D), y compararlo con las prestaciones RD que se obtendrían utilizando una codificación PCM, para la imagen "Lena256B" con 256 niveles de gris.' :[
       'Se debe obtener la gráfica RD mostrada en la figura. '],
-    ''
+    'En MPEG-1 los cuadros P:' :[
+      'utilizan para la codificación, la información contenida en el cuadro previo, I o P. '],
+    'En el control de caudal del estándar H.261 (codificación CBR):' :[
+      'los bits producidos por el codificador son almacenados en un buffer, el cual es drenado a caudal constante. '],
+    'El estándar H.263 presenta las siguientes opciones de codificación avanzada:' :[
+      'Syntax-based arithmetic coding mode (SAC-mode). ',
+      'Advanced prediction mode (AP-mode) ',
+      'Unrestricted motion vectors mode (UMV-mode) '],
+    'El estándar H.263 presenta la opción de codificación avanzada Unrestricted motion vectors mode (UMV-mode), que consiste en:' :[
+      'se permite a los MVs apuntar fuera de la imagen '],
+    'El estándar H.263 presenta la opción de codificación avanzada PB-frames mode, que consiste en:' :[
+      'frames P&B entrelazados como una unidad '],
+    'En MPEG-1-2 se define una estructura jerárquica para la compresión de la señal de vídeo, que consta de varias capas y en este orden:' :[
+      'Secuencia de Vídeo, Grupo de Cuadros, Cuadro, Franja, Macrobloque, Bloque '],
+    'En el estándar MPEG-2, se obtienen las siguientes prestaciones mostradas en estas figuras para evaluar la influencia del Breakpoint sobre la distribución del tráfico y la calidad de la capa base en la Partición de Datos. ¿Qué conclusiones son ciertas?:' :[
+      'el sobreflujo introducido es independiente del breakpoint seleccionado ',
+      'un aumento del breakpoint conlleva un aumento del % tráfico y calidad de la capa base ',
+      'Un breakpoint en torno a [4-8] consigue dotar a la capa base de una calidad (hasta un 50%) '],
+    'En MPEG-2, en la escalabilidad Temporal:' :[
+      'las capas de mejora son codificadas con predicción temporal con respecto a la capa básica ',
+      'todas las capas tienen el mismo tamaño de cuadro y formatos de muestreo pero diferentes caudales de cuadro ',
+      'permite la migración desde sistemas con baja resolución temporal a sistemas con mayores resoluciones temporales '],
+    'Con respecto al estándar MPEG-1:' :[
+      'Video CD está basado en MPEG-1 y se vendieron cientos de millones de reproductores. '],
+    'En el estándar H.264/AVC, se pueden generar tamaños de MB de:' :[
+      '16x16, 16x8, 8x16, 8x8, 8x4, 4x8 y 4x4 '],
+    'En el estándar H.264/AVC, que Perfil hay que utilizar para aplicaciones de Studio Editing:' :[
+      'High '],
+    'El estándar H.264/SVC, surge porque…' :[
+      'Cada dispositivo tiene diferentes capacidades de tamaño de display, frames por segundo a mostrar, capacidad de computo, etc…. ',
+      'Codificar y enviar la misma secuencia de vídeo en diferentes resoluciones (simultcast) espacial, temporal y calidad, es una solución técnica muy ineficiente '],
+    'En H.261 se define una estructura jerárquica para la compresión de la señal de vídeo, que consta de cuatro capas y en este orden:' :[
+      'Cuadro, Grupo de Macrobloques (GOB), Macrobloque (MB) y Bloque. '],
+    'Algunos de los nuevos conceptos que añade el estándar HEVC son:' :[
+      'Transform Units (TUs): Es la unidad donde se aplica la transformada y la cuantificación ',
+      'Coding Units (CUs): define una sub-partición de la imagen. La CU reemplaza a la estructura de MB ',
+      'Prediction Units (PUs): Es la unidad elemental de predicción '],
+    'La parte de Sistemas del estándar MPEG-2 (13818-1) ofrece:' :[
+      'Añade sintaxis para el control temporal de los flujos ',
+      'Multiplexación y sincronización de los flujos de audio y vídeo '],
+    'El sistema H.324 y H.324/M se utilizan para:' :[
+      'Videoconferencia sobre la Red Telefónica Básica y la Red Celular Móvil '],
+    'En Adaptive Media Streaming sobre HTTP:' :[
+      'Los clientes monitoriza los recursos locales (CPU, memoria, display, etc...) ',
+      'Los clientes llevan el peso de la adaptación. ',
+      'Los clientes manejan las conexiones TCP, el transporte HTTP e interpretan los ficheros MPD. '],
+    'Un Sistema completo de Adaptive Media Streaming esta formado por:' :[
+      'Todas las Fases enunciadas son necesarias. '],
+    'Streaming Push-based: Sus características son:' :[
+      'Uso de protocolos como RTP, RTSP y UDP. ',
+      'Son adaptativos a través de feedback explícitos. Son realizados por el servidor. '],
+    'Streaming Pull-based: Sus características son:' :[],
+    'Players propietarios (mas conocidos) en el mercado de adaptive video streaming son:' :[
+      'Adobe HTTP Dynamic Flash Streaming. ',
+      'Apple HTTP Live Streaming (HLS) ',
+      'Microsoft Smooth Streaming. '],
+    'Las dos principales problemas de progressive video streaming son:' :[
+      'Calidad (escalado) ',
+      'Buffering (pausas) '],
+    'El estándar MPEG-DASH:' :[
+      'Especifica el formato del fichero MPD (Media Presentation Description) '],
+    'Ejemplos comerciales de sistemas que utilizan el estándar MPEG-DASH son:' :[
+      'Youtube. ',
+      'Netflix '],
+    'En adaptive video streaming:' :[
+      'Se codifican diferentes versiones de un mismo contenido audiovisual, para luego ser segmentadas. ',
+      'El contenido audiovisual es troceado en segmentos (de una determinada duración en segundos). ',
+      'El cliente puede cambiar de versión de contenido a nivel de segmento (al comienzo de cada segmento). '],
+    'Las características principales de adaptive video streaming son:' :[
+      'Permite al proveedor de los servicios de video crear diferentes versiones del video para cada tamaño de display. ',
+      'Evita hacer escalados de imagen, y el usuario puede recibir una resolución de video que se adapta correctamente a su display (mejora de calidad). ',
+      'Se adapta a la velocidad de la conexión de internet del usuario, utilizando un version de ese contenido de video codificada a un menor/mayor caudal de bits. '],
+    'La Arquitectura de DVB-x para la difusión de la TV digital:' :[
+      'Utiliza DVB-C2, DVB-S2 y DVB-T2 para la 2ª generación de TV digital utilizando H.264/HEVC ',
+      'Utiliza DVB-C, DVB-S y DVB-T para la 1ª generación de TV digital utilizando MPEG-2 '],
+    'Las características principales de progressive video streaming son:' :[
+      'La resolución del video debe ser escalada para ajustarse al tamaño del display del usuario. ',
+      'Independientemente del tamaño del display del usuario, el fichero siempre es el mismo. ',
+      'El cliente reproduce el contenido después de almacenar una cierta cantidad (buffering) '],
+    'Streaming es la transmisión de un contenido continuo desde un servidor a un cliente, que es simultáneamente consumido por el cliente. Sus dos características importantes son:' :[
+      'El ritmo de transmisión del servidor puede o no coincidir con el ritmo de consumo del cliente. ',
+      'El ritmo de consumo del cliente puede estar limitado por las restricciones de la aplicación, en lugar de solo por la disponibilidad de ancho de banda en la red. '],
+    'En el estándar H.264/AVC, en el proceso de codificación de entropía, las opciones son:' :[
+      'Context-based Adaptive Binary Arithmetic Codes (CABAC) ',
+      'Universal VLCs (UVLC). ',
+      'Context Adaptive VLCs (CAVLC). '],
+    'En YouTube, a finales de 2015 ¿cual es la tendencia al tipo de resolución espacial de los videos subidos?:' :[
+      'Utilizar resoluciones de HD (720p y 1080p) '],
+    'En el estándar H.264/AVC, que Perfil hay que utilizar para aplicaciones de Television Broadcasting:' :[
+      'Main '],
+    'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa demacrobloque codificado como inter son:' :[
+      'la posición del macrobloque en la franja ',
+      'los vectores de movimiento para el macrobloque. ',
+      'el patrón de codificación de los bloques del macrobloque '],
+    'La sintaxis del MPEG-1, permite al codificador elegir la frecuencia con que se presentan:' :[
+      'los cuadros I y el número de cuadros bidireccionales intercalados entre cualquier par de cuadros de referencia (I o P). El resto de cuadros serían del tipo P. '],
+    'Las especificaciones DVB-x para la difusión de la TV digital especifican los siguientes módulos:' :[
+      'Sincronización y multiplexación de Vídeo y Audio. ',
+      'Codificación y modulación del canal ',
+      'Codificación de Vídeo y Audio. '],
+
+
+
 }
 
 
