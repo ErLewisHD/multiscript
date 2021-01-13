@@ -197,7 +197,7 @@ bbdd = {
         'su aplicación objetivo son la compresión de imágenes con diferentes niveles de gris ',
         'consiste de un modelador de probabilidades y de un codificador aritmético ',
         'es un estándar de compresión sin pérdidas '],
-    'El concepto de TILE en JPEG2000 permite:'  :[
+    'El concepto de TILE en JPEG2000 permite:' :[
         'reducir las necesidades de memoria y cómputo ',
         'dividir la imagen en bloques de igual tamaño ',
         'comprimirlo independientemente con sus propios parámetros de compresión ',
@@ -339,6 +339,8 @@ bbdd = {
       'reducir en un 50% el bit-rate para el mismo nivel de calidad con respecto a MPEG-2. ',
       'buenas prestaciones en términos de resistencia a errores '],
     'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura con respecto a otros estándares. ¿Qué conclusiones son ciertas?.' :[
+      'MPEG-2, aunque sigue siendo utilizado ampliamente en la TV digital, tiene unas prestaciones muy reducidas con respecto a la tecnología actual de codificación de vídeo ',
+      'H.264/AVC mejora sustancialmente las prestaciones del resto de estándares previos. ',
       'H.264/AVC obtiene un ahorro en bitrate del 50% (aprox) con respecto a MPEG-2 para un mismo nivel de calidad '],
     'En el estándar H.264/AVC, alguna de sus novedades para mejorar la eficiencia son:' :[
       'Compensación de movimiento con diferentes tamaños de MB '],
@@ -459,7 +461,10 @@ bbdd = {
       'fue el primer estándar para la codificación de audio de calidad CD ',
       'Utiliza una codificación en sub-banda y un modelo psico-acústico ',
       'alcanza compresión explotando el fenómeno de enmascaramiento tanto en los dominios frecuencial como temporal '],
-
+    'El estándar H.264/SVC, algunos de sus beneficios son:' :[
+      'Adaptaciones del caudal/resolución espacial y temporal ',
+      'Degradaciones de la calidad controladas ',
+      'Representación compacta y única del contenido audiovisual '],
 
 
 
@@ -534,12 +539,15 @@ bbdd = {
     'En MPEG-2, en las técnicas de ocultación de errores, la Temporal Simple:' :[
       'obtiene prestaciones adecuadas en áreas estáticas '],
     'En MPEG-2, en las técnicas de ocultación de errores, la Espacial:' :[],
-
+    'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa de macrobloque codificado como intra son:' :[
+      'la posición del macrobloque en la franja '],
 
 
 
 
     'Con respecto al estándar H.261:' :[
+      'no representa en absoluto el estado actual de la tecnología de codificación de vídeo. ',
+      'ha influenciado mucho en los estándares que han sido desarrollados con posterioridad. ',
       'fue el primer estándar de codificación de vídeo con cierta adopción comercial. '],
 
     'En MPEG-1-2 la capa de franja:' :[
@@ -587,7 +595,7 @@ bbdd = {
 
 
     'En MPEG-1, la precisión de ½ de pixel en la estimación y compensación de movimiento:' :[
-      'aumenta el coste computacional',
+      'aumenta el coste computacional ',
       'obtiene mejores residuos (menores errores de predicción) ',
       'permite una mayor precisión en la estimación del movimiento '],
     'El estándar H.263 presenta las siguientes diferencias con respecto a H.261:' :[
@@ -756,8 +764,8 @@ bbdd = {
         'Codifica muestras PCM muestreada a 8Khz a un caudal de 8 Kbit/s ',
         'Fue motivado para la transmisión de voz sobre redes inalámbricas ',
         'Utiliza un CS-ACELP '],
-    'El estándar MPEG-4 de audio. Características de HE-AACv2:' :[
-      'Todas son ciertas '],
+    // 'El estándar MPEG-4 de audio. Características de HE-AACv2:' :[
+    //   'Todas son ciertas '],
     'El estándar MPEG-4 de audio. Características de HE-AAC:' :[],
     'La curva de sensibilidad del oído humano…' :[
       'nos indica que nuestro oído es muy sensible a frecuencias entre 2 y 4 KHz (aprox) ',
@@ -827,6 +835,8 @@ bbdd = {
     'En el estándar H.264/AVC, en la predicción Intra-Frame (para las Luminancias), se calculan en este ejemplo mostrado en la figura, los 9 predictores Intra4x4 para obtener el mejor predictor de todos ellos. ¿Cuál elegiría el estándar?:' :[
       'Modo 7 '],
     'En el Formato 3D: Multiview Vídeo (MVV), …' :[
+      'Posibilita cambiar el punto de vista libremente ',
+      'Compatibilidad con displays solo 2D ',
       'El estándar H.264/MVC utiliza este formato '],
     'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia de la partición del MB. ¿Qué conclusiones son ciertas?.' :[
       'Aproximadamente el 80% de la ganancia se obtiene utilizando MB de 8x8 o mayores ',
@@ -948,7 +958,9 @@ bbdd = {
     'Streaming Push-based: Sus características son:' :[
       'Uso de protocolos como RTP, RTSP y UDP. ',
       'Son adaptativos a través de feedback explícitos. Son realizados por el servidor. '],
-    'Streaming Pull-based: Sus características son:' :[],
+    'Streaming Pull-based: Sus características son:' :[
+      'Uso del protocolo HTTP (puerto 80) y TCP. ',
+      'Son adaptativos a través de decisiones inteligentes de los clientes. '],
     'Players propietarios (mas conocidos) en el mercado de adaptive video streaming son:' :[
       'Adobe HTTP Dynamic Flash Streaming. ',
       'Apple HTTP Live Streaming (HLS) ',
@@ -957,6 +969,8 @@ bbdd = {
       'Calidad (escalado) ',
       'Buffering (pausas) '],
     'El estándar MPEG-DASH:' :[
+      'Especifica la ubicación de los segmentos via HTTP-URL ',
+      'Es independiente de los codecs de video y audio utilizados. ',
       'Especifica el formato del fichero MPD (Media Presentation Description) '],
     'Ejemplos comerciales de sistemas que utilizan el estándar MPEG-DASH son:' :[
       'Youtube. ',
@@ -996,11 +1010,14 @@ bbdd = {
     'Las especificaciones DVB-x para la difusión de la TV digital especifican los siguientes módulos:' :[
       'Sincronización y multiplexación de Vídeo y Audio. ',
       'Codificación y modulación del canal ',
-      'Codificación de Vídeo y Audio. ']
+      'Codificación de Vídeo y Audio. '],
+    'En H.261 se define una estructura jerárquica para la compresión de la señal de vídeo, que consta de cuatro capas y en este orden:' :[
+      'Cuadro, Grupo de Bloques (GOB), Macrobloque (MB) y Bloque. '],
+    'El estándar H.263 presenta la opción de codificación avanzada Syntax-based arithmetic coding mode (SAC-mode), que consiste en:' :[
+      'el código VLC se obtiene mediante codificación aritmética, generándose códigos más eficientes. ']
 
 }
-
-
+var cambiar = true
 setTimeout(() => {
     pregunta = []
     for(let i = 0; i < preguntas.length; i++) {
@@ -1009,19 +1026,89 @@ setTimeout(() => {
 
     let i = 0
     for(let j = 0; j < pregunta.length; j++) {
+      cambiar = true
         Object.entries(bbdd).forEach(([key, value]) => {
             if (pregunta[i].includes(key)) {
+              console.log(pregunta[i])
                 opciones_test = opciones.item(i).childNodes
-                for (let j=0; j < (opciones_test.length); j+=2) {
-                    respuesta = opciones_test.item(j).textContent.slice(3)
+                for (let k=0; k < (opciones_test.length); k+=2) {
+                    respuesta = opciones_test.item(k).textContent.slice(3)
                     if (value.includes(respuesta)) {
-
-						 opciones_test.item(j).childNodes[1].childNodes[0].setAttribute("style","color:#504D4D")
+                      // console.log(respuesta, value)
+                      cambiar = false
+						            opciones_test.item(k).childNodes[1].childNodes[0].setAttribute("style","color:red")
                         i++
                     }
                 }
             }
         });
-        i++
+        if(cambiar){
+          i++
+        }
     }
+    i = 0
+    for(let j = pregunta.length; j >= 0; j--) {
+      cambiar = true
+        Object.entries(bbdd).forEach(([key, value]) => {
+            if (pregunta[i].includes(key)) {
+              console.log(pregunta[i])
+                opciones_test = opciones.item(i).childNodes
+                for (let k=0; k < (opciones_test.length); k+=2) {
+                    respuesta = opciones_test.item(k).textContent.slice(3)
+                    if (value.includes(respuesta)) {
+                      // console.log(respuesta, value)
+                      cambiar = false
+						            opciones_test.item(k).childNodes[1].childNodes[0].setAttribute("style","color:red")
+                        i++
+                    }
+                }
+            }
+        });
+        if(cambiar){
+          i++
+        }
+    }
+
 })
+
+// setTimeout(() => {
+//     pregunta = []
+//     let keys = Object.keys(bbdd)
+//     for(let i = 0; i < preguntas.length; i++) {
+//         pregunta[i] = preguntas.item(i).textContent
+//     }
+//     Object.entries(bbdd).forEach(([key, value]) => {
+//         for (let i = 0; i<pregunta.length; i++) {
+//             if (keys.includes(pregunta[i])) {
+//                 opciones_test = opciones.item(i).childNodes
+//                 for (let j=0; j < (opciones_test.length); j+=2) {
+//                     respuesta = opciones_test.item(j).textContent.slice(3)
+//                     if (value.includes(respuesta)) {
+//                         opciones_test.item(j).childNodes[1].childNodes[0].setAttribute("style","color:#ccff00")
+//                     }
+//                 }
+//             }
+//         }
+//     });
+// })
+
+// setTimeout(() => {
+//     pregunta = []
+//     let keys = Object.keys(bbdd)
+//     for(let i = 0; i < preguntas.length; i++) {
+//         pregunta[i] = preguntas.item(i).textContent
+//     }
+//     Object.entries(bbdd).forEach(([key, value]) => {
+//         for (let i = 0; i<pregunta.length; i++) {
+//             if (keys.includes(pregunta[i])) {
+//                 opciones_test = opciones.item(i).childNodes
+//                 for (let j=0; j < (opciones_test.length); j+=2) {
+//                     respuesta = opciones_test.item(j).textContent.slice(3)
+//                     if (value.includes(respuesta)) {
+//                          opciones_test.item(j).childNodes[1].childNodes[0].setAttribute("style","color:#ccff00")
+//                     }
+//                 }
+//             }
+//         }
+//     });
+// })
