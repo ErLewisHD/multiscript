@@ -53,7 +53,7 @@ bbdd = {
         'es una técnica de compresión sin pérdidas ',
         'reduce la redundancia espacio-temporal de las señales ',
         'predice el valor de una muestra a través de su vecindad espacial o temporal '],
-    "La codificación predictiva (predicción temporal):"  :[
+    'La codificación predictiva (predicción temporal):'  :[
         'elimina la redundancia temporal ',
         'se basa en la estimación y compensación de movimiento entre frames '],
     'La codificación predictiva (predicción temporal): para la estimación de movimiento, ¿Cuál es el procedimiento más popular?.' :[
@@ -852,7 +852,7 @@ bbdd = {
       'El uso de las técnicas de Inter-Layer Prediction son las responsables de la eficiencia de SVC ',
       'SVC mejora sustancialmente las prestaciones frente a la versión Simulcast ',
       'Aun se puede mejorar las prestaciones de SVC si se optimizara más la codificación '],
-    'El  estándar de compresión de audio G.721/G.726' :[],
+
     'En el estándar H.264/AVC, para decidir que tamaño de MB utiliza:':[
       'selecciona “la mejor” partición posible para maximizar la eficiencia de la codificación ',
       'prueba todas y se queda con la mejor ',
@@ -868,8 +868,7 @@ bbdd = {
       'Espacial ',
       'Temporal ',
       'Fidelidad/Calidad '],
-    'Estándar HEVC, los tamaños posibles de las Coding Units(CU) son:' :[
-        '64x64 a 8x8 '],
+
     'En el estándar HEVC, se obtienen las siguientes prestaciones mostradas en esta figura con respecto a estándares previos . ¿Qué conclusiones son ciertas?.' :[
       'MPEG-2 a pesar de ser muy utilizado actualmente (TV Digital SD), está muy desfasado tecnológicamente. ',
       'HEVC mejora considerablemente las prestaciones de estándares previos ',
@@ -911,8 +910,6 @@ bbdd = {
     'En MPEG-1 los cuadros P:' :[
       'utilizan para la codificación, la información contenida en el cuadro previo, I o P. '],
     'En el control de caudal del estándar H.261 (codificación CBR):' :[
-      'la calidad de vídeo varía debido a que el factor de cuantificación se varía para alcanzar un caudal de salida constante. ',
-      'El estado de ocupación del buffer es controlado a través de la variación del factor de cuantificación. ',
       'los bits producidos por el codificador son almacenados en un buffer, el cual es drenado a caudal constante. '],
     'El estándar H.263 presenta las siguientes opciones de codificación avanzada:' :[
       'Syntax-based arithmetic coding mode (SAC-mode). ',
@@ -1017,61 +1014,56 @@ bbdd = {
     'En H.261 se define una estructura jerárquica para la compresión de la señal de vídeo, que consta de cuatro capas y en este orden:' :[
       'Cuadro, Grupo de Bloques (GOB), Macrobloque (MB) y Bloque. '],
     'El estándar H.263 presenta la opción de codificación avanzada Syntax-based arithmetic coding mode (SAC-mode), que consiste en:' :[
-      'el código VLC se obtiene mediante codificación aritmética, generándose códigos más eficientes. ']
-
+      'el código VLC se obtiene mediante codificación aritmética, generándose códigos más eficientes. '],
+    'En H.261 se define  una estructura jerárquica para la compresión de la señal de vídeo, que consta de cuatro capas y en este orden:' :[
+      'Cuadro, Grupo de Bloques (GOB), Macrobloque (MB) y Bloque. ']
+      
 }
-var cambiar = true
+
 setTimeout(() => {
     pregunta = []
     for(let i = 0; i < preguntas.length; i++) {
         pregunta[i] = preguntas.item(i).textContent
+        console.log(pregunta[i])
     }
 
-    let i = 0
     for(let j = 0; j < pregunta.length; j++) {
-      cambiar = true
         Object.entries(bbdd).forEach(([key, value]) => {
-            if (pregunta[i] == key) {
-              console.log(pregunta[i])
-                preguntas.item(i).setAttribute("style","color:red")
-                opciones_test = opciones.item(i).childNodes
+            if (pregunta[j].includes(key)) {
+                //console.log(pregunta[j])
+                preguntas.item(j).setAttribute("style","color:red")
+                opciones_test = opciones.item(j).childNodes
                 for (let k=0; k < (opciones_test.length); k+=2) {
                     respuesta = opciones_test.item(k).textContent.slice(3)
                     if (value.includes(respuesta)) {
                       // console.log(respuesta, value)
-                      cambiar = false
 						            opciones_test.item(k).childNodes[1].childNodes[0].setAttribute("style","color:red")
-                        i++
                     }
                 }
             }
         });
-        if(cambiar){
-          i++
-        }
     }
-    i = 0
-    for(let j = pregunta.length; j >= 0; j--) {
-      cambiar = true
-        Object.entries(bbdd).forEach(([key, value]) => {
-            if (pregunta[i] == key) {
-              console.log(pregunta[i])
-                opciones_test = opciones.item(i).childNodes
-                for (let k=0; k < (opciones_test.length); k+=2) {
-                    respuesta = opciones_test.item(k).textContent.slice(3)
-                    if (value.includes(respuesta)) {
-                      // console.log(respuesta, value)
-                      cambiar = false
-						            opciones_test.item(k).childNodes[1].childNodes[0].setAttribute("style","color:red")
-                        i++
-                    }
-                }
-            }
-        });
-        if(cambiar){
-          i++
-        }
-    }
+
+    // for(let j = pregunta.length; j >= 0; j--) {
+    //   cambiar = true
+    //     Object.entries(bbdd).forEach(([key, value]) => {
+    //         if (pregunta[i].includes(key)) {
+    //             opciones_test = opciones.item(i).childNodes
+    //             for (let k=0; k < (opciones_test.length); k+=2) {
+    //                 respuesta = opciones_test.item(k).textContent.slice(3)
+    //                 if (value.includes(respuesta)) {
+    //                   // console.log(respuesta, value)
+    //                   cambiar = false
+		// 				            opciones_test.item(k).childNodes[1].childNodes[0].setAttribute("style","color:red")
+    //                     i++
+    //                 }
+    //             }
+    //         }
+    //     });
+    //     if(cambiar){
+    //       i++
+    //     }
+    // }
 
 })
 
