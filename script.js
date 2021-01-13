@@ -335,7 +335,7 @@ bbdd = {
       'se empaquetan los píxeles de las vistas izquierda y derecha, en un único frame para ser codificado “tradicionalmente”. ',
       'cada vista tiene solo la mitad de la resolución '],
     'En el estándar H.264/AVC, los objetivos que se marcaron para su diseño fueron:' :[
-      'aplicable a un amplio abanico de aplicaciones ',
+      'aplicable a un amplio abanico de aplicaciones. ',
       'reducir en un 50% el bit-rate para el mismo nivel de calidad con respecto a MPEG-2. ',
       'buenas prestaciones en términos de resistencia a errores '],
     'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura con respecto a otros estándares. ¿Qué conclusiones son ciertas?.' :[
@@ -580,7 +580,7 @@ bbdd = {
 
     'El soporte de almacenamiento elegido por el estándar MPEG-1 fue:' :[
       'CD '],
-    'En MPEG-1-2 la redundancia espacial se reduce/elimina en el módulo de:' :[
+    'En MPEG-1-2 la redundancia espacial se reduce/elimina en el módulo de:' :[
       'DCT '],
     'En MPEG-1 el significado funcional de la capa de Macrobloque es:' :[
       'unidad de estimación y compensación de movimiento '],
@@ -643,7 +643,7 @@ bbdd = {
     'Las aplicaciones multimedia basadas en datos continuos presentan':[
       'mayores requerimientos (retardos, sincronismo, etc) que las basadas en datos discretos '],
     'En el formato de muestreo 4:2:0' :[
-      'las señales de crominancia son muestreadas a la mitad de frecuencia que las de luminancia, tanto en la dirección horizontal como en la vertical '],
+      'las señales de crominancia son  muestreadas a la mitad de frecuencia que las de luminancia, tanto en la dirección horizontal como en la vertical '],
     'Considerando una señal de audio estéreo de alta fidelidad en CD. ¿Cuál es el número de bits generados en un segundo?' :[
       '1.410 Kbps '],
     'Cuál es el tamaño de las imágenes en el formato CIF' :[
@@ -858,9 +858,11 @@ bbdd = {
       'prueba todas y se queda con la mejor ',
       'es un proceso costoso computacionalmente '],
     'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción All Intra (AI):' :[
+      'Todos los fotogramas son codificados como tipo I. ',
+      'Es una configuración adecuada para aplicaciones con bajo retraso y elevado bitrate ',
       'Es apto para aplicaciones de Post-producción y Edición (necesidad de acceso a cada frame de alta calidad). ',
       'Es una configuración adecuada para aplicaciones con elevado bitrate y bajo retraso '],
-    'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción Random-Access (RA):' :[
+    'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción Random-Access (RA):' :[
       'Es una configuración adecuada para aplicaciones con elevada eficiencia de codificación pero con un elevado retraso debido al reordenamiento de frames (Brodcasting y Streaming) ',
       'Se utiliza una estructura de predicción jerarquica con frames de tipo B. ',
       'Se introduce periódicamente un frame de tipo I (IntraPeriod) para eliminar la propagación de errores y permitir acceso aleatorio. '],
@@ -881,7 +883,7 @@ bbdd = {
 
 
     'En el estándar H.264/AVC, la predicción Intra-Frame (para las Crominancias):' :[
-      'Utiliza 4 predictores direccionales Intra16x16. '],
+      'Utiliza 4 predictores direccionales Intra16x16. '],
     'En el estándar HEVC, en las CTC (Common Test Conditions), en las Estructuras de Predicción Low Delay P (LDP) y Low Delay B (LDB):' :[
       'LDP: Se utiliza solo la primera imagen de tipo I, y el resto son de tipo P. LDB: Se utiliza solo la primera imagen de tipo I, y el resto son de tipo B. ',
       'Adecuadas para aplicaciones de bajo retraso y adecuada eficiencia de codificación (LDB>LDP).Videoconferencia. ',
@@ -910,6 +912,8 @@ bbdd = {
     'En MPEG-1 los cuadros P:' :[
       'utilizan para la codificación, la información contenida en el cuadro previo, I o P. '],
     'En el control de caudal del estándar H.261 (codificación CBR):' :[
+      'El estado de ocupación del buffer es controlado a través de la variación del factor de cuantificación. ',
+      'la calidad de vídeo varía debido a que el factor de cuantificación se varía para alcanzar un caudal de salida constante. ',
       'los bits producidos por el codificador son almacenados en un buffer, el cual es drenado a caudal constante. '],
     'El estándar H.263 presenta las siguientes opciones de codificación avanzada:' :[
       'Syntax-based arithmetic coding mode (SAC-mode). ',
@@ -1018,7 +1022,15 @@ bbdd = {
     'En H.261 se define  una estructura jerárquica para la compresión de la señal de vídeo, que consta de cuatro capas y en este orden:' :[
       'Cuadro, Grupo de Bloques (GOB), Macrobloque (MB) y Bloque. '],
     'El estándar H.261 se diseñó bajo los siguientes requisitos:' :[
-      'la calidad de vídeo necesaria puede ser media o baja ']
+      'la calidad de vídeo necesaria puede ser media o baja '],
+    'La sintaxis del MPEG-2 contempla:' :[
+      'Una sintaxis escalable ',
+      'Una sintaxis no escalable '],
+    'Estándar HEVC, los tamaños posibles de las Coding Units(CU) son:' :[
+      '64x64 a 8x8 '],
+    'El  estándar de compresión de audio G.721/G.726' :[],
+    'En H.261 cuando se decide que un cuadro será codificado como intra:' :[
+      'todos sus MBs serán codificados como intra ']
 
 }
 
@@ -1033,40 +1045,20 @@ setTimeout(() => {
         Object.entries(bbdd).forEach(([key, value]) => {
             if (pregunta[j].includes(key)) {
                 //console.log(pregunta[j])
+                console.log(opciones.item(j).childNodes)
                 preguntas.item(j).setAttribute("style","color:red")
                 opciones_test = opciones.item(j).childNodes
                 for (let k=0; k < (opciones_test.length); k+=2) {
                     respuesta = opciones_test.item(k).textContent.slice(3)
+                    console.log(opciones_test.item(k).textContent.slice(3))
                     if (value.includes(respuesta)) {
-                      // console.log(respuesta, value)
+
 						            opciones_test.item(k).childNodes[1].childNodes[0].setAttribute("style","color:red")
                     }
                 }
             }
         });
     }
-
-    // for(let j = pregunta.length; j >= 0; j--) {
-    //   cambiar = true
-    //     Object.entries(bbdd).forEach(([key, value]) => {
-    //         if (pregunta[i].includes(key)) {
-    //             opciones_test = opciones.item(i).childNodes
-    //             for (let k=0; k < (opciones_test.length); k+=2) {
-    //                 respuesta = opciones_test.item(k).textContent.slice(3)
-    //                 if (value.includes(respuesta)) {
-    //                   // console.log(respuesta, value)
-    //                   cambiar = false
-		// 				            opciones_test.item(k).childNodes[1].childNodes[0].setAttribute("style","color:red")
-    //                     i++
-    //                 }
-    //             }
-    //         }
-    //     });
-    //     if(cambiar){
-    //       i++
-    //     }
-    // }
-
 })
 
 // setTimeout(() => {
