@@ -1016,8 +1016,10 @@ bbdd = {
     'El estándar H.263 presenta la opción de codificación avanzada Syntax-based arithmetic coding mode (SAC-mode), que consiste en:' :[
       'el código VLC se obtiene mediante codificación aritmética, generándose códigos más eficientes. '],
     'En H.261 se define  una estructura jerárquica para la compresión de la señal de vídeo, que consta de cuatro capas y en este orden:' :[
-      'Cuadro, Grupo de Bloques (GOB), Macrobloque (MB) y Bloque. ']
-      
+      'Cuadro, Grupo de Bloques (GOB), Macrobloque (MB) y Bloque. '],
+    'El estándar H.261 se diseñó bajo los siguientes requisitos:' :[
+      'la calidad de vídeo necesaria puede ser media o baja ']
+
 }
 
 setTimeout(() => {
