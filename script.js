@@ -357,6 +357,8 @@ bbdd = {
     'En el Formato 3D: 3DV (MVD+synthesis) …' :[
       'Sintetizan un número de vistas “continuo” basado sobre un limitado conjunto de vistas decodificadas '],
     'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del uso de los frames B generalizados. ¿Qué conclusiones son ciertas?.' :[
+        'El uso tradicional de frames P con una sola referencia es el que peor prestaciones obtiene ',
+        'Utilizando frames B generalizados se mejoran las prestaciones con respecto a frames B clásicos. ',
         'La mejora puede sser de un 40% con respecto al uso de frames P con una sola referencia previa '],
     '¿Cuáles fueron algunas de las motivaciones para el diseño del estándar HEVC?' :[
       'Codificar eficientemente resoluciones de alta (HD) a ultra-alta definición (UHDV) de vídeo ',
@@ -1079,7 +1081,67 @@ bbdd = {
       'vídeo '],
     'Un factor de compresión (F) de 3:1 significa:' :[
       'el tamaño comprimido ocupa la tercera parte con respecto al tamaño original ']
-
+    'En el estándar H.264/AVC, los objetivos que se marcaron para su diseño fueron:' :[],
+    'En el estándar H.264/AVC, en la predicción Intra-Frame (para las Luminancias), se calculan en este ejemplo mostrado en la figura, los 9 predictores Intra4x4 para obtener el mejor predictor de todos ellos. ¿Cuál elegiría el estándar?:' :[
+      'Modo 7 '],
+    'En el Formato 3D: Multiview Vídeo (MVV), …' :[
+      'El estándar H.264/MVC utiliza este formato '],
+    'En el estándar H.264/AVC, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia de la partición del MB. ¿Qué conclusiones son ciertas?.' :[
+      'Aproximadamente el 80% de la ganancia se obtiene utilizando MB de 8x8 o mayores ',
+      'El modo 4x4 no proporciona prácticamente mejora en PSNR ',
+      'El modo 4x4 no proporciona prácticamente ganancia de compresión ',
+      'Utilizando los 7 tamaños de MB se comprime un 16% (aprox) más comparado a usar solo 16x16. ',
+      'Utilizando los 7 tamaños de MB se comprime un 16% mas comparado a usar solo 16x16. '],
+    'El estándar H.264/MVC, sobre sus prestaciones, …' :[
+      'Explotar la redundancia entre vistas proporciona solo una reducción del bitrate de un 25% aprox. ',
+      'Es más eficiente que simulcast ',
+      'El caudal con MVC es todavía bastante proporcional al número de vistas '],
+    'En el estándar H.264/SVC, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar el uso de la escalabilidad espacial . ¿Qué conclusiones son ciertas?' :[
+      'El uso de las técnicas de Inter-Layer Prediction son las responsables de la eficiencia de SVC ',
+      'SVC mejora sustancialmente las prestaciones frente a la versión Simulcast ',
+      'Aun se puede mejorar las prestaciones de SVC si se optimizara más la codificación '],
+    'En un estándar de codificación donde la partición de los Macrobloques (asume que los cuadrados de mayor tamaño son de 16x16) para obtener el mejor residuo posible ha sido el siguiente, ¿de cuál estándar se trata?:' :[
+      'H.264/AVC '],
+    'En el estándar H.264/AVC, para decidir que tamaño de MB utiliza:':[
+      'selecciona “la mejor” partición posible para maximizar la eficiencia de la codificación '],
+    'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción All Intra (AI):' :[
+      'Es apto para aplicaciones de Post-producción y Edición (necesidad de acceso a cada frame de alta calidad). '],
+    'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción Random-Access (RA):' :[
+      'Es una configuración adecuada para aplicaciones con elevada eficiencia de codificación pero con un elevado retraso debido al reordenamiento de frames (Brodcasting y Streaming) ',
+      'Se utiliza una estructura de predicción jerarquica con frames de tipo B. ',
+      'Se introduce periódicamente un frame de tipo I (IntraPeriod) para eliminar la propagación de errores y permitir acceso aleatorio. '],
+    'El estándar H.264/SVC, los tipos de escalabilidad básicos soportados son:' :[
+      'Espacial ',
+      'Temporal ',
+      'Fidelidad/Calidad '],
+    'En el estándar H.264/AVC, en el filtro de deblocking, si es de tipo POST FILTER:' :[
+      'Libertad de implementación en el decodificador ',
+      'No necesitan estar estandarizados ',
+      'Operan a la salida de la decodificación y antes de mostrar el frame en pantalla '],
+    'En el estándar HEVC, se obtienen las siguientes prestaciones mostradas en esta figura con respecto a estándares previos . ¿Qué conclusiones son ciertas?.' :[
+      'MPEG-2 a pesar de ser muy utilizado actualmente (TV Digital SD), está muy desfasado tecnológicamente. ',
+      'HEVC mejora considerablemente las prestaciones de estándares previos ',
+      'Obtiene un ahorro del bitrate del 50% con respecto a su predecesor H.264/AVC '],
+    'El estándar H.264/MVC, entre sus aplicaciones comerciales más conocida se encuentran' :[
+      'Películas 3D en Blu-Ray Disc '],
+    'El estándar H.264/SVC, permite…' :[
+      'Permite adaptar las características del vídeo a las diferentes características de los dispositivos receptores ',
+      'Codificar vídeos una sola vez a muy alta calidad y poder decodificar varias versiones del vídeo. '],
+    'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción All Intra (AI):' :[
+      'Es una configuración adecuada para aplicaciones con elevado bitrate y bajo retraso '],
+    '¿Cuáles fueron los principales requisitos para el diseño del estándar HEVC?' :[
+      'una considerable reducción en bitrate con respecto al H.264/AVC High Profile (para un mismo nivel de calidad). '],
+    'En el estándar H.264/AVC, la predicción Intra-Frame (para las Crominancias):' :[
+      'Utiliza 4 predictores direccionales Intra16x16. '],
+    'En el estándar HEVC, en las CTC (Common Test Conditions), en las Estructuras de Predicción Low Delay P (LDP) y Low Delay B (LDB):' :[
+      'LDP: Se utiliza solo la primera imagen de tipo I, y el resto son de tipo P. LDB: Se utiliza solo la primera imagen de tipo I, y el resto son de tipo B. ',
+      'Adecuadas para aplicaciones de bajo retraso y adecuada eficiencia de codificación (LDB>LDP).Videoconferencia. ',
+      'En LDP y LDB, no se permite reordenamiento de fotogramas (Low Delay), solo pueden usarse predicciones con respecto al pasado (P-unipredictiva, B-bipredictiva). '],
+    'En el estándar H.264/AVC, en el filtro de deblocking, si es de tipo IN LOOP FILTER:' :[
+      'Operan en el lazo del codificador donde los frames son utilizados para la estimación y compensación de movimiento ',
+      'Mejora objetiva y subjetiva de la calidad al aplicarse antes de la estimación de movimiento ',
+      'Necesitan estar estandarizados '],
+    ''
 
 
 
