@@ -847,7 +847,8 @@ bbdd = {
         'Codifica muestras PCM muestreada a 8Khz a un caudal de 8 Kbit/s ',
         'Fue motivado para la transmisión de voz sobre redes inalámbricas ',
         'Utiliza un CS-ACELP '],
-    'El estándar MPEG-4 de audio. Características de HE-AACv2:' :[],
+    'El estándar MPEG-4 de audio. Características de HE-AACv2:' :[
+      'Todas son ciertas '],
     'El estándar MPEG-4 de audio. Características de HE-AAC:' :[],
     'La curva de sensibilidad del oído humano…' :[
       'nos indica que nuestro oído es muy sensible a frecuencias entre 2 y 4 KHz (aprox) ',
@@ -876,7 +877,10 @@ bbdd = {
     'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
       'H.310 '],
     'La parte de Sistemas del estándar MPEG-2 (13818-1), un Program Stream se caracteriza por:' :[
-      'Solo puede contener un único programa '],
+      'Solo puede contener un único programa ',
+      'Utilizado en condiciones donde no hay errores ',
+      'Solo puede contener un único programa ',
+      'Longitud variable de paquetes '],
     'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
       'H.321 '],
     'Dada la arquitectura del sistema mostrada en la figura, se trata de la recomendación:' :[
