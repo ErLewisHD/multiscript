@@ -80,8 +80,8 @@ bbdd = {
         'se aumenta el coste computacional '],
     'La codificación predictiva (predicción temporal): en la estimación y compensación de movimiento..' :[
         'la diferencia entre la imagen actual y la predicción se llama residuo de movimiento compensado ',
-        'se crea una imagen de predicción con la imagen actual y la imagen precedente '
-        'se generan los vectores de movimiento '
+        'se crea una imagen de predicción con la imagen actual y la imagen precedente ',
+        'se generan los vectores de movimiento ',
         'se genera el residuo de movimiento compensado '],
     'La codificación predictiva (predicción temporal): en la estimación de movimiento, ¿Cuál es el algoritmo de búsqueda más costoso computacionalmente?.'  :[
         'Búsqueda completa '],
@@ -242,8 +242,7 @@ bbdd = {
       'El estado de ocupación del buffer es controlado a través de la variación del factor de cuantificación ',
       'los bits producidos por el codificador son almacenados en un buffer, el cual es drenado a caudal constante '],
     'En MPEG-1 los cuadros B:' :[
-      'utilizan para la codificación, la información contenida en los cuadros pasado y futuro, I o P, más próximos. '
-    ],
+      'utilizan para la codificación, la información contenida en los cuadros pasado y futuro, I o P, más próximos. '],
     'En el control de caudal del estándar MPEG-1-2 (codificación CBR):' :[
       'los bits producidos por el codificador son almacenados en un buffer, el cual es drenado a caudal constante '],
     'En MPEG-1-2 el coeficiente de continua (DC) de un bloque inter se cuantifica' :[
@@ -313,7 +312,7 @@ bbdd = {
     'El estándar MPEG-4 de audio. Características de AAC-ELD:'  :[
       'Es apto para audio-conferencias de alta calidad '],
     'En MPEG-1-2 la redundancia estadística se reduce/elimina en el módulo de:' :[],
-    'El estándar H.261 utiliza las siguientes técnicas en este orden' :[]
+    'El estándar H.261 utiliza las siguientes técnicas en este orden' :[],
     'En H.261 la redundancia perceptiva se reduce/elimina en el módulo de:' :[],
     'En MPEG-2, sus ejemplos de uso más conocidos son:' :[
       'TDT (televisión digital terrestre) ',
@@ -328,7 +327,7 @@ bbdd = {
       'H.264/AVC obtiene un ahorro en bitrate del 50% (aprox) con respecto a MPEG-2 para un mismo nivel de calidad '],
     'En el estándar H.264/AVC, alguna de sus novedades para mejorar la eficiencia son:' :[
       'Compensación de movimiento con diferentes tamaños de MB '],
-    ''
+    
     'En el estándar H.264/AVC, alguna de sus novedades para mejorar la robustez son:' :[
       'Flexible macroblock ordering (FMO)'],
     'En el estándar H.264/AVC, en la codificación de los Frames B:' :[
@@ -875,7 +874,7 @@ bbdd = {
     'El estándar MPEG-1 de audio. Su modelo psico-acústico…'  :[
         'Obtiene los umbrales de enmascaramiento para cada sub-banda ',
         'Su coste computacional es elevado ',
-        'Es la clave de su funcionamiento ']
+        'Es la clave de su funcionamiento '],
     'El estándar de compresión de audio G.729'  :[
         'Codifica muestras PCM muestreada a 8Khz a un caudal de 8 Kbit/s ',
         'Fue motivado para la transmisión de voz sobre redes inalámbricas ',
@@ -1126,7 +1125,7 @@ bbdd = {
     '¿Cuál de los siguientes son datos multimedia de tipo continuo?' :[
       'vídeo '],
     'Un factor de compresión (F) de 3:1 significa:' :[
-      'el tamaño comprimido ocupa la tercera parte con respecto al tamaño original ']
+      'el tamaño comprimido ocupa la tercera parte con respecto al tamaño original '],
     'En el estándar H.264/AVC, los objetivos que se marcaron para su diseño fueron:' :[],
     'En el estándar H.264/AVC, en la predicción Intra-Frame (para las Luminancias), se calculan en este ejemplo mostrado en la figura, los 9 predictores Intra4x4 para obtener el mejor predictor de todos ellos. ¿Cuál elegiría el estándar?:' :[
       'Modo 7 '],
@@ -1215,10 +1214,8 @@ bbdd = {
       'se da más resolución a las muestras de valor más pequeño y menos resolución a las muestras de mayor valor '],
     'Caso de Estudio: Estimación y Compensación de Movimiento (Evaluación de la Ganancia de la Predicción). Seleccionando la secuencia “Vectra21Frames.yuv”, utilizando modo no Jerárquico, Full Search, tamaño de MB=16x16, tamaño área de búsqueda=15, se obtienen los resultados mostrados en la figura. ¿Cuál es la Ganancia de compresión (Gp) de la imagen fd y de la imagen mcfd del Frame[2]?.' :[
       'Gp(fd)=4.53; Gp(mcfd)=41.05 '],
-    'Caso de Estudio: Codificación en Subbanda (SBC, Sub-Band Coding). Aplicándole a la imagen "Lena256B" con 256 niveles de gris, una codificación en sub-banda con un modelo de descomposición en 16 bandas de frecuencia, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, se obtienen los resultados mostrados en la figura. ¿Cuál sería la imagen con la descomposición en sub-bandas codificadas, acorde al modelo de descomposición en sub-bandas seleccionado en Decomp, y a los resultados obtenidos?.' :[],
-    'Caso de Estudio: Codificación en Sub-banda (SBC, Sub-Band Coding). Aplicándole a la imagen "Lena256B" con 256 niveles de gris, una codificación en sub-banda con un modelo de descomposición en 16 bandas de frecuencia, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, se obtienen los resultados mostrados en la figura. ¿Cuál sería la imagen con la descomposición en sub-bandas codificadas, acorde al modelo de descomposición en sub-bandas seleccionado en Decomp, y a los resultados obtenidos?.' :[
-      'd '],
-    'Caso de Estudio: Codificación en Sub-banda (SBC, Sub-Band Coding). Al representar la curva RD obtenida para los 6 tipos diferentes comunes de descomposición en sub-bandas de una imagen, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, y comparándolo con las prestaciones RD que se obtendrían utilizando una codificación DPCM (mismo modelo de predicción 2D que el utilizado en SBC-Subs), para la imagen "Lena256B" con 256 niveles de gris.' :[],
+
+
     'La codificación perceptiva…' :[
       'se basa en el conocimiento de la percepción psico-visual y psico-acústica '],
     'Un cuantificador de 3 bits aplicado a muestras de niveles de gris codificados con un byte/muestra proporciona un factor de compresión F de:' :[],
@@ -1226,12 +1223,12 @@ bbdd = {
       '16 niveles de gris y FC=2:1 '],
     'Caso de Estudio: Estimación y Compensación de Movimiento (Evaluación de la Ganancia de la Predicción). Seleccionando la secuencia “Vectra21Frames.yuv” (352x288), utilizando modo no Jerárquico, Full Search, tamaño de MB=16x16, (asume que se genera un vector de movimiento por MB), tamaño área de búsqueda=15, se obtienen los resultados mostrados en la figura. ¿Cuál es el coste estimado de codificar todos los Vectores de Movimiento del Frame[2]?.' :[
       '871,2 bits '],
-    'Caso de Estudio: Estimación y Compensación de Movimiento (Evaluación de la Ganancia de la Predicción). Seleccionando la secuencia “Vectra21Frames.yuv” (352x288), utilizando modo no Jerárquico, Full Search, tamaño de MB=16x16, (asume que se genera un vector de movimiento por MB), tamaño área de búsqueda=15, se obtienen los resultados mostrados en la figura. Imagina que la imagen diferencia obtenida con movimiento compensado (mcfd) del Frame [2] se codifica posteriormente utilizando otros algoritmos de compresión, y que se logra una tasa de compresión de 0.5 bpp (bit por pixel). ¿Cuánto supone para dicho Frame [2], comparativamente, el coste de codificar sus vectores de movimiento asociados ?. Utiliza la expresión [CosteBitsMVs/CosteBitsResiduo]x100 para expresarlo en %.' :[],
+
     'La codificación predictiva (predicción temporal): en la estimación de movimiento, ¿Cuál es la influencia del tamaño de MB?.' :[
       'se generan menores vectores de movimiento al aumentar el tamaño del MB '],
     'Caso de Estudio: Codificación Predictiva de Muestras (DPCM). Al representar la curva RD al aplicar el DPCM a la imagen de Lena256B (con 256 niveles de gris) para todos los DPCM bitrates disponibles (1 a 6 bpp)' :[],
     'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Al representar la curva RD al aplicar el cuantificador lineal (PCM) a la imagen de Lena256B (con 256 niveles de gris) para todos los PCM bitrates disponibles (1 a 7 bpp).' :[],
-    'Caso de Estudio: Estimación y Compensación de Movimiento (Influencia del Tamaño de MB). Seleccionando la secuencia “Vectra21Frames.yuv” (352x288), utilizando modo no Jerárquico, Full Search, tamaño área de búsqueda=15, y modo de visionado secuencia completa con loop=1. Modificando el tamaño de MB (Set Block Size=2x2, 4x4, 8x8 y 16x16), se obtienen los resultados numéricos obtenidos en la figura. Compara las diferencias en eficiencia entre los diferentes tamaños de MB. En base a ellas ¿Cuáles de las siguientes afirmaciones son ciertas?.' :[],
+
     'Caso de Estudio: Codificación Predictiva de Muestras (DPCM). Al representar la curva RD obtenida para los diferentes modelos de predictores DPCM disponibles (modelo 1-D y modelos 2-D), y compararlo con las prestaciones RD que se obtendrían utilizando una codificación PCM, para la imagen "Lena256B" con 256 niveles de gris.' :[
       'Se debe obtener la gráfica RD mostrada en la figura. '],
     'En MPEG-1 los cuadros P:' :[
@@ -1333,9 +1330,7 @@ bbdd = {
     'Las especificaciones DVB-x para la difusión de la TV digital especifican los siguientes módulos:' :[
       'Sincronización y multiplexación de Vídeo y Audio. ',
       'Codificación y modulación del canal ',
-      'Codificación de Vídeo y Audio. '],
-
-
+      'Codificación de Vídeo y Audio. ']
 
 }
 
