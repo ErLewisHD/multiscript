@@ -734,6 +734,7 @@ bbdd = {
     'Cuál es el tamaño de las imágenes en el formato 8K' :[
       '7680x4320 '],
     'La gama de frecuencias perceptibles por el oído humano está en el rango de frecuencias de' :[
+      '20-20.000 Hz ',
       '20­20.000 Hz '],
     'Considerando el formato de vídeo CIF que consta de 288 líneas con 360 pixeles cada línea, por imagen y un caudal de frames de 30 fps. ¿Cuál es el número de bits generados en un segundo?':[
       '74,65 Mbits/s '],
@@ -766,6 +767,7 @@ bbdd = {
       'las señales de crominancia son muestreadas a la mitad de frecuencia que las de luminancia, en la dirección horizontal '],
     '¿Cuál de los siguientes son datos multimedia de tipo discreto?' :[
       'imágenes estáticas ',
+      'texto ',
       'gráficos ',
       'texto '],
     'Cuáles son las características del formato HDTV 1080p' :[
@@ -799,6 +801,7 @@ bbdd = {
       'El doble de la frecuencia más alta presente en la señal analógica '],
     'La codificación predictiva:' :[
       'es una técnica de compresión sin pérdidas ',
+      'reduce la redundancia espacio-temporal de las señales ',
       'predice el valor de una muestra a través de su vecindad espacial o temporal ',
       'reduce la redundancia espacio-temporal de las señales ',
       'codifica sólo la diferencia entre los valores predichos y los valores actuales que tengan las muestras '],
@@ -1141,11 +1144,32 @@ bbdd = {
       'Operan en el lazo del codificador donde los frames son utilizados para la estimación y compensación de movimiento ',
       'Mejora objetiva y subjetiva de la calidad al aplicarse antes de la estimación de movimiento ',
       'Necesitan estar estandarizados '],
-    ''
-
-
-
-
+    'Un factor de compresión (F) de 3:1 significa:' :[
+      'el tamaño comprimido ocupa la tercera parte con respecto al tamaño original '],
+    'Cuáles son las características del formato HDTV 720p' :[
+      'video progresivo ',
+      '720x1280 '],
+    'Cuáles son las características del formato HDTV 1080p' :[],
+    'Si la idea es la de comprimir la señal, se puede obtener ahorro del ancho de banda si se trabaja con luminancias y crominancias debido a:' :[
+      'que el ojo humano es más sensible al brillo (luminancia), y no tanto a la diferencia de color (crominancias) '],
+    'Los parámetros característicos más habituales de una señal de audio calidad CD Digital son:' :[],
+    'Caso de Estudio: Cuantificación Vectorial (VQ, Vector Quantization). Al representar la curva RD al aplicar el cuantificador vectorial(VQ) a la imagen de Lena256B (con 256 niveles de gris), con el codebook pre-diseñado en la herramienta  VcDemo1_4x4_min1_max12, para los diferentes bitrate/vector 4x4 (desde 1 a 12), y comparándolo con las prestaciones RD que se obtendrían utilizando PCM, DPCM (modelo de predicción 1-D).' :[
+      'Se debe obtener una gráfica RD como la mostrada en la figura. '],
+    'Un cuantificador de 2 bits aplicado a muestras de niveles de gris codificados con un byte/muestra proporciona un factor de compresión F de:' :[
+      '4:1 '],
+    'La Codificación de Longitud de Series, (RLC):' :[],
+    'La Codificación de Longitud de Series, (RLC):' :[
+      'es una técnica de compresión sin pérdidas ',
+      'es una técnica útil cuando se esperan largas sucesiones de un mismo valor (usualmente cero) entre cualquier otro par de valores ',
+      'puede dar lugar a compresión o a expansión de los datos '],
+    'La codificación predictiva (predicción temporal):' :[
+      'elimina la redundancia temporal '],
+    'En el cuantificador no lineal:' :[
+      'el salto en cada paso del cuantificador no es el mismo a lo largo de todo el rango ',
+      'la relación entre la señal de entrada y la señal de salida no es lineal ',
+      'se da más resolución a las muestras de valor más pequeño y menos resolución a las muestras de mayor valor '],
+    'Caso de Estudio: Estimación y Compensación de Movimiento (Evaluación de la Ganancia de la Predicción). Seleccionando la secuencia “Vectra21Frames.yuv”, utilizando modo no Jerárquico, Full Search, tamaño de MB=16x16, tamaño área de búsqueda=15, se obtienen los resultados mostrados en la figura. ¿Cuál es la Ganancia de compresión (Gp) de la imagen fd y de la imagen mcfd del Frame[2]?.' :[
+      'Gp(fd)=4.53; Gp(mcfd)=41.05 '],
 
 }
 
