@@ -348,7 +348,7 @@ bbdd = {
     'En el estándar H.264/AVC, alguna de sus novedades para mejorar la robustez son:' :[
       'Flexible macroblock ordering (FMO)'],
     'En el estándar H.264/AVC, en la codificación de los Frames B:' :[
-      'Frames B MBs pueden utilizar dos referencias ponderadas: puede ser dos del pasado, o dos del futuro, o una del pasado y otra del futuro ',
+      'Frames B MBs pueden utilizar dos referencias ponderadas: pueden ser dos del pasado, o dos del futuro, o una del pasado y otra del futuro ',
       'La selección de las dos referencias (y los frames de referencia) dependen del codificador para maximizar la eficiencia en la codificación ',
       'Frames B pueden servir como referencia(predicción) para otros frames. '],
     'En el estándar H.264/AVC, en el proceso de cuantificación:'  :[
@@ -402,7 +402,9 @@ bbdd = {
     'En el estándar H.264/AVC, que Perfil hay que utilizar para aplicaciones de VideoConferencia:' :[
       'Baseline '],
     'En el estándar H.264/AVC, ¿Qué tipo de transformada se utiliza?:' :[
-      'Transformada Hadamard 4x4 '],
+      'Transformada Hadamard 4x4 ',
+      'Transformada Hadamard 2x2 ',
+      'Transformada DCT Entera 4x4 '],
     'Estándar HEVC, sobre la Prediction Unit (PU)…' :[
       'Es el particionado adicional que se le puede realizar a una CU ',
       'Tiene 4 particionados asimétricos ',
@@ -864,8 +866,8 @@ bbdd = {
       'Es una configuración adecuada para aplicaciones con elevado bitrate y bajo retraso '],
     'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción Random-Access (RA):' :[
       'Es una configuración adecuada para aplicaciones con elevada eficiencia de codificación pero con un elevado retraso debido al reordenamiento de frames (Brodcasting y Streaming) ',
-      'Se utiliza una estructura de predicción jerarquica con frames de tipo B. ',
-      'Se introduce periódicamente un frame de tipo I (IntraPeriod) para eliminar la propagación de errores y permitir acceso aleatorio. '],
+      'Se introduce periódicamente un frame de tipo I (IntraPeriod) para eliminar la propagación de errores y permitir acceso aleatorio. ',
+      'Se introduce periódicamente un frame de tipo I (IntraPeriod) para eliminar la propagación de errores y permitir acceso aleatorio. '],
     'El estándar H.264/SVC, los tipos de escalabilidad básicos soportados son:' :[
       'Espacial ',
       'Temporal ',
@@ -941,7 +943,7 @@ bbdd = {
       'High '],
     'El estándar H.264/SVC, surge porque…' :[
       'Cada dispositivo tiene diferentes capacidades de tamaño de display, frames por segundo a mostrar, capacidad de computo, etc…. ',
-      'Codificar y enviar la misma secuencia de vídeo en diferentes resoluciones (simultcast) espacial, temporal y calidad, es una solución técnica muy ineficiente '],
+      'Codificar y enviar la misma secuencia de vídeo en diferentes resoluciones  (simultcast) espacial, temporal y calidad, es una solución técnica muy ineficiente '],
     'En H.261 se define una estructura jerárquica para la compresión de la señal de vídeo, que consta de cuatro capas y en este orden:' :[
       'Cuadro, Grupo de Macrobloques (GOB), Macrobloque (MB) y Bloque. '],
     'Algunos de los nuevos conceptos que añade el estándar HEVC son:' :[
@@ -1030,8 +1032,19 @@ bbdd = {
       '64x64 a 8x8 '],
     'El  estándar de compresión de audio G.721/G.726' :[],
     'En H.261 cuando se decide que un cuadro será codificado como intra:' :[
-      'todos sus MBs serán codificados como intra ']
-
+      'todos sus MBs serán codificados como intra '],
+    'Caso de Estudio 10: JPEG vs JPEG2000. Al aplicar un codificador de JPEG2000, para bitrates=0.1, 0.2, 0.3, 0.4, 0.75, 1.5 y 3 bpp, y para los niveles de descomposición Wavelet=2, 5 y 9, manteniendo el resto de parámetros a sus valores por defecto, a la imagen de Lena256B (con 256 niveles de gris), y comparándolo con las codificaciones que se obtendrían utilizando un codificador de JPEG, para bitrates=0.1, 0.2, 0.3, 0.4, 0.7, 1.5 y 3, manteniendo el resto de parámetros a sus valores por defecto. Se observa:'  :[
+      'Para el caso de JPEG2000, y para BitRate (bpp) de salida bajos (0,1-0,4) bpp no se aprecia el efecto de bloques y las degradaciones se distribuyen homogéneamente por toda la imagen. ',
+      'Para el caso de JPEG, y para BitRate (bpp) de salida bajos (0,1-0,4) bpp se aprecia el efecto de bloques. '],
+    '¿Cuáles de los siguientes tipos de escalabilidad permite JPEG2000?.' :[
+      'Calidad (Textura) '],
+    'En H.261 la redundancia espacial se reduce/elimina en el módulo de: '  :[],
+    'En H.261 cuando se decide que un cuadro será codificado como inter: '  :[
+      'sus MBs seran codificados como intra o inter dependiendo del resultado la estimación de movimiento '],
+    'El  estándar de compresión de audio G.723.1' :[
+      'Codifica muestras PCM muestreadas a 8 Khz a caudales de 5.3 y 6.3 Kbit/s ',
+      'G.723.1 es estándar de facto para la codificación de voz en Internet ',
+      'Para generar el caudal de 6.3 Kbit/s utiliza un codificador  MP-MLQ ']
 }
 
 setTimeout(() => {
@@ -1044,8 +1057,8 @@ setTimeout(() => {
     for(let j = 0; j < pregunta.length; j++) {
         Object.entries(bbdd).forEach(([key, value]) => {
             if (pregunta[j].includes(key)) {
-                //console.log(pregunta[j])
-                console.log(opciones.item(j).childNodes)
+                console.log(j, pregunta[j])
+                //console.log(opciones.item(j).childNodes)
                 preguntas.item(j).setAttribute("style","color:red")
                 opciones_test = opciones.item(j).childNodes
                 for (let k=0; k < (opciones_test.length); k+=2) {
