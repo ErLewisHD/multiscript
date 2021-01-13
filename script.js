@@ -13,6 +13,7 @@ bbdd = {
     'En el estándar JPEG con pérdidas, se obtienen las prestaciones mostradas en esta figura cuando se aplica a la imagen “The Palace”. ¿Qué conclusiones son ciertas?.' :[
         'JPEG es un códec simétrico ',
         'la compresión es en tiempo real ',
+        'la compresión aumenta al aumentar el factor de cuantificación ',
         'la compresión aument al aumentar el factor de cuantificación '],
     'En el estándar de compresión para aplicaciones de fax' :[
         'se adopta una codificación de longitud de series seguido de una codificación Huffman ',
@@ -199,6 +200,7 @@ bbdd = {
     'El concepto de TILE en JPEG2000 permite:'  :[
         'reducir las necesidades de memoria y cómputo ',
         'dividir la imagen en bloques de igual tamaño ',
+        'comprimirlo independientemente con sus propios parámetros de compresión ',
         'comprimir independientemente con sus propios parámetros de compresión '],
     'La tranformada DWT en JPEG2000'  :[
         'permite la representación en multiresolución espacial y de calidad '],
@@ -427,6 +429,7 @@ bbdd = {
       'se aplica a nivel de TILE ',
       'elimina el “efecto de bloques” cuando se usan factores de compresión muy altos '],
     'En el estándar de compresión para aplicaciones de fax' :[
+      'las imágenes o documentos son escaneados en un formato bi-tonal ',
       'las imágenes o documentos son escaneados en un formato bitonal '],
     'Analizando las prestaciones mostradas en esta figura. ¿Qué conclusiones son ciertas?.' :[
       'JPEG2000 mejora sustancialmente las prestaciones de JPEG ',
@@ -489,6 +492,7 @@ bbdd = {
     'En el estándar de compresión para aplicaciones de fax' :[
       'se adopta una codificación de longitud de series seguido de una codificación Huffman ',
       'las imágenes o documentos son escaneados en un formato bitonal ',
+      'las imágenes o documentos son escaneados en un formato bi-tonal ',
       'se utiliza un bit por pixel '],
     'En el estándar de compresión JBIG' :[
       'es un estándar de compresión sin pérdidas ',
@@ -1170,7 +1174,26 @@ bbdd = {
       'se da más resolución a las muestras de valor más pequeño y menos resolución a las muestras de mayor valor '],
     'Caso de Estudio: Estimación y Compensación de Movimiento (Evaluación de la Ganancia de la Predicción). Seleccionando la secuencia “Vectra21Frames.yuv”, utilizando modo no Jerárquico, Full Search, tamaño de MB=16x16, tamaño área de búsqueda=15, se obtienen los resultados mostrados en la figura. ¿Cuál es la Ganancia de compresión (Gp) de la imagen fd y de la imagen mcfd del Frame[2]?.' :[
       'Gp(fd)=4.53; Gp(mcfd)=41.05 '],
-
+    'Caso de Estudio: Codificación en Subbanda (SBC, Sub-Band Coding). Aplicándole a la imagen "Lena256B" con 256 niveles de gris, una codificación en sub-banda con un modelo de descomposición en 16 bandas de frecuencia, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, se obtienen los resultados mostrados en la figura. ¿Cuál sería la imagen con la descomposición en sub-bandas codificadas, acorde al modelo de descomposición en sub-bandas seleccionado en Decomp, y a los resultados obtenidos?.' :[],
+    'Caso de Estudio: Codificación en Sub-banda (SBC, Sub-Band Coding). Aplicándole a la imagen "Lena256B" con 256 niveles de gris, una codificación en sub-banda con un modelo de descomposición en 16 bandas de frecuencia, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, se obtienen los resultados mostrados en la figura. ¿Cuál sería la imagen con la descomposición en sub-bandas codificadas, acorde al modelo de descomposición en sub-bandas seleccionado en Decomp, y a los resultados obtenidos?.' :[
+      'd '],
+    'Caso de Estudio: Codificación en Sub-banda (SBC, Sub-Band Coding). Al representar la curva RD obtenida para los 6 tipos diferentes comunes de descomposición en sub-bandas de una imagen, habilitando la codificación de las sub-bandas que se generan y la codificación de entropía de los valores cuantificados, y comparándolo con las prestaciones RD que se obtendrían utilizando una codificación DPCM (mismo modelo de predicción 2D que el utilizado en SBC-Subs), para la imagen "Lena256B" con 256 niveles de gris.' :[],
+    'La codificación perceptiva…' :[
+      'se basa en el conocimiento de la percepción psico-visual y psico-acústica '],
+    'Un cuantificador de 3 bits aplicado a muestras de niveles de gris codificados con un byte/muestra proporciona un factor de compresión F de:' :[],
+    'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Aplicando un PCM de 1 bpp a 7 bpp para la imagen "Lena256B" con 256 niveles de gris, obtenemos los resultados que se muestran en la figura. Si de entre todos ellos, finalmente optamos por un PCM bit rate=4,¿Cuántos niveles de gris de salida se están utilizando?. ¿Cual es el Factor de Compresión (FC) que se obtendría?.' :[
+      '16 niveles de gris y FC=2:1 '],
+    'Caso de Estudio: Estimación y Compensación de Movimiento (Evaluación de la Ganancia de la Predicción). Seleccionando la secuencia “Vectra21Frames.yuv” (352x288), utilizando modo no Jerárquico, Full Search, tamaño de MB=16x16, (asume que se genera un vector de movimiento por MB), tamaño área de búsqueda=15, se obtienen los resultados mostrados en la figura. ¿Cuál es el coste estimado de codificar todos los Vectores de Movimiento del Frame[2]?.' :[
+      '871,2 bits '],
+    'Caso de Estudio: Estimación y Compensación de Movimiento (Evaluación de la Ganancia de la Predicción). Seleccionando la secuencia “Vectra21Frames.yuv” (352x288), utilizando modo no Jerárquico, Full Search, tamaño de MB=16x16, (asume que se genera un vector de movimiento por MB), tamaño área de búsqueda=15, se obtienen los resultados mostrados en la figura. Imagina que la imagen diferencia obtenida con movimiento compensado (mcfd) del Frame [2] se codifica posteriormente utilizando otros algoritmos de compresión, y que se logra una tasa de compresión de 0.5 bpp (bit por pixel). ¿Cuánto supone para dicho Frame [2], comparativamente, el coste de codificar sus vectores de movimiento asociados ?. Utiliza la expresión [CosteBitsMVs/CosteBitsResiduo]x100 para expresarlo en %.' :[],
+    'La codificación predictiva (predicción temporal): en la estimación de movimiento, ¿Cuál es la influencia del tamaño de MB?.' :[
+      'se generan menores vectores de movimiento al aumentar el tamaño del MB '],
+    'Caso de Estudio: Codificación Predictiva de Muestras (DPCM). Al representar la curva RD al aplicar el DPCM a la imagen de Lena256B (con 256 niveles de gris) para todos los DPCM bitrates disponibles (1 a 6 bpp)' :[],
+    'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Al representar la curva RD al aplicar el cuantificador lineal (PCM) a la imagen de Lena256B (con 256 niveles de gris) para todos los PCM bitrates disponibles (1 a 7 bpp).' :[],
+    'Caso de Estudio: Estimación y Compensación de Movimiento (Influencia del Tamaño de MB). Seleccionando la secuencia “Vectra21Frames.yuv” (352x288), utilizando modo no Jerárquico, Full Search, tamaño área de búsqueda=15, y modo de visionado secuencia completa con loop=1. Modificando el tamaño de MB (Set Block Size=2x2, 4x4, 8x8 y 16x16), se obtienen los resultados numéricos obtenidos en la figura. Compara las diferencias en eficiencia entre los diferentes tamaños de MB. En base a ellas, ¿Cuáles de las siguientes afirmaciones son ciertas?.' :[],
+    'Caso de Estudio: Codificación Predictiva de Muestras (DPCM). Al representar la curva RD obtenida para los diferentes modelos de predictores DPCM disponibles (modelo 1-D y modelos 2-D), y compararlo con las prestaciones RD que se obtendrían utilizando una codificación PCM, para la imagen "Lena256B" con 256 niveles de gris.' :[
+      'Se debe obtener la gráfica RD mostrada en la figura. '],
+    ''
 }
 
 
