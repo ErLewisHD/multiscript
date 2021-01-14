@@ -67,7 +67,6 @@ bbdd = {
       'se basa en codificar un conjunto de muestras (vector) en base a una lista de vectores pre-establecidos '],
     'La codificación predictiva (predicción temporal): en la estimación de movimiento, ¿Cuál es la influencia del tamaño de MB?'  :[
         'el residuo es menor conforme se reduce el tamaño del MB ',
-        'se generan menores vectores de movimiento al aumentar el tamaño del MB ',
         'se disminuye el coste computacional al aumentar el tamaño del MB '],
     'La codificación predictiva (predicción temporal): en la estimación de movimiento..'  :[
         'se define un área de búsqueda para reducir el coste de la misma ',
@@ -229,13 +228,15 @@ bbdd = {
 
     'Las mejoras del Estándar JPEG XR con respecto a JPEG son:' :[
         'también usa bloques de 4x4, 2x4 y 2x2 pixeles ',
-        'soporta pixeles de hasta 32 bits '],
+        'soporta pixeles de hasta 32 bits. '],
     'En el estándar MPEG-4/parte 2:' :[
       'la codificación basada en objetos audiovisuales permitirá fácilmente la interacción, la reusabilidad y la escalabilidad ',
       'es necesaria información que describa las relaciones espaciales (descriptor de escena) y temporales entre los objetos que forman la escena ',
       'una escena es una composición de objetos audiovisuales que puede ser modificada por el usuario '],
     'En MPEG-1 el significado funcional de la capa de Cuadro es:' :[
       'unidad primaria de display '],
+    'En H.261 la redundancia estadística se reduce/elimina en el módulo de:' :[
+      'Codificación de entropía '],
     'MPEG-2 presenta los siguientes modos de escalabilidad:' :[
       'Hibrida ',
       'SNR ',
@@ -271,7 +272,7 @@ bbdd = {
     'El estándar MPEG-2 de audio (Parte 3) es una extensión del MPEG-1 donde se han añadido las siguientes características.…' :[
       'Caudales de 384 Kbit/s o menos por canal. ',
       'Frecuencias de muestreo adicionales ',
-      'Sistema Multicanal (5+1) '],
+      'Sistema Multicanal (5+1). '],
     'En MPEG-1-2 algunos de los parámetros (sintaxis) más importantes de la capa de cuadro son:' :[
       'el tipo de codificación (I, P o B) ',
       'el rango de los vectores de movimiento. ',
@@ -302,7 +303,9 @@ bbdd = {
     'En MPEG-1 el significado funcional de la capa de Bloque es:' :[
       'unidad de transformada DCT '],
     'En MPEG-2, en la escalabilidad de SNR:' :[
-      'Las capas de mejora restantes son codificadas para mejorar la calidad básica proporcionando un mayor refinamiento de los coeficientes de la DCT de la capa básica '],
+      'Las capas de mejora restantes son codificadas para mejorar la calidad básica proporcionando un mayor refinamiento de los coeficientes de la DCT de la capa básica ',
+      'Cada capa contiene todos los coeficientes DCT, pero cada capa puede tener un valor diferente del factor Q ',
+      'Todas las capas tienen la misma resolución espacial pero diferentes calidades de vídeo '],
     'El estándar H.263 presenta la opción de codificación avanzada Syntaxbased arithmetic coding mode (SAC-mode), que consiste en:' :[],
     'En el estándar MPEG-1, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del tamaño de la ventana de búsqueda. ¿Qué conclusiones son ciertas?.' :[
       'aumentar el tamaño de la ventana de búsqueda aumenta el coste computacional del codificador ',
@@ -331,7 +334,8 @@ bbdd = {
     'En MPEG-1-2 la redundancia estadística se reduce/elimina en el módulo de:' :[],
     'El estándar H.261 utiliza las siguientes técnicas en este orden' :[
       'un sistema híbrido de codificación inter-cuadro, un cuantificador, un codificador de longitud de series y un codificador de entropía '],
-    'En H.261 la redundancia perceptiva se reduce/elimina en el módulo de:' :[],
+    'En H.261 la redundancia perceptiva se reduce/elimina en el módulo de:' :[
+      'cuantificación '],
     'En MPEG-2, sus ejemplos de uso más conocidos son:' :[
       'TDT (televisión digital terrestre) ',
       'Sistemas basados en DVD '],
@@ -348,7 +352,9 @@ bbdd = {
       'H.264/AVC mejora sustancialmente las prestaciones del resto de estándares previos. ',
       'H.264/AVC obtiene un ahorro en bitrate del 50% (aprox) con respecto a MPEG-2 para un mismo nivel de calidad '],
     'En el estándar H.264/AVC, alguna de sus novedades para mejorar la eficiencia son:' :[
-      'Compensación de movimiento con diferentes tamaños de MB '],
+      'Compensación de movimiento con diferentes tamaños de MB ',
+      'Predicción temporal (P) basada en múltiples frames ',
+      'Predicción Intra-frame '],
     'En el estándar MPEG-1 se utilizan las siguientes técnicas:'  :[
       'Predicción bidireccional ',
       'Codificación Huffman ',
@@ -363,7 +369,8 @@ bbdd = {
       'se obtiene una reducción del 12.5% en bitrate conforme se incrementa en 1 el Qstep '],
     'En el estándar HEVC, su extensión MV-HEVC esta basada en el formato:' :[
       'Multi-View Video (MVV) '],
-    'En el estándar HEVC, su extensión 3D-HEVC esta basada en el formato:'  :[],
+    'En el estándar HEVC, su extensión 3D-HEVC esta basada en el formato:'  :[
+      'Multi-view+Profundidad (MVD). '],
     'En el estándar H.264/SVC, dado el diagrama de bloques de la figura se trata de una escalabilidad…' :[
       'Calidad/Fidelidad ',
       'Espacial '],
@@ -376,7 +383,7 @@ bbdd = {
       'Un incremento pequeño en la complejidad de la decodificación '],
     'En el estándar H.264/AVC, en la predicción Intra-Frame:' :[
       'al bloque o MB que se está codificando se le resta la predicción realizada para él. ',
-      'se realiza una predicción para ese bloque o MB basándose en los bloques o MB previamente codificados en esa imagen ',
+      'se realiza una  predicción para ese bloque o MB basándose en los bloques o MB previamente codificados en esa imagen ',
       'solo se pueden utilizar las muestras pertenecientes al mismo Slice '],
     'El estándar H.264/MVC, …' :[
       'Explota las redundancias entre vistas utilizando la predicción inter-vista para reducir el bitrate. ',
@@ -403,7 +410,8 @@ bbdd = {
     '¿Cuáles fueron algunas de las motivaciones para el diseño del estándar HEVC?' :[
       'Codificar eficientemente resoluciones de alta (HD) a ultra-alta definición (UHDV) de vídeo ',
       'Se necesita desarrollar una nueva tecnología de compresión de vídeo para reducir considerablemente las tasas de bits que genera la mejor configuración de H.264/AVC ',
-      'Si se sigue utilizando H.264/AVC,  el caudal generado por el tráfico de vídeo crecerá más rápido de lo que serán capaces de transportar las infraestructuras de transmisión '],
+      'Si se sigue utilizando H.264/AVC,  el caudal generado por el tráfico de vídeo crecerá más rápido de lo que serán capaces de transportar las infraestructuras de transmisión ',
+      'una considerable reducción en bitrate con respecto al H.264/AVC High Profile (para un mismo nivel de calidad). '],
     'En el Formato 3D: Multiview Simulcast, …' :[
       'Codifica cada vista por separado ',
       'Permite utilizar codificadores convencionales para cada vista (MPEG-2, H.264, etc..) ',
@@ -571,7 +579,7 @@ bbdd = {
       'permite hacer al sistema más robusto frente a errores ',
       'al comienzo de cada una de las franjas, las predicciones son puestos a cero '],
     'El estándar H.261 presenta las siguientes características:' :[
-      'un formato de muestreo 4:2:0 y un formato de colores YCbCr ',
+      'un formato de muestreo  4:2:0 y un formato de colores YCbCr ',
       'el formato de tamaño vídeo utilizado es CIF o QCIF ',
       'debe comprimir imágenes en movimiento a un caudal de 15 cuadros por segundo '],
 
@@ -598,7 +606,7 @@ bbdd = {
       'CD '],
     'En MPEG-1-2 la redundancia espacial se reduce/elimina en el módulo de:' :[
       'DCT '],
-    'En MPEG-1 el significado funcional de la capa de Macrobloque es:' :[
+    'En MPEG-1 el significado funcional de la capa de Macrobloque es:' :[
       'unidad de estimación y compensación de movimiento '],
     'En el estándar MPEG-4/parte 2, cuales de las siguientes son técnicas de resistencia a errores:' :[
       'partición de datos ',
@@ -615,7 +623,9 @@ bbdd = {
       'obtiene mejores residuos (menores errores de predicción) ',
       'permite una mayor precisión en la estimación del movimiento '],
     'El estándar H.263 presenta las siguientes diferencias con respecto a H.261:' :[
-      'en H.263, para aumentar la resistencia ante errores, cada GOB contiene sólo una fila de MBs '],
+      'en H.263, para aumentar la resistencia ante errores, cada GOB contiene sólo una fila de MBs ',
+      'los vectores de movimiento para el H.263 tienen  una precisión de medio pixel, comparada a la precisión de pixel entero del H.261 ',
+      'el estándar H.263 no realiza el filtrado realizado por el H.261 '],
 
     'Dada una aplicación, los esquemas de compresión pueden explotar …… los factores de redundancia existentes, para alcanzar el nivel de compresión deseado' :[
       'todos '],
@@ -766,9 +776,9 @@ bbdd = {
       'G.721 es un estándar para la codificación de la voz a 32 kbit/s '],
     'El estándar MPEG-4 de audio. Características de AAC-LD:' :[
         'Es apto para audio-conferencias de alta calidad ',
-        'Es un códec de audio solo para estéreo ',
-        'Apto oara audio-conferencias de alta calidad ',
-        'Es de bajo retraso '],
+        'Es un códec de audio solo para estéreo. ',
+        'Apto para audio-conferencias de alta calidad ',
+        'Es de bajo retraso. '],
     'Los codificadores preceptúales de compresión de audio se basan en los siguientes fenómenos'  :[
       'El fenómeno de enmascaramiento ',
       'La curva de sensibilidad del oído '],
@@ -844,7 +854,7 @@ bbdd = {
     'La Recomendación del ITU-T H.241 (2012):' :[
       'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.320 ',
       'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.323 ',
-      'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.324 Se realizó en el año 2012 '],
+      'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.324Se realizó en el año 2012 '],
 
     'En el estándar H.264/AVC, en la predicción Intra-Frame (para las Luminancias), se calculan en este ejemplo mostrado en la figura, los 9 predictores Intra4x4 para obtener el mejor predictor de todos ellos. ¿Cuál elegiría el estándar?:' :[
       'Modo 7 '],
@@ -879,7 +889,8 @@ bbdd = {
     'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción Random-Access (RA):' :[
       'Es una configuración adecuada para aplicaciones con elevada eficiencia de codificación pero con un elevado retraso debido al reordenamiento de frames (Brodcasting y Streaming) ',
       'Se introduce periódicamente un frame de tipo I (IntraPeriod) para eliminar la propagación de errores y permitir acceso aleatorio. ',
-      'Se introduce periódicamente un frame de tipo I (IntraPeriod) para eliminar la propagación de errores y permitir acceso aleatorio. '],
+      'Se introduce periódicamente un frame de tipo I (IntraPeriod) para eliminar la propagación de errores y permitir acceso aleatorio. ',
+      'Se utiliza una estructura de predicción jerarquica con frames de tipo B. '],
     'El estándar H.264/SVC, los tipos de escalabilidad básicos soportados son:' :[
       'Espacial ',
       'Temporal ',
@@ -898,8 +909,8 @@ bbdd = {
 
     'En el estándar H.264/AVC, la predicción Intra-Frame (para las Crominancias):' :[
       'Utiliza 4 predictores direccionales Intra16x16. '],
-    'En el estándar HEVC, en las CTC (Common Test Conditions), en las Estructuras de Predicción Low Delay P (LDP) y Low Delay B (LDB):' :[
-      'LDP: Se utiliza solo la primera imagen de tipo I, y el resto son de tipo P. LDB: Se utiliza solo la primera imagen de tipo I, y el resto son de tipo B. ',
+    'En el estándar HEVC, en las CTC (Common Test Conditions), en las Estructuras de Predicción Low Delay P (LDP) y Low Delay B (LDB):' :[
+      'LDP: Se utiliza solo la primera imagen de tipo I, y el resto son de tipo P.LDB: Se utiliza solo la primera imagen de tipo I, y el resto son de tipo B. ',
       'Adecuadas para aplicaciones de bajo retraso y adecuada eficiencia de codificación (LDB>LDP).Videoconferencia. ',
       'En LDP y LDB, no se permite reordenamiento de fotogramas (Low Delay), solo pueden usarse predicciones con respecto al pasado (P-unipredictiva, B-bipredictiva). '],
 
@@ -1059,7 +1070,7 @@ bbdd = {
     '¿Cuáles de los siguientes tipos de escalabilidad permite JPEG2000?.' :[
       'Calidad (Textura) ',
       'Espacial '],
-    'En H.261 la redundancia espacial se reduce/elimina en el módulo de: '  :[],
+    'En H.261 la redundancia espacial se reduce/elimina en el módulo de:'  :[],
     'En H.261 cuando se decide que un cuadro será codificado como inter: '  :[
       'sus MBs seran codificados como intra o inter dependiendo del resultado la estimación de movimiento '],
     'El  estándar de compresión de audio G.723.1' :[
@@ -1069,7 +1080,7 @@ bbdd = {
     '¿Cuáles de las siguientes características de JPEG2000 son ciertas?'  :[
       'Permite una codificación escalable del flujo de bits ',
       'Usa la DWT (Transformada Wavelet) en vez de la DCT ',
-      'Proporciona buena calidad de imagen, incluso para elevadas tasas de compresión (por encima de 80:1) '],
+      'Proporciona buena calidad de imagen, incluso para elevadas tasas de compresión (por encima de 80:1)  '],
     'La codificación escalable de JPEG2000 permite:'  :[],
     'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Aplicando un PCM de 1 bpp a 7 bpp para la imagen "Odie" con 256 niveles de gris, obtenemos los resultados que se muestran en la figura. Si de entre todos ellos, finalmente optamos por un PCM bit rate=2,¿Cuántos niveles de gris de salida se están utilizando?. ¿Cual es el Factor de Compresión (FC) que se obtendría?.' :[],
     'El modo de operación de JPEG mostrado en esta figura es:' :[
