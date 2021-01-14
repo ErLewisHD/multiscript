@@ -805,7 +805,7 @@ bbdd = {
       'Es un códec de audio solo para estéreo ',
       'Es apto para audio-conferencias de alta calidad '],
     'Los estándares de compresión de audio G.72x' :[
-        'alcanzan su compresión realizando codificaciones predictivas en la mayría de los casos ',
+        'alcanzan su compresión realizando codificaciones predictivas en la mayoría de los casos ',
         'realizan una codificación eficiente de la voz humana sobre canales de ancho de banda limitado. '],
     'Los estándares de compresión de audio G.727' :[
       'Utiliza un ADPCM mejorado (EADPCM). ',
@@ -881,7 +881,7 @@ bbdd = {
       'selecciona “la mejor” partición posible para maximizar la eficiencia de la codificación ',
       'prueba todas y se queda con la mejor ',
       'es un proceso costoso computacionalmente '],
-    'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción All Intra (AI):' :[
+    'En el estándar HEVC, en las CTC (Common Test Conditions), en la Estructura de Predicción All Intra (AI):' :[
       'Todos los fotogramas son codificados como tipo I. ',
       'Es una configuración adecuada para aplicaciones con bajo retraso y elevado bitrate ',
       'Es apto para aplicaciones de Post-producción y Edición (necesidad de acceso a cada frame de alta calidad). ',
@@ -1006,7 +1006,7 @@ bbdd = {
       'Especifica la ubicación de los segmentos via HTTP-URL ',
       'Es independiente de los codecs de video y audio utilizados. ',
       'Especifica el formato del fichero MPD (Media Presentation Description) '],
-    'Ejemplos comerciales de sistemas que utilizan el estándar MPEG-DASH son:' :[
+    'Ejemplos comerciales de sistemas que utilizan el estándar MPEG-DASH son:' :[
       'Youtube. ',
       'Netflix '],
     'En adaptive video streaming:' :[
@@ -1020,7 +1020,7 @@ bbdd = {
     'La Arquitectura de DVB-x para la difusión de la TV digital:' :[
       'Utiliza DVB-C2, DVB-S2 y DVB-T2 para la 2ª generación de TV digital utilizando H.264/HEVC ',
       'Utiliza DVB-C, DVB-S y DVB-T para la 1ª generación de TV digital utilizando MPEG-2 '],
-    'Las características principales de progressive video streaming son:' :[
+    'Las características principales de progressive video streaming son:' :[
       'La resolución del video debe ser escalada para ajustarse al tamaño del display del usuario. ',
       'Independientemente del tamaño del display del usuario, el fichero siempre es el mismo. ',
       'El cliente reproduce el contenido después de almacenar una cierta cantidad (buffering) '],
@@ -1070,8 +1070,10 @@ bbdd = {
     '¿Cuáles de los siguientes tipos de escalabilidad permite JPEG2000?.' :[
       'Calidad (Textura) ',
       'Espacial '],
-    'En H.261 la redundancia espacial se reduce/elimina en el módulo de:'  :[],
-    'En H.261 cuando se decide que un cuadro será codificado como inter: '  :[
+    'En H.261 la redundancia espacial se reduce/elimina en el módulo de:'  :[
+      'DCT '
+    ],
+    'En H.261 cuando se decide que un cuadro será codificado como inter:'  :[
       'sus MBs seran codificados como intra o inter dependiendo del resultado la estimación de movimiento '],
     'El  estándar de compresión de audio G.723.1' :[
       'Codifica muestras PCM muestreadas a 8 Khz a caudales de 5.3 y 6.3 Kbit/s ',
@@ -1086,7 +1088,19 @@ bbdd = {
     'El modo de operación de JPEG mostrado en esta figura es:' :[
       'T4.11',
       'codificación jerárquica'
+    ],
+    'El estándar H.261 es aplicable para sistemas del tipo:' :[
+      'Videotelefonía/ Videoconferencia '
+    ],
+    'En el estándar H.264/AVC, se añade complejidad (memoria y computacional) para obtener eficiencia con respecto a MPEG-2. ¿Qué aspectos añaden esa complejidad?.' :[
+      'Codificación de entropía más compleja (computo) ',
+      'Estimación de movimiento con tamaños de bloques más pequeños (memoria y computo). ',
+      'Estimación de movimiento basada en múltiples frames (memoria y computo) '
+    ],
+    'El estándar H.263 presenta la opción de codificación avanzada Advanced prediction mode (AP-mode), que consiste en:' :[
+      'cada bloque de un MB tiene 1 vector de movimiento '
     ]
+
 }
 
 setTimeout(() => {
