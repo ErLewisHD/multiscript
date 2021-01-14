@@ -791,7 +791,8 @@ bbdd = {
       'Frecuencia de muestreo (44.1, 48, 96, 192 kHz). ',
       'Número de bits por muestra de audio (8, 16, 24 bits). '],
     'El estándar MPEG-4 de audio. Características de AAC-ELDv2:'  :[
-      'Es un códec de aucio solo para estéreo ',
+      'Es un códec de audio solo para estéreo. ',
+      'Es un códec de audio solo para estéreo ',
       'Es apto para audio-conferencias de alta calidad '],
     'Los estándares de compresión de audio G.72x' :[
         'alcanzan su compresión realizando codificaciones predictivas en la mayría de los casos ',
