@@ -1115,14 +1115,14 @@ setTimeout(() => {
             if (pregunta[j].includes(key)) {
                 console.log(j, pregunta[j])
                 console.log(opciones.item(j).childNodes)
-                preguntas.item(j).setAttribute("style","color:red")
+                preguntas.item(j).setAttribute("style","color:#4E4C4C")
                 opciones_test = opciones.item(j).childNodes
                 for (let k=0; k < (opciones_test.length); k+=2) {
                     respuesta = opciones_test.item(k).textContent.slice(3)
                     console.log(opciones_test.item(k).textContent.slice(3))
                     if (value.includes(respuesta)) {
 
-						            opciones_test.item(k).childNodes[1].childNodes[0].setAttribute("style","color:red")
+						            opciones_test.item(k).childNodes[1].childNodes[0].setAttribute("style","color:#4E4C4C")
                     }
                 }
             }
