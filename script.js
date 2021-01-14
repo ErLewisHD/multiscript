@@ -1070,7 +1070,12 @@ bbdd = {
       'Permite una codificación escalable del flujo de bits ',
       'Usa la DWT (Transformada Wavelet) en vez de la DCT ',
       'Proporciona buena calidad de imagen, incluso para elevadas tasas de compresión (por encima de 80:1) '],
-    'La codificación escalable de JPEG2000 permite:'  :[]
+    'La codificación escalable de JPEG2000 permite:'  :[],
+    'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Aplicando un PCM de 1 bpp a 7 bpp para la imagen "Odie" con 256 niveles de gris, obtenemos los resultados que se muestran en la figura. Si de entre todos ellos, finalmente optamos por un PCM bit rate=2,¿Cuántos niveles de gris de salida se están utilizando?. ¿Cual es el Factor de Compresión (FC) que se obtendría?.' :[],
+    'El modo de operación de JPEG mostrado en esta figura es:' :[
+      'T4.11',
+      'codificación jerárquica'
+    ]
 }
 
 setTimeout(() => {
@@ -1084,7 +1089,7 @@ setTimeout(() => {
         Object.entries(bbdd).forEach(([key, value]) => {
             if (pregunta[j].includes(key)) {
                 console.log(j, pregunta[j])
-                //console.log(opciones.item(j).childNodes)
+                console.log(opciones.item(j).childNodes)
                 preguntas.item(j).setAttribute("style","color:red")
                 opciones_test = opciones.item(j).childNodes
                 for (let k=0; k < (opciones_test.length); k+=2) {
