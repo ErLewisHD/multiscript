@@ -286,7 +286,9 @@ bbdd = {
       'la posición de la franja dentro del cuadro ',
       'el factor de escala Q de cuantificación (MQUANT) '],
     'En MPEG-2, el impacto que tienen los errores:' :[
-      'se ven amplificados por los efectos de la propagación espacial y temporal '],
+      'se ven amplificados por los efectos de la propagación espacial y temporal ',
+      'depende no sólo de la cantidad de información errónea sino del tipo de información errónea y el lugar donde esta información se corrompe ',
+      'Los errores en una imagen de tipo I degrada más la calidad de vídeo que los errores en una imagen de tipo P, y ésta, a su vez, más que en una imagen de tipo B. '],
     'En el estándar H.261, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar la influencia del tamaño de la ventana de búsqueda. ¿Qué conclusiones son ciertas?' :[
       'aumentar el tamaño de la ventana de búsqueda no es muy eficiente en términos de RD ',
       'H.261 es un códec asimétrico independientemente del tamaño de la ventana de búsqueda utilizado. ',
@@ -312,7 +314,10 @@ bbdd = {
     'El estándar MPEG-2 se diseñó bajo los siguientes requisitos:' :[
       'formato de video entrelazado y progresivo ',
       'tamaños de bloque de 8x8 o menores ',
-      'formato de muestreo 4:2:0, 4:2:2 y 4:4:4 '],
+      'formato de muestreo 4:2:0, 4:2:2 y 4:4:4 ',
+      'Flexibilidad del formato de entrada ',
+      'Compatibilidad con MPEG-1 ',
+      'Escalabilidad en el flujo de bits '],
     'En el estándar H.263, se obtienen las siguientes prestaciones mostradas en esta figura con respecto al estándar H.261. ¿Qué conclusiones son ciertas?.' :[],
     'El estándar H.263 presenta la opción de codificación avanzada PBframes mode, que consiste en:' :[],
     'En el estándar H.261:' :[
@@ -344,7 +349,10 @@ bbdd = {
       'H.264/AVC obtiene un ahorro en bitrate del 50% (aprox) con respecto a MPEG-2 para un mismo nivel de calidad '],
     'En el estándar H.264/AVC, alguna de sus novedades para mejorar la eficiencia son:' :[
       'Compensación de movimiento con diferentes tamaños de MB '],
-
+    'En el estándar MPEG-1 se utilizan las siguientes técnicas:'  :[
+      'Predicción bidireccional ',
+      'Codificación Huffman ',
+      'DCT y Cuantificación '],
     'En el estándar H.264/AVC, alguna de sus novedades para mejorar la robustez son:' :[
       'Flexible macroblock ordering (FMO)'],
     'En el estándar H.264/AVC, en la codificación de los Frames B:' :[
@@ -357,7 +365,8 @@ bbdd = {
       'Multi-View Video (MVV) '],
     'En el estándar HEVC, su extensión 3D-HEVC esta basada en el formato:'  :[],
     'En el estándar H.264/SVC, dado el diagrama de bloques de la figura se trata de una escalabilidad…' :[
-      'Calidad/Fidelidad '],
+      'Calidad/Fidelidad ',
+      'Espacial '],
     'Alguno de los factores críticos para el éxito del vídeo 3D son …' :[
       'Que el cliente experimente una elevada calidad sin elevados costes de migración hacía el 3D.. ',
       'Aceptación por parte de los clientes de la tecnología de display del vídeo 3D, sin fatigas ni cansancio ocular ',
@@ -394,7 +403,7 @@ bbdd = {
     '¿Cuáles fueron algunas de las motivaciones para el diseño del estándar HEVC?' :[
       'Codificar eficientemente resoluciones de alta (HD) a ultra-alta definición (UHDV) de vídeo ',
       'Se necesita desarrollar una nueva tecnología de compresión de vídeo para reducir considerablemente las tasas de bits que genera la mejor configuración de H.264/AVC ',
-      'Si se sigue utilizando H.264/AVC, el caudal generado por el tráfico de vídeo crecerá más rápido de lo que serán capaces de transportar las infraestructuras de transmisión '],
+      'Si se sigue utilizando H.264/AVC,  el caudal generado por el tráfico de vídeo crecerá más rápido de lo que serán capaces de transportar las infraestructuras de transmisión '],
     'En el Formato 3D: Multiview Simulcast, …' :[
       'Codifica cada vista por separado ',
       'Permite utilizar codificadores convencionales para cada vista (MPEG-2, H.264, etc..) ',
@@ -432,7 +441,9 @@ bbdd = {
       'Las dos vistas (izquierda y derecha) son codificadas en su resolución total. ',
       'H.264/MVC utiliza este formato como caso particular (n=2, Stereo High Profile) ',
       'Las dos vistas son codificadas explotando la redundancia existente entre ellas '],
-
+    'En el Formato 3D: Multi-View+Depth (MVD)…' :[
+      'codifica ambos, la textura y los datos de profundidad, (mismo número de vistas) con MVC ',
+      'es el formato de referencia para MPEG 3D video '],
     'En el estándar H.264/AVC, dada la técnica de codificación mostrada en la figura ¿Qué nombre recibe esta técnica?:' :[
       'Predicción temporal (P) basada en múltiples frames '],
 
@@ -489,7 +500,10 @@ bbdd = {
       'Telemedicina (consultas médicas y diagnostico a distancia) ',
       'Video vigilancia y monitorización ',
       'Videoconferencias sobre diferentes tipos de dispositivos '],
-    'En MPEG-2, en la escalabilidad de Partición de Datos:' :[],
+    'En MPEG-2, en la escalabilidad de Partición de Datos:' :[
+      'los coeficientes de baja frecuencia junto con otras informaciones importantes, van a la “capa base” ',
+      'El flujo de bits es dividido en dos capas ',
+      'Los coeficientes de alta frecuencia, y otra información menos importante, van a la “capa de mejora” '],
     'En MPEG-2, en las técnicas de ocultación de errores, la Temporal con Movimiento Compensado:' :[
       'obtiene prestaciones reducidas en imágenes de tipo I ',
       'obtiene prestaciones reducidas en cambios de escena ',
@@ -756,8 +770,8 @@ bbdd = {
         'Apto oara audio-conferencias de alta calidad ',
         'Es de bajo retraso '],
     'Los codificadores preceptúales de compresión de audio se basan en los siguientes fenómenos'  :[
-      'El fenómero de enmascaramiento ',
-      'La curva de sensibilidad del oído'],
+      'El fenómeno de enmascaramiento ',
+      'La curva de sensibilidad del oído '],
     'El estándar MPEG-1 de audio. Su modelo psico-acústico…'  :[
         'Obtiene los umbrales de enmascaramiento para cada sub-banda ',
         'Su coste computacional es elevado ',
@@ -831,9 +845,6 @@ bbdd = {
       'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.323 ',
       'Se definió para incluir H.264/AVC/SVC en la versión revisada de H.324 Se realizó en el año 2012 '],
 
-
-
-
     'En el estándar H.264/AVC, en la predicción Intra-Frame (para las Luminancias), se calculan en este ejemplo mostrado en la figura, los 9 predictores Intra4x4 para obtener el mejor predictor de todos ellos. ¿Cuál elegiría el estándar?:' :[
       'Modo 7 '],
     'En el Formato 3D: Multiview Vídeo (MVV), …' :[
@@ -898,17 +909,22 @@ bbdd = {
 
     'Caso de Estudio: Estimación y Compensación de Movimiento (Evaluación de la Ganancia de la Predicción). Seleccionando la secuencia “Vectra21Frames.yuv”, utilizando modo no Jerárquico, Full Search, tamaño de MB=16x16, tamaño área de búsqueda=15, se obtienen los resultados mostrados en la figura. ¿Cuál es la Ganancia de compresión (Gp) de la imagen fd y de la imagen mcfd del Frame[2]?.' :[
       'Gp(fd)=4.53; Gp(mcfd)=41.05 '],
-
-
+    'El  estándar de compresión de audio G.729'  :[
+      'Codifica muestras PCM muestreadas a 8 Khz a un caudal de 8 Kbit/s '],
     'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Aplicando un PCM de 1 bpp a 7 bpp para la imagen "Lena256B" con 256 niveles de gris, obtenemos los resultados que se muestran en la figura. Si de entre todos ellos, finalmente optamos por un PCM bit rate=4,¿Cuántos niveles de gris de salida se están utilizando?. ¿Cual es el Factor de Compresión (FC) que se obtendría?.' :[
       '16 niveles de gris y FC=2:1 '],
-
-
+    'El  estándar de compresión de audio G.728' :[
+      'Utiliza un codificador LD-CELP. (CELP de bajo retraso). '],
     'La codificación predictiva (predicción temporal): en la estimación de movimiento, ¿Cuál es la influencia del tamaño de MB?.' :[
       'se generan menores vectores de movimiento al aumentar el tamaño del MB '],
-
+    'Los  estándares de compresión de audio G.727'  :[
+      'Codifica muestras PCM muestreadas a 8 Khz a caudales de 40, 32, 24 y 16 kbits/s. ',
+      'Utiliza un ADPCM mejorado (EADPCM). '],
     'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Al representar la curva RD al aplicar el cuantificador lineal (PCM) a la imagen de Lena256B (con 256 niveles de gris) para todos los PCM bitrates disponibles (1 a 7 bpp).' :[],
-
+    'El  estándar de compresión de audio G.722' :[
+      'Utiliza codificación en sub-bandas+ADPCM ',
+      'Los anchos de banda son 7 Khz a 48, 56 y  64 kbits/s ',
+      'Es una versión  mejorada del G.726. '],
     'Caso de Estudio: Codificación Predictiva de Muestras (DPCM). Al representar la curva RD obtenida para los diferentes modelos de predictores DPCM disponibles (modelo 1-D y modelos 2-D), y compararlo con las prestaciones RD que se obtendrían utilizando una codificación PCM, para la imagen "Lena256B" con 256 niveles de gris.' :[
       'Se debe obtener la gráfica RD mostrada en la figura. '],
     'En MPEG-1 los cuadros P:' :[
@@ -959,8 +975,8 @@ bbdd = {
       'Los clientes monitoriza los recursos locales (CPU, memoria, display, etc...) ',
       'Los clientes llevan el peso de la adaptación. ',
       'Los clientes manejan las conexiones TCP, el transporte HTTP e interpretan los ficheros MPD. '],
-    'Un Sistema completo de Adaptive Media Streaming esta formado por:' :[
-      'Todas las Fases enunciadas son necesarias. '],
+    'Un Sistema completo de Adaptive Media Streaming esta formado por:' :[
+      'Todas las Fases enunciadas son necesarias. '],
     'Streaming Push-based: Sus características son:' :[
       'Uso de protocolos como RTP, RTSP y UDP. ',
       'Son adaptativos a través de feedback explícitos. Son realizados por el servidor. '],
@@ -971,7 +987,7 @@ bbdd = {
       'Adobe HTTP Dynamic Flash Streaming. ',
       'Apple HTTP Live Streaming (HLS) ',
       'Microsoft Smooth Streaming. '],
-    'Las dos principales problemas de progressive video streaming son:' :[
+    'Las dos principales problemas de progressive video streaming son:' :[
       'Calidad (escalado) ',
       'Buffering (pausas) '],
     'El estándar MPEG-DASH:' :[
@@ -1024,27 +1040,36 @@ bbdd = {
     'En H.261 se define  una estructura jerárquica para la compresión de la señal de vídeo, que consta de cuatro capas y en este orden:' :[
       'Cuadro, Grupo de Bloques (GOB), Macrobloque (MB) y Bloque. '],
     'El estándar H.261 se diseñó bajo los siguientes requisitos:' :[
-      'la calidad de vídeo necesaria puede ser media o baja '],
+      'la calidad de vídeo necesaria puede ser media o baja ',
+      'el retraso es crítico ',
+      'válido para servicios de comunicaciones personales '],
     'La sintaxis del MPEG-2 contempla:' :[
       'Una sintaxis escalable ',
       'Una sintaxis no escalable '],
     'Estándar HEVC, los tamaños posibles de las Coding Units(CU) son:' :[
       '64x64 a 8x8 '],
-    'El  estándar de compresión de audio G.721/G.726' :[],
+    'El  estándar de compresión de audio G.721/G.726' :[
+      'G.721 fue sustituido por el G.726 el cual permite codificación en caudales de 16, 24, 32 y 40 Kbit/s '],
     'En H.261 cuando se decide que un cuadro será codificado como intra:' :[
       'todos sus MBs serán codificados como intra '],
     'Caso de Estudio 10: JPEG vs JPEG2000. Al aplicar un codificador de JPEG2000, para bitrates=0.1, 0.2, 0.3, 0.4, 0.75, 1.5 y 3 bpp, y para los niveles de descomposición Wavelet=2, 5 y 9, manteniendo el resto de parámetros a sus valores por defecto, a la imagen de Lena256B (con 256 niveles de gris), y comparándolo con las codificaciones que se obtendrían utilizando un codificador de JPEG, para bitrates=0.1, 0.2, 0.3, 0.4, 0.7, 1.5 y 3, manteniendo el resto de parámetros a sus valores por defecto. Se observa:'  :[
       'Para el caso de JPEG2000, y para BitRate (bpp) de salida bajos (0,1-0,4) bpp no se aprecia el efecto de bloques y las degradaciones se distribuyen homogéneamente por toda la imagen. ',
       'Para el caso de JPEG, y para BitRate (bpp) de salida bajos (0,1-0,4) bpp se aprecia el efecto de bloques. '],
     '¿Cuáles de los siguientes tipos de escalabilidad permite JPEG2000?.' :[
-      'Calidad (Textura) '],
+      'Calidad (Textura) ',
+      'Espacial '],
     'En H.261 la redundancia espacial se reduce/elimina en el módulo de: '  :[],
     'En H.261 cuando se decide que un cuadro será codificado como inter: '  :[
       'sus MBs seran codificados como intra o inter dependiendo del resultado la estimación de movimiento '],
     'El  estándar de compresión de audio G.723.1' :[
       'Codifica muestras PCM muestreadas a 8 Khz a caudales de 5.3 y 6.3 Kbit/s ',
       'G.723.1 es estándar de facto para la codificación de voz en Internet ',
-      'Para generar el caudal de 6.3 Kbit/s utiliza un codificador  MP-MLQ ']
+      'Para generar el caudal de 6.3 Kbit/s utiliza un codificador  MP-MLQ '],
+    '¿Cuáles de las siguientes características de JPEG2000 son ciertas?'  :[
+      'Permite una codificación escalable del flujo de bits ',
+      'Usa la DWT (Transformada Wavelet) en vez de la DCT ',
+      'Proporciona buena calidad de imagen, incluso para elevadas tasas de compresión (por encima de 80:1) '],
+    'La codificación escalable de JPEG2000 permite:'  :[]
 }
 
 setTimeout(() => {
