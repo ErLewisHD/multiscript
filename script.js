@@ -938,7 +938,7 @@ bbdd = {
       'Los anchos de banda son 7 Khz a 48, 56 y  64 kbits/s ',
       'Es una versión  mejorada del G.726. '],
     'Caso de Estudio: Codificación Predictiva de Muestras (DPCM). Al representar la curva RD obtenida para los diferentes modelos de predictores DPCM disponibles (modelo 1-D y modelos 2-D), y compararlo con las prestaciones RD que se obtendrían utilizando una codificación PCM, para la imagen "Lena256B" con 256 niveles de gris.' :[
-      'Se debe obtener la gráfica RD mostrada en la figura. '],
+      'Se debe obtener la gráfica RD mostrada en la figura. '],
     'En MPEG-1 los cuadros P:' :[
       'utilizan para la codificación, la información contenida en el cuadro previo, I o P. '],
     'En el control de caudal del estándar H.261 (codificación CBR):' :[
@@ -1099,7 +1099,13 @@ bbdd = {
     ],
     'El estándar H.263 presenta la opción de codificación avanzada Advanced prediction mode (AP-mode), que consiste en:' :[
       'cada bloque de un MB tiene 1 vector de movimiento '
-    ]
+    ],
+    'Caso de Estudio: Cuantificación Vectorial (VQ, Vector Quantization). Al representar la curva RD al aplicar el cuantificador vectorial(VQ) a la imagen de Lena256B (con 256 niveles de gris), con el codebook pre-diseñado en la herramienta VcDemo1_4x4_min1_max12, para los diferentes bitrate/vector 4x4 (desde 1 a 12), y comparándolo con las prestaciones RD que se obtendrían utilizando PCM, DPCM (modelo de predicción 1-D).' :[],
+    'En el estándar H.264/SVC, se obtienen las siguientes prestaciones mostradas en esta figura para evaluar  el uso de la escalabilidad espacial . ¿Qué conclusiones son ciertas?' :[
+      'El uso de las técnicas de Inter-Layer Prediction son las responsables de la eficiencia de SVC '],
+    'Caso de Estudio: Cuantificador Escalar Uniforme (PCM). Aplicando un PCM de 1 bpp a 7 bpp para la imagen "Lena256B" con 256 niveles de gris, obtenemos los resultados que se muestran en la figura. Si de entre todos ellos, finalmente optamos por un PCM bit rate=3,¿Cuántos niveles de gris de salida se están utilizando?. ¿Cual es el Factor de Compresión (FC) que se obtendría?.' :[
+      '8 niveles de gris y FC=8:3 '],
+    'Caso de Estudio 10: JPEG vs JPEG2000. Al representar las curvas RD al aplicar un codificador de JPEG2000, para bitrates=0.1, 0.2, 0.3, 0.4, 0.75, 1.5 y 3 bpp, y para los niveles de descomposición Wavelet=2, 5 y 9, manteniendo el resto de parámetros a sus valores por defecto, a la imagen de Lena256B (con 256 niveles de gris), y comparándolo con las prestaciones RD que se obtendrían utilizando un codificador de JPEG, para bitrates=0.1, 0.2, 0.3, 0.4, 0.7, 1.5 y 3, manteniendo el resto de parámetros a sus valores por defecto.':[]
 
 }
 
