@@ -1128,7 +1128,7 @@ setTimeout(() => {
                     console.log(opciones_test.item(k).textContent.slice(3))
                     if (value.includes(respuesta)) {
 
-						            opciones_test.item(k).childNodes[1].childNodes[0].setAttribute("style","color:#4E4C4C")
+						            opciones_test.item(k).childNodes[1].setAttribute("style","color:#4E4C4C")
                     }
                 }
             }
